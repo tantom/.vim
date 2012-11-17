@@ -8,6 +8,7 @@ call pathogen#helptags()
 "两个连续的逗号等同于ESC :%s/one/two 将one替换为two,加上/g为全部替换
 "@不加%表示从此往下,加了代表全文替换
 "ctrl-/ 连续按两次注析行
+"选择中行后按=号排列
 "----------------------------------------
 
 
@@ -15,6 +16,7 @@ call pathogen#helptags()
 set clipboard+=unnamed
 syntax on
 inoremap ,, <ESC>
+inoremap ;; <ESC>
 "设置目录树
 nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeWinPos = "left"
@@ -26,6 +28,10 @@ let g:tagbar_width=30
 "打开一下格式文件时自动显示函数树
 autocmd BufReadPost *.js,*.py call tagbar#autoopen()
 nnoremap <F4> :call g:Jsbeautify()<CR>  
+
+"设置xptemplate
+let g:xptemplate_key_pum_only = '<S-Tab>'
+
 
 filetype plugin indent on 
 
