@@ -14,6 +14,8 @@ call pathogen#helptags()
 "ctrl-/ 连续按两次注析行
 "选择中行后按=号对齐代码
 "扩大一个窗口:res +40 <c+w>方向键在不同的窗体中跳转 
+":vert help command 竖向打开帮助
+"FuzzyFinder时选中文件按<c-j>竖向打开文件
 "----------------------------------------
 
 "快捷键映射
@@ -22,15 +24,20 @@ nmap <F2> :TagbarToggle<CR>
 nmap <F5> :call g:Jsbeautify()<CR>  
 
 imap ,, <ESC>
-imap ;; <ESC>
+imap ;; <ESC>:
 
 imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M> 
 imap ,b <ESC>:FufBuffer<C-M>
-imap ,t <ESC>:FufTag<C-M>
+imap ,t <ESC>:FufBufferTagAll<C-M>
+imap ,p <ESC>:FufTag<C-M>
 
 map ,f :FufFileWithCurrentBufferDir **/<C-M> 
 map ,b :FufBuffer<C-M>
-map ,t :FufTag<C-M>
+map ,t :FufBufferTagAll<C-M>
+map ,p :FufTag<C-M>
+
+map ,w <c-w>
+imap ,w <c-w>
 
 "设置剪切可以跨vim
 set clipboard+=unnamed
