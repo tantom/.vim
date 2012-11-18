@@ -13,6 +13,8 @@ call pathogen#helptags()
 "扩大一个窗口:res +40 <c+w>方向键在不同的窗体中跳转 
 ":vert help command 竖向打开帮助
 "FuzzyFinder时选中文件按<c-j>竖向打开文件
+"定期需要ctags -R一下
+"VbookmarkClearAll删除所有标记
 "----------------------------------------
 
 "快捷键映射
@@ -34,6 +36,12 @@ map ,p :FufTag<C-M>
 
 map ,w <c-w>
 imap ,w <c-w>
+
+" 使用 Visual Stdio 书签的按键方式
+inoremap ,m <ESC>:VbookmarkToggle<CR>i
+nnoremap ,m :VbookmarkToggle<CR>
+nnoremap <silent> <F2> :VbookmarkNext<CR>
+nnoremap <silent> <S-F2> :VbookmarkPrevious<CR>
 
 "设置剪切可以跨vim
 set clipboard+=unnamed
@@ -113,3 +121,10 @@ set noswapfile
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_stl_path_style = 'full'
+
+" 禁用默认的按键绑定
+let g:vbookmark_disableMapping = 1
+let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
+
+
+
