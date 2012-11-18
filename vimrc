@@ -24,6 +24,8 @@ nmap <F5> :call g:Jsbeautify()<CR>
 inoremap ,, <ESC>
 inoremap ;; <ESC>
 
+map <leader>f :FufFileWithCurrentBufferDir **/<C-M> 
+map <leader>b :FufBuffer<C-M>
 
 "设置剪切可以跨vim
 set clipboard+=unnamed
