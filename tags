@@ -73,12 +73,11 @@ ABBR_SNIP_MASK	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:ABBR_SNIP_MASK = '...
 ASYNC_PY_PATH	bundle/l9/autoload/l9/async.vim	/^let s:ASYNC_PY_PATH = fnamemodify(expand('<sfile>:p:h'), ':p') . 'async.py'$/;"	v
 ATTR	test/a.js	/^			ATTR: function(a, b) {$/;"	r
 ATTR	test/a.js	/^			ATTR: function(a, b, c, d, e, f) {$/;"	r
-AcceptSelection	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:AcceptSelection(mode)$/;"	f
 AcpGlobalAutoCommand	bundle/autocomplete/autoload/acp.vim	/^  augroup AcpGlobalAutoCommand$/;"	a
 AddDivider	bundle/powerline/autoload/Pl/Parser.vim	/^function! s:AddDivider(text, side, mode, colors, prev, curr, next) " {{{$/;"	f
 AddFunc_Opt	bundle/ultisnips/test.py	/^class AddFunc_Opt(_AddFuncBase):$/;"	c
 AddFunc_Simple	bundle/ultisnips/test.py	/^class AddFunc_Simple(_AddFuncBase):$/;"	c
-AddScopedTags	bundle/tagbar/autoload/tagbar.vim	/^function! s:AddScopedTags(tags, processedtags, parent, depth,$/;"	f
+Agrep_Path	bundle/grep/plugin/grep.vim	/^    let Agrep_Path = 'agrep'$/;"	v
 Align	bundle/align/autoload/Align.vim	/^fun! Align#Align(hasctrl,...) range$/;"	f
 Align	bundle/align/autoload/Align.vim	/^fun! Align#AlignCtrl(...)$/;"	f
 Align	bundle/align/autoload/Align.vim	/^fun! Align#AlignPop()$/;"	f
@@ -103,88 +102,27 @@ Anon_Trigger_Opts	bundle/ultisnips/test.py	/^class Anon_Trigger_Opts(_AnonBase):
 Anon_Trigger_Simple	bundle/ultisnips/test.py	/^class Anon_Trigger_Simple(_AnonBase):$/;"	c
 Anon_Trigger_Twice	bundle/ultisnips/test.py	/^class Anon_Trigger_Twice(_AnonBase):$/;"	c
 Asyncer	bundle/l9/autoload/l9/async.py	/^class Asyncer:$/;"	c
-AutoUpdate	bundle/tagbar/autoload/tagbar.vim	/^function! s:AutoUpdate(fname, force) abort$/;"	f
 Backspace_TabStop_NotZero	bundle/ultisnips/test.py	/^class Backspace_TabStop_NotZero(_VimTest):$/;"	c
 Backspace_TabStop_Zero	bundle/ultisnips/test.py	/^class Backspace_TabStop_Zero(_VimTest):$/;"	c
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.New(name) abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag._getPrefix() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag._init(name) abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.closeFold() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.getClosedParentTline() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.getPrototype(short) abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.initFoldState() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.isFoldable() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.isFolded() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.isKindheader() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.isNormalTag() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.isPseudoTag() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.openFold() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.openParents() abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:BaseTag.setFolded(folded) abort dict$/;"	f
-BaseTag	bundle/tagbar/autoload/tagbar.vim	/^let s:BaseTag = {}$/;"	v
 BlockGetCommentRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:BlockGetCommentRx(cdef)$/;"	f
 BlockGetCommentString	bundle/tcomment/autoload/tcomment.vim	/^function! s:BlockGetCommentString(cdef)$/;"	f
 BlockGetMiddleString	bundle/tcomment/autoload/tcomment.vim	/^function! s:BlockGetMiddleString(cdef)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.AddBookmark(name, path)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.BookmarkExistsFor(name)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.BookmarkFor(name)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.BookmarkNames()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.Bookmarks()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.CacheBookmarks(silent)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.ClearAll()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.GetNodeForName(name, searchFromAbsoluteRoot)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.GetSelected()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.InvalidBookmarks()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.New(name, path)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.Sort()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.ToRoot(name)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.Write()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.activate(...)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.compareTo(otherbookmark)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.delete()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.getNode(searchFromAbsoluteRoot)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.mustExist()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.open(...)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.openInNewTab(options)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.setPath(path)$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.str()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.toRoot()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Bookmark.validate()$/;"	f
-Bookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:Bookmark = {}$/;"	v
-BuildPrompt	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:BuildPrompt(upd)$/;"	f
 CACHE_REVISION	bundle/powerline/autoload/Pl.vim	/^	let s:CACHE_REVISION = 7$/;"	v
 CHILD	test/a.js	/^			CHILD: function(a) {$/;"	r
 CHILD	test/a.js	/^			CHILD: function(a, c) {$/;"	r
 CLASS	test/a.js	/^			CLASS: function(a, b) {$/;"	r
 CLASS	test/a.js	/^			CLASS: function(a, b, c, d, e, f) {$/;"	r
 CheckConditions	bundle/powerline/autoload/Pl/Segment.vim	/^function! s:CheckConditions(params) " {{{$/;"	f
-CheckExCtagsVersion	bundle/tagbar/autoload/tagbar.vim	/^function! s:CheckExCtagsVersion(output) abort$/;"	f
-CheckFTCtags	bundle/tagbar/autoload/tagbar.vim	/^function! s:CheckFTCtags(bin, ftype) abort$/;"	f
-CheckForExCtags	bundle/tagbar/autoload/tagbar.vim	/^function! s:CheckForExCtags(silent) abort$/;"	f
-CheckMouseClick	bundle/tagbar/autoload/tagbar.vim	/^function! s:CheckMouseClick() abort$/;"	f
-Close	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:Close()$/;"	f
-CloseFold	bundle/tagbar/autoload/tagbar.vim	/^function! s:CloseFold() abort$/;"	f
-CloseWindow	bundle/tagbar/autoload/tagbar.vim	/^function! s:CloseWindow() abort$/;"	f
 CommentBlock	bundle/tcomment/autoload/tcomment.vim	/^function! s:CommentBlock(beg, end, uncomment, checkRx, cdef, indentStr)$/;"	f
 CommentDef	bundle/tcomment/autoload/tcomment.vim	/^function! s:CommentDef(beg, end, checkRx, commentMode, cstart, cend)$/;"	f
 CommentMode	bundle/tcomment/autoload/tcomment.vim	/^function! s:CommentMode(commentMode, newmode) "{{{3$/;"	f
-CompareByKind	bundle/tagbar/autoload/tagbar.vim	/^function! s:CompareByKind(tag1, tag2) abort$/;"	f
-CompareByLine	bundle/tagbar/autoload/tagbar.vim	/^function! s:CompareByLine(tag1, tag2) abort$/;"	f
 CompensateForPUM	bundle/ultisnips/plugin/UltiSnips.vim	/^function! CompensateForPUM()$/;"	f
 Completion_BackwardsJumpWithoutCOMPL_ACCEPT	bundle/ultisnips/test.py	/^class Completion_BackwardsJumpWithoutCOMPL_ACCEPT(_VimTest):$/;"	c
 Completion_ForwardsJumpWithoutCOMPL_ACCEPT	bundle/ultisnips/test.py	/^class Completion_ForwardsJumpWithoutCOMPL_ACCEPT(_VimTest):$/;"	c
 Completion_SimpleExample_ECR	bundle/ultisnips/test.py	/^class Completion_SimpleExample_ECR(_VimTest):$/;"	c
 ConstructFromComments	bundle/tcomment/autoload/tcomment.vim	/^function! s:ConstructFromComments(commentMode)$/;"	f
-CorrectFocusOnStartup	bundle/tagbar/autoload/tagbar.vim	/^function! s:CorrectFocusOnStartup() abort$/;"	f
 CreateAutocmds	bundle/powerline/plugin/Powerline.vim	/^	function! s:CreateAutocmds()$/;"	f
-CreateAutocommands	bundle/tagbar/autoload/tagbar.vim	/^function! s:CreateAutocommands() abort$/;"	f
-CreateNewFile	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:CreateNewFile(...)$/;"	f
-CreatePseudoTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:CreatePseudoTag(name, parent, scope, typeinfo, fileinfo) abort$/;"	f
-CreateTypeKinddict	bundle/tagbar/autoload/tagbar.vim	/^function! s:CreateTypeKinddict(type) abort$/;"	f
 Cterm2GUI	bundle/powerline/autoload/Pl/Hi.vim	/^function! s:Cterm2GUI(cterm) " {{{$/;"	f
-CtrlPAug	bundle/ctrlP/autoload/ctrlp.vim	/^	aug CtrlPAug$/;"	a
-CtrlPLazy	bundle/ctrlP/autoload/ctrlp.vim	/^		aug CtrlPLazy$/;"	a
-CtrlPMRUF	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^	aug CtrlPMRUF$/;"	a
 CursorMovement_BS_InEditMode	bundle/ultisnips/test.py	/^class CursorMovement_BS_InEditMode(_VimTest):$/;"	c
 CursorMovement_Multiline_ECR	bundle/ultisnips/test.py	/^class CursorMovement_Multiline_ECR(_VimTest):$/;"	c
 DATA_FILE_VERSION	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:DATA_FILE_VERSION = 400$/;"	v
@@ -196,24 +134,21 @@ DeleteLastTwoLinesInSnippet	bundle/ultisnips/test.py	/^class DeleteLastTwoLinesI
 DeleteSnippetInsertion0	bundle/ultisnips/test.py	/^class DeleteSnippetInsertion0(_VimTest):$/;"	c
 DeleteSnippetInsertion1	bundle/ultisnips/test.py	/^class DeleteSnippetInsertion1(_VimTest):$/;"	c
 DestroyMark	bundle/align/plugin/cecutil.vim	/^fun! DestroyMark(markname)$/;"	f
-DetectFiletype	bundle/tagbar/autoload/tagbar.vim	/^function! s:DetectFiletype(bufnr) abort$/;"	f
 DoNotExpandAfterSpace_ExceptCorrectResult	bundle/ultisnips/test.py	/^class DoNotExpandAfterSpace_ExceptCorrectResult(_SimpleExpands):$/;"	c
 DrChipTopLvlMenu	bundle/align/plugin/AlignMapsPlugin.vim	/^  let g:DrChipTopLvlMenu= "DrChip."$/;"	v
 EMPTY_SEGMENT	bundle/powerline/autoload/Pl/Parser.vim	/^let s:EMPTY_SEGMENT = { 'type': 'empty' }$/;"	v
 EditableTextObject	bundle/ultisnips/plugin/UltiSnips/text_objects/_base.py	/^class EditableTextObject(TextObject):$/;"	c
+Egrep_Path	bundle/grep/plugin/grep.vim	/^    let Egrep_Path = 'egrep'$/;"	v
 EncodeCommentPart	bundle/tcomment/autoload/tcomment.vim	/^function! s:EncodeCommentPart(string)$/;"	f
 EndColRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:EndColRx(pos)$/;"	f
 EndLineRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:EndLineRx(pos)$/;"	f
 EndOfTextToken	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^class EndOfTextToken(Token):$/;"	c
 EndPosRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:EndPosRx(mode, line, col)$/;"	f
 EscapeCharToken	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^class EscapeCharToken(Token):$/;"	c
-EscapeCtagsCmd	bundle/tagbar/autoload/tagbar.vim	/^function! s:EscapeCtagsCmd(ctags_bin, args, ...) abort$/;"	f
 EscapedChar	bundle/ultisnips/plugin/UltiSnips/text_objects/_escaped_char.py	/^class EscapedChar(NoneditableTextObject):$/;"	c
 Events	test/a.js	/^		Events: ["bubbles", "cancelable"]$/;"	r
 ExclusiveSelection_RealWorldCase_Test	bundle/ultisnips/test.py	/^class ExclusiveSelection_RealWorldCase_Test(_ES_Base):$/;"	c
 ExclusiveSelection_SimpleTabstop_Test	bundle/ultisnips/test.py	/^class ExclusiveSelection_SimpleTabstop_Test(_ES_Base):$/;"	c
-ExecuteCtags	bundle/tagbar/autoload/tagbar.vim	/^function! s:ExecuteCtags(ctags_cmd) abort$/;"	f
-ExecuteCtagsOnFile	bundle/tagbar/autoload/tagbar.vim	/^function! s:ExecuteCtagsOnFile(fname, ftype) abort$/;"	f
 Executor	bundle/l9/autoload/l9/async.py	/^class Executor:$/;"	c
 ExitSnippetModeAfterTabstopZero	bundle/ultisnips/test.py	/^class ExitSnippetModeAfterTabstopZero(_VimTest):$/;"	c
 ExpandInTheMiddleOfLine_ExceptCorrectResult	bundle/ultisnips/test.py	/^class ExpandInTheMiddleOfLine_ExceptCorrectResult(_SimpleExpands):$/;"	c
@@ -224,19 +159,12 @@ FOTextAfter_ExceptCorrectResult	bundle/ultisnips/test.py	/^class FOTextAfter_Exc
 FOTextBeforeAndAfter_ExceptCorrectResult	bundle/ultisnips/test.py	/^class FOTextBeforeAndAfter_ExceptCorrectResult(_FormatoptionsBase):$/;"	c
 FOWrapOnLongWord_ExceptCorrectResult	bundle/ultisnips/test.py	/^class FOWrapOnLongWord_ExceptCorrectResult(_FormatoptionsBase):$/;"	c
 FUF_BUF_NAME	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:FUF_BUF_NAME = '[fuf]'$/;"	v
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:FileInfo.New(fname, ftype) abort dict$/;"	f
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:FileInfo.clearOldFolds() abort dict$/;"	f
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:FileInfo.closeKindFold(kind) abort dict$/;"	f
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:FileInfo.openKindFold(kind) abort dict$/;"	f
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:FileInfo.reset() abort dict$/;"	f
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:FileInfo.sortTags() abort dict$/;"	f
-FileInfo	bundle/tagbar/autoload/tagbar.vim	/^let s:FileInfo = {}$/;"	v
+Fgrep_Path	bundle/grep/plugin/grep.vim	/^    let Fgrep_Path = 'fgrep'$/;"	v
 Filename	bundle/ultisnips/plugin/snipMate_compatibility.vim	/^fun! Filename(...)$/;"	f
 Filetype	bundle/tcomment/autoload/tcomment.vim	/^function! s:Filetype(...) "{{{3$/;"	f
 Findcomplete	autoload/pathogen.vim	/^function! s:Findcomplete(A,L,P) " {{{1$/;"	f
 FoldOverwrite_Simple_ECR	bundle/ultisnips/test.py	/^class FoldOverwrite_Simple_ECR(_VimTest):$/;"	c
 FoldingEnabled_SnippetWithFold_ExpectNoFolding	bundle/ultisnips/test.py	/^class FoldingEnabled_SnippetWithFold_ExpectNoFolding(_VimTest):$/;"	c
-ForceUpdate	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ForceUpdate()$/;"	f
 FufGlobal	bundle/fuzzyfinder/autoload/fuf.vim	/^augroup FufGlobal$/;"	a
 FufLocal	bundle/fuzzyfinder/autoload/fuf.vim	/^  augroup FufLocal$/;"	a
 GROUP0	bundle/autocomplete/autoload/acp.vim	/^let s:GROUP0 = 0$/;"	v
@@ -249,22 +177,34 @@ GetContinuationBegin	indent/javascript.vim	/^function! s:GetContinuationBegin(ln
 GetCustomCommentString	bundle/tcomment/autoload/tcomment.vim	/^function! s:GetCustomCommentString(ft, commentMode, ...)$/;"	f
 GetIndentString	bundle/tcomment/autoload/tcomment.vim	/^function! s:GetIndentString(line, start)$/;"	f
 GetJsIndent	indent/javascript.vim	/^function! GetJsIndent(lnum)$/;"	f
-GetNearbyTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:GetNearbyTag(all, ...) abort$/;"	f
 GetNonCommentLine	indent/javascript.vim	/^function! s:GetNonCommentLine(lnum)$/;"	f
 GetObjectBeg	indent/javascript.vim	/^function! s:GetObjectBeg(lnum)$/;"	f
 GetParenBeg	indent/javascript.vim	/^function! s:GetParenBeg(lnum)$/;"	f
 GetStartEnd	bundle/tcomment/autoload/tcomment.vim	/^function! s:GetStartEnd(beg, end, commentMode) "{{{3$/;"	f
-GetSupportedFiletypes	bundle/tagbar/autoload/tagbar.vim	/^function! s:GetSupportedFiletypes() abort$/;"	f
 GetSyntaxName	bundle/tcomment/autoload/tcomment.vim	/^function! s:GetSyntaxName(lnum, col) "{{{3$/;"	f
-GetTagInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:GetTagInfo(linenr, ignorepseudo) abort$/;"	f
-GlobPath	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:GlobPath(dirs, depth)$/;"	f
+GetVimCmdOutput	bundle/visualmark/visualmark.vim	/^fun! s:GetVimCmdOutput(cmd)$/;"	f
 GoWinbufnr	bundle/align/plugin/cecutil.vim	/^fun! GoWinbufnr(bufnum)$/;"	f
-GotoNextToplevelTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:GotoNextToplevelTag(direction) abort$/;"	f
+Grep_Cygwin_Find	bundle/grep/plugin/grep.vim	/^    let Grep_Cygwin_Find = 0$/;"	v
+Grep_Default_Filelist	bundle/grep/plugin/grep.vim	/^    let Grep_Default_Filelist = '*'$/;"	v
+Grep_Default_Options	bundle/grep/plugin/grep.vim	/^    let Grep_Default_Options = ''$/;"	v
+Grep_Find_Path	bundle/grep/plugin/grep.vim	/^    let Grep_Find_Path = 'find'$/;"	v
+Grep_Find_Use_Xargs	bundle/grep/plugin/grep.vim	/^    let Grep_Find_Use_Xargs = 1$/;"	v
+Grep_Null_Device	bundle/grep/plugin/grep.vim	/^        let Grep_Null_Device = 'NUL'$/;"	v
+Grep_Null_Device	bundle/grep/plugin/grep.vim	/^        let Grep_Null_Device = '\/dev\/null'$/;"	v
+Grep_OpenQuickfixWindow	bundle/grep/plugin/grep.vim	/^    let Grep_OpenQuickfixWindow = 1$/;"	v
+Grep_Path	bundle/grep/plugin/grep.vim	/^    let Grep_Path = 'grep'$/;"	v
+Grep_Shell_Escape_Char	bundle/grep/plugin/grep.vim	/^        let Grep_Shell_Escape_Char = ''$/;"	v
+Grep_Shell_Escape_Char	bundle/grep/plugin/grep.vim	/^        let Grep_Shell_Escape_Char = '\\'$/;"	v
+Grep_Shell_Quote_Char	bundle/grep/plugin/grep.vim	/^        let Grep_Shell_Quote_Char = "'"$/;"	v
+Grep_Shell_Quote_Char	bundle/grep/plugin/grep.vim	/^        let Grep_Shell_Quote_Char = ''$/;"	v
+Grep_Skip_Dirs	bundle/grep/plugin/grep.vim	/^    let Grep_Skip_Dirs = 'RCS CVS SCCS'$/;"	v
+Grep_Skip_Files	bundle/grep/plugin/grep.vim	/^    let Grep_Skip_Files = '*~ *,v s.*'$/;"	v
+Grep_Xargs_Options	bundle/grep/plugin/grep.vim	/^    let Grep_Xargs_Options = '--null'$/;"	v
+Grep_Xargs_Path	bundle/grep/plugin/grep.vim	/^    let Grep_Xargs_Path = 'xargs'$/;"	v
 GuessCurrentCommentString	bundle/tcomment/autoload/tcomment.vim	/^function! s:GuessCurrentCommentString(commentMode)$/;"	f
 GuessFileType	bundle/tcomment/autoload/tcomment.vim	/^function! s:GuessFileType(beg, end, commentMode, filetype, ...)$/;"	f
 HARD_DIVIDER	bundle/powerline/autoload/Pl/Parser.vim	/^let s:HARD_DIVIDER = 0$/;"	v
 HTMLEvents	test/a.js	/^		HTMLEvents: ["bubbles", "cancelable"],$/;"	r
-HighlightTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:HighlightTag(openfolds, ...) abort$/;"	f
 HlCreate	bundle/powerline/autoload/Pl/Parser.vim	/^function! s:HlCreate(hl) " {{{$/;"	f
 HlExists	bundle/powerline/autoload/Pl/Parser.vim	/^function! s:HlExists(hl) " {{{$/;"	f
 ID	test/a.js	/^			ID: function(a) {$/;"	r
@@ -280,9 +220,6 @@ IMMoving_NoExitingEventAtEnd_ECR	bundle/ultisnips/test.py	/^class IMMoving_NoExi
 IMMoving_NoExiting_ECR	bundle/ultisnips/test.py	/^class IMMoving_NoExiting_ECR(_VimTest):$/;"	c
 IMMoving_NotExitingWhenBarelyOutsideLeft_ECR	bundle/ultisnips/test.py	/^class IMMoving_NotExitingWhenBarelyOutsideLeft_ECR(_VimTest):$/;"	c
 IndentUtil	bundle/ultisnips/plugin/UltiSnips/util.py	/^class IndentUtil(object):$/;"	c
-Init	bundle/tagbar/autoload/tagbar.vim	/^function! s:Init(silent) abort$/;"	f
-InitTypes	bundle/tagbar/autoload/tagbar.vim	/^function! s:InitTypes() abort$/;"	f
-InitWindow	bundle/tagbar/autoload/tagbar.vim	/^function! s:InitWindow(autoclose) abort$/;"	f
 IsArrayBeg	indent/javascript.vim	/^function! s:IsArrayBeg(line)$/;"	f
 IsArrayEnd	indent/javascript.vim	/^function! s:IsArrayEnd(line)$/;"	f
 IsComment	indent/javascript.vim	/^function! s:IsComment(lnum)$/;"	f
@@ -299,31 +236,9 @@ IsParenEnd	indent/javascript.vim	/^function! s:IsParenEnd(line)$/;"	f
 IsSwitchBeginNextLine	indent/javascript.vim	/^function! s:IsSwitchBeginNextLine(line) $/;"	f
 IsSwitchBeginSameLine	indent/javascript.vim	/^function! s:IsSwitchBeginSameLine(line) $/;"	f
 IsSwitchMid	indent/javascript.vim	/^function! s:IsSwitchMid(line)$/;"	f
-IsValidFile	bundle/tagbar/autoload/tagbar.vim	/^function! s:IsValidFile(fname, ftype) abort$/;"	f
 Jsbeautify	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! g:Jsbeautify()$/;"	f
 JumpForward_DefSnippet	bundle/ultisnips/test.py	/^class JumpForward_DefSnippet(_VimTest):$/;"	c
-JumpToTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:JumpToTag(stay_in_tagbar) abort$/;"	f
 KeyEvents	test/a.js	/^		KeyEvents: ["bubbles", "cancelable", "view", "ctrlKey", "altKey", "shiftKey", "metaKey", "keyCode", "charCode"],$/;"	r
-KeyLoop	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:KeyLoop()$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.Add(keymap)$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.All()$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.BindAll()$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.Create(options)$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.FindFor(key, scope)$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.Invoke(key)$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.Remove(key, scope)$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.bind()$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap.invoke(...)$/;"	f
-KeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:KeyMap = {}$/;"	v
-KeyMap_Invoke	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:KeyMap_Invoke(key)$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.closeFold() abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.getPrototype(short) abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.isFoldable() abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.isFolded() abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.isKindheader() abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.openFold() abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:KindheaderTag.toggleFold() abort dict$/;"	f
-KindheaderTag	bundle/tagbar/autoload/tagbar.vim	/^let s:KindheaderTag = copy(s:BaseTag)$/;"	v
 L9TempBuffer	bundle/l9/autoload/l9/tempbuffer.vim	/^  augroup L9TempBuffer$/;"	a
 L9_VERSION_CURRENT	bundle/l9/autoload/l9.vim	/^let s:L9_VERSION_CURRENT  = 101$/;"	v
 L9_VERSION_PASSABLE	bundle/l9/autoload/l9.vim	/^let s:L9_VERSION_PASSABLE = 101$/;"	v
@@ -334,9 +249,7 @@ ListAllAvailable_NothingTyped_ExceptCorrectResult	bundle/ultisnips/test.py	/^cla
 ListAllAvailable_SpaceInFront_ExceptCorrectResult	bundle/ultisnips/test.py	/^class ListAllAvailable_SpaceInFront_ExceptCorrectResult(_ListAllSnippets):$/;"	c
 ListAllAvailable_testtypedSecondOpt_ExceptCorrectResult	bundle/ultisnips/test.py	/^class ListAllAvailable_testtypedSecondOpt_ExceptCorrectResult(_ListAllSnippets):$/;"	c
 ListAllAvailable_testtyped_ExceptCorrectResult	bundle/ultisnips/test.py	/^class ListAllAvailable_testtyped_ExceptCorrectResult(_ListAllSnippets):$/;"	c
-LoadUserTypeDefs	bundle/tagbar/autoload/tagbar.vim	/^function! s:LoadUserTypeDefs(...) abort$/;"	f
 Log	indent/javascript.vim	/^function! s:Log(msg)$/;"	f
-LogDebugMessage	bundle/tagbar/autoload/tagbar.vim	/^function! s:LogDebugMessage(msg) abort$/;"	f
 MODE_NAME	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^let s:MODE_NAME = expand('<sfile>:t:r')$/;"	v
 MODE_NAME	bundle/fuzzyfinder/autoload/fuf/bookmarkfile.vim	/^let s:MODE_NAME = expand('<sfile>:t:r')$/;"	v
 MODE_NAME	bundle/fuzzyfinder/autoload/fuf/buffer.vim	/^let s:MODE_NAME = expand('<sfile>:t:r')$/;"	v
@@ -359,36 +272,7 @@ MODE_NAME	bundle/fuzzyfinder/autoload/fuf/quickfix.vim	/^let s:MODE_NAME = expan
 MODE_NAME	bundle/fuzzyfinder/autoload/fuf/tag.vim	/^let s:MODE_NAME = expand('<sfile>:t:r')$/;"	v
 MODE_NAME	bundle/fuzzyfinder/autoload/fuf/taggedfile.vim	/^let s:MODE_NAME = expand('<sfile>:t:r')$/;"	v
 MakeSpace	bundle/align/autoload/Align.vim	/^fun! s:MakeSpace(spacecnt)$/;"	f
-MapKeys	bundle/tagbar/autoload/tagbar.vim	/^function! s:MapKeys() abort$/;"	f
-MapNorms	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:MapNorms()$/;"	f
-MapSpecs	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:MapSpecs()$/;"	f
-MarkToOpen	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:MarkToOpen()$/;"	f
 MatchIsTooCheap	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^class MatchIsTooCheap(_Base, unittest.TestCase):$/;"	c
-MatchIt	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:MatchIt(items, pat, limit, exc)$/;"	f
-MatchedItems	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:MatchedItems(items, pat, limit)$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController.New(menuItems)$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._allIndexesFor(shortcut)$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._current()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._cursorDown()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._cursorUp()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._echoPrompt()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._handleKeypress(key)$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._nextIndexFor(shortcut)$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._restoreOptions()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._saveOptions()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController._setCmdheight()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuController.showMenu()$/;"	f
-MenuController	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:MenuController = {}$/;"	v
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.All()$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.AllEnabled()$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.Create(options)$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.CreateSeparator(options)$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.CreateSubmenu(options)$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.enabled()$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.execute()$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.isSeparator()$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:MenuItem.isSubmenu()$/;"	f
-MenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:MenuItem = {}$/;"	v
 Mirror	bundle/ultisnips/plugin/UltiSnips/text_objects/_mirror.py	/^class Mirror(NoneditableTextObject):$/;"	c
 MirrorBeforeTabstopLeave_ExceptCorrectResult	bundle/ultisnips/test.py	/^class MirrorBeforeTabstopLeave_ExceptCorrectResult(_VimTest):$/;"	c
 MirrorBeforeTabstopOverwrite_ExceptCorrectResult	bundle/ultisnips/test.py	/^class MirrorBeforeTabstopOverwrite_ExceptCorrectResult(_VimTest):$/;"	c
@@ -434,36 +318,6 @@ Multiple_SimpleCaseSelectSecond_ECR	bundle/ultisnips/test.py	/^class Multiple_Si
 Multiple_SimpleCaseSelectTooHigh_ESelectLast	bundle/ultisnips/test.py	/^class Multiple_SimpleCaseSelectTooHigh_ESelectLast(_MultipleMatches):$/;"	c
 Multiple_SimpleCaseSelectZero_EEscape	bundle/ultisnips/test.py	/^class Multiple_SimpleCaseSelectZero_EEscape(_MultipleMatches):$/;"	c
 NAME	test/a.js	/^			NAME: function(a, b) {$/;"	r
-NERDTree	bundle/nerdtree/plugin/NERD_tree.vim	/^augroup NERDTree$/;"	a
-NERDTreeAddKeyMap	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddKeyMap(options)$/;"	f
-NERDTreeAddMenuItem	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddMenuItem(options)$/;"	f
-NERDTreeAddMenuSeparator	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddMenuSeparator(...)$/;"	f
-NERDTreeAddNode	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeAddNode()$/;"	f
-NERDTreeAddSubmenu	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddSubmenu(options)$/;"	f
-NERDTreeAutoDeleteBuffer	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^    let g:NERDTreeAutoDeleteBuffer = 0$/;"	v
-NERDTreeBookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^let g:NERDTreeBookmark = s:Bookmark$/;"	v
-NERDTreeBufName	bundle/nerdtree/plugin/NERD_tree.vim	/^    let t:NERDTreeBufName = bufferName$/;"	v
-NERDTreeBufName	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:NERDTreeBufName = 'NERD_tree_'$/;"	v
-NERDTreeCWD	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeCWD()$/;"	f
-NERDTreeCopyNode	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeCopyNode()$/;"	f
-NERDTreeDeleteNode	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeDeleteNode()$/;"	f
-NERDTreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^let g:NERDTreeDirNode = s:TreeDirNode$/;"	v
-NERDTreeExecFile	bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^function! NERDTreeExecFile()$/;"	f
-NERDTreeExecFileActive	bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^function! NERDTreeExecFileActive()$/;"	f
-NERDTreeExecuteFile	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeExecuteFile()$/;"	f
-NERDTreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^let g:NERDTreeFileNode = s:TreeFileNode$/;"	v
-NERDTreeFocus	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeFocus()$/;"	f
-NERDTreeHijackNetrw	bundle/nerdtree/plugin/NERD_tree.vim	/^    augroup NERDTreeHijackNetrw$/;"	a
-NERDTreeIgnore	bundle/nerdtree/plugin/NERD_tree.vim	/^    let g:NERDTreeIgnore = ['\\~$']$/;"	v
-NERDTreeMoveNode	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeMoveNode()$/;"	f
-NERDTreePath	bundle/nerdtree/plugin/NERD_tree.vim	/^let g:NERDTreePath = s:Path$/;"	v
-NERDTreeQuickLook	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeQuickLook()$/;"	f
-NERDTreeRender	bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeRender()$/;"	f
-NERDTreeRevealInFinder	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeRevealInFinder()$/;"	f
-NERDTreeSortOrder	bundle/nerdtree/plugin/NERD_tree.vim	/^    let g:NERDTreeSortOrder = ['\\\/$', '*', '\\.swp$',  '\\.bak$', '\\~$']$/;"	v
-NERDTreeSortStarIndex	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:NERDTreeSortStarIndex = index(g:NERDTreeSortOrder, '*')$/;"	v
-NERDTreeStatusline	bundle/nerdtree/plugin/NERD_tree.vim	/^    let g:NERDTreeStatusline = "%{exists('b:NERDTreeRoot')?b:NERDTreeRoot.path.str():''}"$/;"	v
-NERD_tree_version	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:NERD_tree_version = '4.2.0'$/;"	v
 No_Tab_Expand_ET	bundle/ultisnips/test.py	/^class No_Tab_Expand_ET(_No_Tab_Expand):$/;"	c
 No_Tab_Expand_ET_Leading_Spaces	bundle/ultisnips/test.py	/^class No_Tab_Expand_ET_Leading_Spaces(_No_Tab_Expand):$/;"	c
 No_Tab_Expand_ET_SW	bundle/ultisnips/test.py	/^class No_Tab_Expand_ET_SW(_No_Tab_Expand):$/;"	c
@@ -474,11 +328,6 @@ No_Tab_Expand_No_TS	bundle/ultisnips/test.py	/^class No_Tab_Expand_No_TS(_No_Tab
 No_Tab_Expand_RealWorld	bundle/ultisnips/test.py	/^class No_Tab_Expand_RealWorld(_TabExpand_RealWorld,_VimTest):$/;"	c
 No_Tab_Expand_Simple	bundle/ultisnips/test.py	/^class No_Tab_Expand_Simple(_No_Tab_Expand):$/;"	c
 NoneditableTextObject	bundle/ultisnips/plugin/UltiSnips/text_objects/_base.py	/^class NoneditableTextObject(TextObject):$/;"	c
-NormalTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:NormalTag.getPrototype(short) abort dict$/;"	f
-NormalTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:NormalTag.isNormalTag() abort dict$/;"	f
-NormalTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:NormalTag.str(longsig, full) abort dict$/;"	f
-NormalTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:NormalTag.strfmt() abort dict$/;"	f
-NormalTag	bundle/tagbar/autoload/tagbar.vim	/^let s:NormalTag = copy(s:BaseTag)$/;"	v
 OPEN_TYPE_CURRENT	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:OPEN_TYPE_CURRENT = 1$/;"	v
 OPEN_TYPE_DELETE	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^let s:OPEN_TYPE_DELETE = -1$/;"	v
 OPEN_TYPE_DELETE	bundle/fuzzyfinder/autoload/fuf/bookmarkfile.vim	/^let s:OPEN_TYPE_DELETE = -1$/;"	v
@@ -488,25 +337,6 @@ OPEN_TYPE_EXPAND	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^let s:OPEN_TYPE_E
 OPEN_TYPE_SPLIT	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:OPEN_TYPE_SPLIT   = 2$/;"	v
 OPEN_TYPE_TAB	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:OPEN_TYPE_TAB     = 4$/;"	v
 OPEN_TYPE_VSPLIT	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:OPEN_TYPE_VSPLIT  = 3$/;"	v
-Open	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:Open()$/;"	f
-OpenFold	bundle/tagbar/autoload/tagbar.vim	/^function! s:OpenFold() abort$/;"	f
-OpenMulti	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:OpenMulti(...)$/;"	f
-OpenNoMarks	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:OpenNoMarks(md, line)$/;"	f
-OpenParents	bundle/tagbar/autoload/tagbar.vim	/^function! s:OpenParents(...) abort$/;"	f
-OpenWindow	bundle/tagbar/autoload/tagbar.vim	/^function! s:OpenWindow(flags) abort$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener.New(path, opts)$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._checkToCloseTree(newtab)$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._gotoTargetWin()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._newSplit()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._newVSplit()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._openDirectory(node)$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._openFile()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._previousWindow()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._restoreCursorPos()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._reuseWindow()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener._saveCursorPos()$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Opener.open(target)$/;"	f
-Opener	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:Opener = {}$/;"	v
 PADDING	bundle/powerline/autoload/Pl/Parser.vim	/^let s:PADDING = 1$/;"	v
 POS	test/a.js	/^			POS: function(a) {$/;"	r
 POS	test/a.js	/^			POS: function(a, b, c, d) {$/;"	r
@@ -533,47 +363,6 @@ ParseSnippets_MultiWord_UnmatchedContainer	bundle/ultisnips/test.py	/^class Pars
 ParseSnippets_MultiWord_WithQuotes	bundle/ultisnips/test.py	/^class ParseSnippets_MultiWord_WithQuotes(_PS_Base):$/;"	c
 ParseSnippets_SimpleSnippet	bundle/ultisnips/test.py	/^class ParseSnippets_SimpleSnippet(_PS_Base):$/;"	c
 ParseSnippets_UnknownDirective	bundle/ultisnips/test.py	/^class ParseSnippets_UnknownDirective(_PS_Base):$/;"	c
-ParseTagline	bundle/tagbar/autoload/tagbar.vim	/^function! s:ParseTagline(part1, part2, typeinfo, fileinfo) abort$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.AbsolutePathFor(str)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.CopyingSupported()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.Create(fullpath)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.JoinPathStrings(...)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.New(path)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.Resolve(path)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.Slash()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.WinToUnixPath(pathstr)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path._ignorePatternMatches(pattern)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path._str()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path._strForCd()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path._strForEdit()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path._strForGlob()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path._strForUI()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.bookmarkNames()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.cacheDisplayString()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.changeToDir()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.compareTo(path)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.copy(dest)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.copyingWillOverwrite(dest)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.delete()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.displayString()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.edit()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.equals(path)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.exists()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.extractDriveLetter(fullpath)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.getDir()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.getLastPathComponent(dirSlash)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.getParent()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.getSortOrderIndex()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.ignore()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.isUnder(path)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.isUnixHiddenFile()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.readInfoFromDisk(fullpath)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.refresh()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.rename(newPath)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.str(...)$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.strTrunk()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:Path.tabnr()$/;"	f
-Path	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:Path = {}$/;"	v
 PerlSyntaxFold	bundle/ultisnips/test.py	/^class PerlSyntaxFold(_VimTest):$/;"	c
 Pl	bundle/powerline/autoload/Pl.vim	/^	function! Pl#ClearCache() " {{{$/;"	f
 Pl	bundle/powerline/autoload/Pl.vim	/^	function! Pl#Load() " {{{$/;"	f
@@ -630,16 +419,11 @@ Powerline	bundle/powerline/autoload/Powerline/Functions/hgrev.vim	/^function! Po
 Powerline	bundle/powerline/autoload/Powerline/Functions/syntastic.vim	/^function! Powerline#Functions#syntastic#GetErrors(line_symbol) " {{{$/;"	f
 Powerline	bundle/powerline/autoload/Powerline/Matches.vim	/^let g:Powerline#Matches#matches = {$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments.vim	/^let g:Powerline#Segments#segments = Pl#Segment#Init([$/;"	v
-Powerline	bundle/powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#focus = '%{"%0"}'$/;"	v
-Powerline	bundle/powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#next = '%-3{"%5"}'$/;"	v
-Powerline	bundle/powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#prev = '%-3{"%3"}'$/;"	v
-Powerline	bundle/powerline/autoload/Powerline/Segments/ctrlp.vim	/^let g:Powerline#Segments#ctrlp#segments = Pl#Segment#Init(['ctrlp'$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments/ft_man.vim	/^let g:Powerline#Segments#ft_man#segments = Pl#Segment#Init(['ft_man',$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments/fugitive.vim	/^let g:Powerline#Segments#fugitive#segments = Pl#Segment#Init(['fugitive',$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments/hgrev.vim	/^let g:Powerline#Segments#hgrev#segments = Pl#Segment#Init(['hgrev',$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments/rvm.vim	/^let g:Powerline#Segments#rvm#segments = Pl#Segment#Init(['rvm',$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments/syntastic.vim	/^let g:Powerline#Segments#syntastic#segments = Pl#Segment#Init(['syntastic',$/;"	v
-Powerline	bundle/powerline/autoload/Powerline/Segments/tagbar.vim	/^let g:Powerline#Segments#tagbar#segments = Pl#Segment#Init(['tagbar',$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Segments/virtualenv.vim	/^let g:Powerline#Segments#virtualenv#segments = Pl#Segment#Init(['virtualenv',$/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Themes/default.vim	/^let g:Powerline#Themes#default#theme = Pl#Theme#Create($/;"	v
 Powerline	bundle/powerline/autoload/Powerline/Themes/solarized16.vim	/^let g:Powerline#Themes#solarized16#theme = Pl#Theme#Create($/;"	v
@@ -648,39 +432,10 @@ PowerlineMain	bundle/powerline/plugin/Powerline.vim	/^		augroup PowerlineMain$/;
 PowerlineStartup	bundle/powerline/plugin/Powerline.vim	/^	augroup PowerlineStartup$/;"	a
 Powerline_cache_dir	bundle/powerline/plugin/Powerline.vim	/^		let g:Powerline_cache_dir = simplify(expand('<sfile>:p:h') .'\/..')$/;"	v
 Powerline_loaded	bundle/powerline/plugin/Powerline.vim	/^	let g:Powerline_loaded = 1$/;"	v
-PrintHelp	bundle/tagbar/autoload/tagbar.vim	/^function! s:PrintHelp() abort$/;"	f
-PrintKinds	bundle/tagbar/autoload/tagbar.vim	/^function! s:PrintKinds(typeinfo, fileinfo) abort$/;"	f
-PrintTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:PrintTag(tag, depth, fileinfo, typeinfo) abort$/;"	f
-ProcessFile	bundle/tagbar/autoload/tagbar.vim	/^function! s:ProcessFile(fname, ftype) abort$/;"	f
-ProcessPseudoChildren	bundle/tagbar/autoload/tagbar.vim	/^function! s:ProcessPseudoChildren(tags, tag, depth, typeinfo, fileinfo) abort$/;"	f
-ProcessPseudoTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:ProcessPseudoTag(curtags, tag, parent, typeinfo, fileinfo) abort$/;"	f
 ProcessedLine	bundle/tcomment/autoload/tcomment.vim	/^function! s:ProcessedLine(uncomment, match, checkRx, replace)$/;"	f
 ProperIndenting_AutoIndentAndNewline_ECR	bundle/ultisnips/test.py	/^class ProperIndenting_AutoIndentAndNewline_ECR(_VimTest):$/;"	c
 ProperIndenting_SimpleCase_ECR	bundle/ultisnips/test.py	/^class ProperIndenting_SimpleCase_ECR(_VimTest):$/;"	c
 ProperIndenting_SingleLineNoReindenting_ECR	bundle/ultisnips/test.py	/^class ProperIndenting_SingleLineNoReindenting_ECR(_VimTest):$/;"	c
-PrtAdd	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtAdd(char)$/;"	f
-PrtBS	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtBS()$/;"	f
-PrtClear	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtClear()$/;"	f
-PrtClearCache	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtClearCache()$/;"	f
-PrtCurEnd	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtCurEnd()$/;"	f
-PrtCurLeft	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtCurLeft()$/;"	f
-PrtCurRight	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtCurRight()$/;"	f
-PrtCurStart	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtCurStart()$/;"	f
-PrtDelete	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtDelete()$/;"	f
-PrtDeleteEnt	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtDeleteEnt()$/;"	f
-PrtDeleteMRU	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtDeleteMRU()$/;"	f
-PrtDeleteWord	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtDeleteWord()$/;"	f
-PrtExit	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtExit()$/;"	f
-PrtExpandDir	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtExpandDir()$/;"	f
-PrtFocusMap	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtFocusMap(char)$/;"	f
-PrtHistory	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtHistory(...)$/;"	f
-PrtInsert	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtInsert(...)$/;"	f
-PrtSelectJump	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtSelectJump(char)$/;"	f
-PrtSelectMove	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtSelectMove(dir)$/;"	f
-PrtSwitcher	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:PrtSwitcher()$/;"	f
-PseudoTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:PseudoTag.isPseudoTag() abort dict$/;"	f
-PseudoTag	bundle/tagbar/autoload/tagbar.vim	/^function! s:PseudoTag.strfmt() abort dict$/;"	f
-PseudoTag	bundle/tagbar/autoload/tagbar.vim	/^let s:PseudoTag = copy(s:BaseTag)$/;"	v
 PythonCode	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^class PythonCode(NoneditableTextObject):$/;"	c
 PythonCodeOld_IndentedMultiline	bundle/ultisnips/test.py	/^class PythonCodeOld_IndentedMultiline(_VimTest):$/;"	c
 PythonCodeOld_ReferencePlaceholderAfter	bundle/ultisnips/test.py	/^class PythonCodeOld_ReferencePlaceholderAfter(_VimTest):$/;"	c
@@ -719,7 +474,6 @@ PythonVisual_NoVisualSelection_Ignore	bundle/ultisnips/test.py	/^class PythonVis
 PythonVisual_SelectOneWord	bundle/ultisnips/test.py	/^class PythonVisual_SelectOneWord(_VimTest):$/;"	c
 QArgSplitter	bundle/align/autoload/Align.vim	/^fun! s:QArgSplitter(qarg)$/;"	f
 QArgSplitter	bundle/align/plugin/cecutil.vim	/^fun! QArgSplitter(qarg)$/;"	f
-QuitIfOnlyWindow	bundle/tagbar/autoload/tagbar.vim	/^function! s:QuitIfOnlyWindow() abort$/;"	f
 RIGHT_SIDE	bundle/powerline/autoload/Pl/Parser.vim	/^let s:RIGHT_SIDE = 2$/;"	v
 RecTabStopsWithExpandtab_SimpleExample_ECR	bundle/ultisnips/test.py	/^class RecTabStopsWithExpandtab_SimpleExample_ECR(_ExpandTabs):$/;"	c
 RecTabStopsWithExpandtab_SpecialIndentProblem_ECR	bundle/ultisnips/test.py	/^class RecTabStopsWithExpandtab_SpecialIndentProblem_ECR(_ExpandTabs):$/;"	c
@@ -752,17 +506,15 @@ RecTabStops_ZeroTSisNothingSpecial_ECR	bundle/ultisnips/test.py	/^class RecTabSt
 RecTabsStops_BackspaceZero_ECR	bundle/ultisnips/test.py	/^class RecTabsStops_BackspaceZero_ECR(_VimTest):$/;"	c
 RecTabsStops_TypeInZero2_ECR	bundle/ultisnips/test.py	/^class RecTabsStops_TypeInZero2_ECR(_VimTest):$/;"	c
 RecTabsStops_TypeInZero_ECR	bundle/ultisnips/test.py	/^class RecTabsStops_TypeInZero_ECR(_VimTest):$/;"	c
-Render	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:Render(lines, pat)$/;"	f
-RenderContent	bundle/tagbar/autoload/tagbar.vim	/^function! s:RenderContent(...) abort$/;"	f
-RenderKeepView	bundle/tagbar/autoload/tagbar.vim	/^function! s:RenderKeepView(...) abort$/;"	f
 RepeatCommentstring	bundle/tcomment/autoload/tcomment.vim	/^function! s:RepeatCommentstring(cdef) "{{{3$/;"	f
 ReplaceInLine	bundle/tcomment/autoload/tcomment.vim	/^function! s:ReplaceInLine(text) "{{{3$/;"	f
-Reset	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:Reset(args)$/;"	f
 RestoreMark	bundle/align/plugin/cecutil.vim	/^fun! RestoreMark(markname)$/;"	f
-RestoreSession	bundle/tagbar/autoload/tagbar.vim	/^function! s:RestoreSession() abort$/;"	f
 RestoreUserMaps	bundle/align/plugin/cecutil.vim	/^fun! RestoreUserMaps(suffix)$/;"	f
 RestoreWinPosn	bundle/align/plugin/cecutil.vim	/^fun! RestoreWinPosn(...)$/;"	f
-SID	bundle/nerdtree/plugin/NERD_tree.vim	/^function s:SID()$/;"	f
+RunGrep	bundle/grep/plugin/grep.vim	/^function! s:RunGrep(cmd_name, grep_cmd, action, ...)$/;"	f
+RunGrepCmd	bundle/grep/plugin/grep.vim	/^function! s:RunGrepCmd(cmd, pattern, action)$/;"	f
+RunGrepRecursive	bundle/grep/plugin/grep.vim	/^function! s:RunGrepRecursive(cmd_name, grep_cmd, action, ...)$/;"	f
+RunGrepSpecial	bundle/grep/plugin/grep.vim	/^function! s:RunGrepSpecial(cmd_name, which, action, ...)$/;"	f
 SOFT_DIVIDER	bundle/powerline/autoload/Pl/Parser.vim	/^let s:SOFT_DIVIDER = 1$/;"	v
 SaveMark	bundle/align/plugin/cecutil.vim	/^fun! SaveMark(markname)$/;"	f
 SaveUserMaps	bundle/align/plugin/cecutil.vim	/^fun! SaveUserMaps(mapmode,maplead,mapchx,suffix)$/;"	f
@@ -774,13 +526,8 @@ SelectModeMappings_IgnoreMappings1_ECR	bundle/ultisnips/test.py	/^class SelectMo
 SelectModeMappings_IgnoreMappings2_ECR	bundle/ultisnips/test.py	/^class SelectModeMappings_IgnoreMappings2_ECR(_SelectModeMappings):$/;"	c
 SelectModeMappings_IgnoreMappings_ECR	bundle/ultisnips/test.py	/^class SelectModeMappings_IgnoreMappings_ECR(_SelectModeMappings):$/;"	c
 SelectModeMappings_RemoveBeforeSelecting_ECR	bundle/ultisnips/test.py	/^class SelectModeMappings_RemoveBeforeSelecting_ECR(_SelectModeMappings):$/;"	c
-SetDefTxt	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:SetDefTxt()$/;"	f
-SetFoldLevel	bundle/tagbar/autoload/tagbar.vim	/^function! s:SetFoldLevel(level, force) abort$/;"	f
-SetFoldLevelRecursive	bundle/tagbar/autoload/tagbar.vim	/^function! s:SetFoldLevelRecursive(fileinfo, tags, level) abort$/;"	f
-SetWD	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:SetWD(args)$/;"	f
 ShellCode	bundle/ultisnips/plugin/UltiSnips/text_objects/_shell_code.py	/^class ShellCode(NoneditableTextObject):$/;"	c
 ShellCodeToken	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^class ShellCodeToken(Token):$/;"	c
-ShowPrototype	bundle/tagbar/autoload/tagbar.vim	/^function! s:ShowPrototype(short) abort$/;"	f
 SimpleExpandEndingWithNewline_ExceptCorrectResult	bundle/ultisnips/test.py	/^class SimpleExpandEndingWithNewline_ExceptCorrectResult(_VimTest):$/;"	c
 SimpleExpandNewLineAndBackspae_ExceptCorrectResult	bundle/ultisnips/test.py	/^class SimpleExpandNewLineAndBackspae_ExceptCorrectResult(_SimpleExpands):$/;"	c
 SimpleExpandTwice_ExceptCorrectResult	bundle/ultisnips/test.py	/^class SimpleExpandTwice_ExceptCorrectResult(_SimpleExpands):$/;"	c
@@ -845,14 +592,9 @@ Snippet_With_Umlauts_OverwriteNone	bundle/ultisnips/test.py	/^class Snippet_With
 Snippet_With_Umlauts_OverwriteSecond	bundle/ultisnips/test.py	/^class Snippet_With_Umlauts_OverwriteSecond(_UmlautsBase):$/;"	c
 Snippet_With_Umlauts_Python	bundle/ultisnips/test.py	/^class Snippet_With_Umlauts_Python(_UmlautsBase):$/;"	c
 Snippet_With_Umlauts_TypeOn	bundle/ultisnips/test.py	/^class Snippet_With_Umlauts_TypeOn(_UmlautsBase):$/;"	c
-SortTags	bundle/tagbar/autoload/tagbar.vim	/^function! s:SortTags(tags, comparemethod) abort$/;"	f
-SpecInputs	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:SpecInputs(str)$/;"	f
-SplitPattern	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:SplitPattern(str)$/;"	f
 StartColRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:StartColRx(pos)$/;"	f
-StartDebug	bundle/tagbar/autoload/tagbar.vim	/^function! s:StartDebug(filename) abort$/;"	f
 StartLineRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:StartLineRx(pos)$/;"	f
 StartPosRx	bundle/tcomment/autoload/tcomment.vim	/^function! s:StartPosRx(mode, line, col)$/;"	f
-StopDebug	bundle/tagbar/autoload/tagbar.vim	/^function! s:StopDebug() abort$/;"	f
 Strlen	bundle/align/autoload/Align.vim	/^fun! s:Strlen(x)$/;"	f
 TAG	test/a.js	/^			TAG: function(a, b) {$/;"	r
 TEMP_VARIABLES_GROUP	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:TEMP_VARIABLES_GROUP = expand('<sfile>:p')$/;"	v
@@ -933,10 +675,6 @@ TabstopWithMirrorInDefaultOverwrite1_ExceptCorrectResult	bundle/ultisnips/test.p
 TabstopWithMirrorInDefaultOverwrite_ExceptCorrectResult	bundle/ultisnips/test.py	/^class TabstopWithMirrorInDefaultOverwrite_ExceptCorrectResult(_VimTest):$/;"	c
 TabstopWithMirrorInDefaultTwiceAndExtra_ExceptCorrectResult	bundle/ultisnips/test.py	/^class TabstopWithMirrorInDefaultTwiceAndExtra_ExceptCorrectResult(_VimTest):$/;"	c
 TabstopWithMirrorManyFromAll_ExceptCorrectResult	bundle/ultisnips/test.py	/^class TabstopWithMirrorManyFromAll_ExceptCorrectResult(_VimTest):$/;"	c
-TagbarAutoCmds	bundle/tagbar/autoload/tagbar.vim	/^    augroup TagbarAutoCmds$/;"	a
-TagbarBalloonExpr	bundle/tagbar/autoload/tagbar.vim	/^function! TagbarBalloonExpr() abort$/;"	f
-TagbarGenerateStatusline	bundle/tagbar/autoload/tagbar.vim	/^function! TagbarGenerateStatusline() abort$/;"	f
-TagbarSession	bundle/tagbar/plugin/tagbar.vim	/^augroup TagbarSession$/;"	a
 TestAllMatch	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^class TestAllMatch(_Base, unittest.TestCase):$/;"	c
 TestCheapDelete	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^class TestCheapDelete(_Base, unittest.TestCase):$/;"	c
 TestCommonCharacters	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^class TestCommonCharacters(_Base, unittest.TestCase):$/;"	c
@@ -967,15 +705,6 @@ TextTabStopTextAfterTab_ExceptCorrectResult	bundle/ultisnips/test.py	/^class Tex
 TextTabStopTextBeforeMirror_ExceptCorrectResult	bundle/ultisnips/test.py	/^class TextTabStopTextBeforeMirror_ExceptCorrectResult(_VimTest):$/;"	c
 TextTabStopTextBeforeTab_ExceptCorrectResult	bundle/ultisnips/test.py	/^class TextTabStopTextBeforeTab_ExceptCorrectResult(_VimTest):$/;"	c
 TextTabStopTextSurroundedTab_ExceptCorrectResult	bundle/ultisnips/test.py	/^class TextTabStopTextSurroundedTab_ExceptCorrectResult(_VimTest):$/;"	c
-ToggleByFname	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ToggleByFname()$/;"	f
-ToggleFocus	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ToggleFocus()$/;"	f
-ToggleFold	bundle/tagbar/autoload/tagbar.vim	/^function! s:ToggleFold() abort$/;"	f
-ToggleHelp	bundle/tagbar/autoload/tagbar.vim	/^function! s:ToggleHelp() abort$/;"	f
-ToggleKeyLoop	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ToggleKeyLoop()$/;"	f
-ToggleRegex	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ToggleRegex()$/;"	f
-ToggleSort	bundle/tagbar/autoload/tagbar.vim	/^function! s:ToggleSort() abort$/;"	f
-ToggleType	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ToggleType(dir)$/;"	f
-ToggleWindow	bundle/tagbar/autoload/tagbar.vim	/^function! s:ToggleWindow() abort$/;"	f
 Token	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^class Token(object):$/;"	c
 TrailingNewline_TabStop_EndNL	bundle/ultisnips/test.py	/^class TrailingNewline_TabStop_EndNL(_VimTest):$/;"	c
 TrailingNewline_TabStop_EndStartNL	bundle/ultisnips/test.py	/^class TrailingNewline_TabStop_EndStartNL(_VimTest):$/;"	c
@@ -1022,69 +751,6 @@ Transformation_TestKill_InsertAfter_NoKill	bundle/ultisnips/test.py	/^class Tran
 Transformation_TestKill_InsertBefore_NoKill	bundle/ultisnips/test.py	/^class Transformation_TestKill_InsertBefore_NoKill(_VimTest):$/;"	c
 Transformation_TestKill_InsertBeginning_Kill	bundle/ultisnips/test.py	/^class Transformation_TestKill_InsertBeginning_Kill(_VimTest):$/;"	c
 Transformation_TestKill_InsertEnd_Kill	bundle/ultisnips/test.py	/^class Transformation_TestKill_InsertEnd_Kill(_VimTest):$/;"	c
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.AbsoluteTreeRoot()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.GetSelected()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.New(path)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode._initChildren(silent)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode._openInNewTab()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode._openRecursively2(forceOpen)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.activate(...)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.addChild(treenode, inOrder)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.close()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.closeChildren()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.createChild(path, inOrder)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.findNode(path)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.getChild(path)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.getChildByIndex(indx, visible)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.getChildCount()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.getChildIndex(path)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.getVisibleChildCount()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.getVisibleChildren()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.hasVisibleChildren()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.open(...)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.openAlong(...)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.openExplorer()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.openInNewTab(options)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.openRecursively()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.refresh()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.removeChild(treenode)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.reveal(path)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.sortChildren()$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.toggleOpen(...)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeDirNode.transplantChild(newNode)$/;"	f
-TreeDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:TreeDirNode = copy(s:TreeFileNode)$/;"	v
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.GetRootForTab()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.GetRootLineNum()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.GetSelected()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.New(path)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode._renderToString(depth, drawText, vertMap, isLastChild)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.activate(...)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.bookmark(name)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.cacheParent()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.clearBookmarks()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.copy(dest)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.delete()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.displayString()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.equals(treenode)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.findNode(path)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.findOpenDirSiblingWithVisibleChildren(direction)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.findSibling(direction)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.getLineNum()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.isRoot()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.isVisible()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.makeRoot()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.open(...)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.openInNewTab(options)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.openSplit()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.openVSplit()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.putCursorHere(isJump, recurseUpward)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.refresh()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.rename(newName)$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:TreeFileNode.renderToString()$/;"	f
-TreeFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:TreeFileNode = {}$/;"	v
-TypeInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:TypeInfo.New(...) abort dict$/;"	f
-TypeInfo	bundle/tagbar/autoload/tagbar.vim	/^function! s:TypeInfo.getKind(kind) abort dict$/;"	f
-TypeInfo	bundle/tagbar/autoload/tagbar.vim	/^let s:TypeInfo = {}$/;"	v
 UIEvents	test/a.js	/^		UIEvents: ["bubbles", "cancelable", "view", "detail"],$/;"	r
 UltiSnipsAddFiletypes	bundle/ultisnips/plugin/UltiSnips.vim	/^function! UltiSnipsAddFiletypes(filetypes)$/;"	f
 UltiSnipsEdit	bundle/ultisnips/plugin/UltiSnips.vim	/^function! UltiSnipsEdit(...)$/;"	f
@@ -1116,8 +782,6 @@ Undo_RemoveWholeSnippet	bundle/ultisnips/test.py	/^class Undo_RemoveWholeSnippet
 UnknownVariable	bundle/ultisnips/utils/get_tm_snippets.py	/^class UnknownVariable(Exception):$/;"	c
 UnreplaceInLine	bundle/tcomment/autoload/tcomment.vim	/^function! s:UnreplaceInLine(text) "{{{3$/;"	f
 UnsupportedVariableExpression	bundle/ultisnips/utils/get_tm_snippets.py	/^class UnsupportedVariableExpression(Exception):$/;"	c
-Update	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:Update(str)$/;"	f
-UserCmd	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:UserCmd(lscmd)$/;"	f
 VERSION_FACTOR	bundle/l9/autoload/l9.vim	/^let s:VERSION_FACTOR = str2float('0.01')$/;"	v
 VimBuffer	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^class VimBuffer(object):$/;"	c
 VimInterface	bundle/ultisnips/test.py	/^class VimInterface:$/;"	c
@@ -1160,9 +824,18 @@ Visual_SelectOneWord_Inword	bundle/ultisnips/test.py	/^class Visual_SelectOneWor
 Visual_SelectOneWord_ProblemAfterTab	bundle/ultisnips/test.py	/^class Visual_SelectOneWord_ProblemAfterTab(_VimTest):$/;"	c
 Visual_SelectOneWord_TillEndOfLine	bundle/ultisnips/test.py	/^class Visual_SelectOneWord_TillEndOfLine(_VimTest):$/;"	c
 Visual_SelectOneWord_TwiceVisual	bundle/ultisnips/test.py	/^class Visual_SelectOneWord_TwiceVisual(_VimTest):$/;"	c
+Vm_get_line_number	bundle/visualmark/visualmark.vim	/^fun! s:Vm_get_line_number(string)$/;"	f
+Vm_get_next_sign_line	bundle/visualmark/visualmark.vim	/^fun! s:Vm_get_next_sign_line(curr_line_number)$/;"	f
+Vm_get_prev_sign_line	bundle/visualmark/visualmark.vim	/^fun! s:Vm_get_prev_sign_line(curr_line_number)$/;"	f
+Vm_get_sign_id_from_line	bundle/visualmark/visualmark.vim	/^fun! s:Vm_get_sign_id_from_line(line_number)$/;"	f
+Vm_goto_next_sign	bundle/visualmark/visualmark.vim	/^fun! Vm_goto_next_sign()$/;"	f
+Vm_goto_prev_sign	bundle/visualmark/visualmark.vim	/^fun! Vm_goto_prev_sign()$/;"	f
+Vm_place_sign	bundle/visualmark/visualmark.vim	/^fun! s:Vm_place_sign()$/;"	f
+Vm_remove_all_signs	bundle/visualmark/visualmark.vim	/^fun! s:Vm_remove_all_signs()$/;"	f
+Vm_remove_sign	bundle/visualmark/visualmark.vim	/^fun! s:Vm_remove_sign(sign_id)$/;"	f
+Vm_toggle_sign	bundle/visualmark/visualmark.vim	/^fun! Vm_toggle_sign()$/;"	f
 Worker	bundle/l9/autoload/l9/async.py	/^class Worker(threading.Thread):$/;"	c
 X	colors/jellybeans.vim	/^fun! s:X(group, fg, bg, attr, lcfg, lcbg)$/;"	f
-ZoomWindow	bundle/tagbar/autoload/tagbar.vim	/^function! s:ZoomWindow() abort$/;"	f
 _AddFuncBase	bundle/ultisnips/test.py	/^class _AddFuncBase(_VimTest):$/;"	c
 _AnonBase	bundle/ultisnips/test.py	/^class _AnonBase(_VimTest):$/;"	c
 _Base	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^class _Base(object):$/;"	c
@@ -1436,11 +1109,6 @@ a.then	test/a.js	/^	a.then = function(c, d) {$/;"	r
 a.type	test/a.js	/^	a.type = "application\/x-shockwave-flash",$/;"	r
 a.width	test/a.js	/^			a.width = "35",$/;"	r
 abbr	bundle/zencoding/autoload/zencoding/lang/html.vim	/^    let abbr = abbr[stridx(abbr, match) + len(match):]$/;"	v
-access_symbols	bundle/tagbar/autoload/tagbar.vim	/^let s:access_symbols = {$/;"	v
-activateAll	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:activateAll()$/;"	f
-activateBookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:activateBookmark(bm)$/;"	f
-activateDirNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:activateDirNode(node)$/;"	f
-activateFileNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:activateFileNode(node)$/;"	f
 activateFufBuffer	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:activateFufBuffer()$/;"	f
 addRule	test/a.js	/^		addRule: function(a, b, c) {$/;"	r
 addRule	test/a.js	/^	addRule: function(a, b) {$/;"	r
@@ -1450,26 +1118,20 @@ add_snippet	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def add_snippet(
 add_snippet	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def add_snippet(self, trigger, value, descr, options, ft = "all", globals = None, fn=None):$/;"	m	class:SnippetManager
 add_snippet_file	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def add_snippet_file(self, ft, path):$/;"	m	class:SnippetManager
 addfile	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def addfile(self, path):$/;"	m	class:_SnippetDictionary
-addtomrufs	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:addtomrufs(fname)$/;"	f
 aliases	bundle/zencoding/autoload/zencoding.vim	/^    let aliases = zencoding#getResource(type, 'aliases', {})$/;"	v
 aliases	bundle/zencoding/autoload/zencoding/lang/css.vim	/^    let aliases = zencoding#getResource(type, 'aliases', {})$/;"	v
 allocated_colors	bundle/powerline/autoload/Pl/Hi.vim	/^let s:allocated_colors = {$/;"	v
 amat	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let amat = matchstr(atts, '\\(\\w\\+\\%(="[^"]*"\\|=''[^'']*''\\|[^ ''"\\]]*\\)\\{0,1}\\)')$/;"	v
-argmaps	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:argmaps(md, i)$/;"	f
 array_beg	indent/javascript.vim	/^let s:array_beg = '\\[[^\\]]*' . s:js_end_line_comment . '$'$/;"	v
 array_end	indent/javascript.vim	/^let s:array_end = '^' . s:js_mid_line_comment . '[^\\[]*\\][;,]*' . s:js_end_line_comment . '$'$/;"	v
-ars	bundle/ctrlP/autoload/ctrlp/dir.vim	/^let s:ars = ['s:maxdepth', 's:maxfiles', 's:compare_lim', 's:glob', 's:caching']$/;"	v
 as_unicode	bundle/ultisnips/plugin/UltiSnips/compatibility.py	/^    def as_unicode(s):$/;"	f
 as_vimencoding	bundle/ultisnips/plugin/UltiSnips/compatibility.py	/^    def as_vimencoding(s):$/;"	f
-at	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:at(str)$/;"	f
 attr	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let attr = substitute(strpart(attr, len(item)), '^\\s*', '', '')$/;"	v
 attr	bundle/zencoding/autoload/zencoding/lang/html.vim	/^      let attr = attributes$/;"	v
 attrHandle	test/a.js	/^		attrHandle: {$/;"	r
 attrMap	test/a.js	/^		attrMap: {$/;"	r
 atts	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let atts = atts[stridx(atts, amat) + len(amat):]$/;"	v
 atts	bundle/zencoding/autoload/zencoding/lang/html.vim	/^          let atts = item[1:-2]$/;"	v
-autocmds	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:autocmds()$/;"	f
-autocommands_done	bundle/tagbar/autoload/tagbar.vim	/^let s:autocommands_done   = 0$/;"	v
 b	test/a.js	/^			b = "#";$/;"	r
 b	test/a.js	/^		b = "script" + (new Date).getTime(),$/;"	r
 b	test/a.js	/^		b = [],$/;"	r
@@ -1711,25 +1373,11 @@ base_color_mode	bundle/powerline/autoload/Pl/Parser.vim	/^					let base_color_mo
 base_snippet_files_for	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def base_snippet_files_for(self, ft, default=True):$/;"	m	class:SnippetManager
 basename	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def basename(self):$/;"	m	class:SnippetUtil
 behavsCurrent	bundle/autocomplete/autoload/acp.vim	/^let s:behavsCurrent = []$/;"	v
-bin	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^			let s:bin = bin$/;"	v
-bin	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^		let s:bin = expand(s:bin, 1)$/;"	v
-bindMappings	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:bindMappings()$/;"	f
-bins	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^let s:bins = [$/;"	v
 bookmark	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^function s:bookmark(word)$/;"	f
 bookmarkHere	bundle/fuzzyfinder/autoload/fuf/bookmarkfile.vim	/^function s:bookmarkHere(word)$/;"	f
-bookmarkNode	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:bookmarkNode(...)$/;"	f
-bufInWindows	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:bufInWindows(bnum)$/;"	f
-bufName	bundle/nerdtree/plugin/NERD_tree.vim	/^        let bufName = treeBufNames[i]$/;"	v
 bufTimes	bundle/fuzzyfinder/autoload/fuf/buffer.vim	/^let s:bufTimes = {}$/;"	v
 bufferCursorPosMap	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:bufferCursorPosMap = {}$/;"	v
-bufferName	bundle/nerdtree/plugin/NERD_tree.vim	/^        let bufferName = options[sort(keys(options))[choice-1]]$/;"	v
-bufferName	bundle/nerdtree/plugin/NERD_tree.vim	/^        let bufferName = values(options)[0]$/;"	v
-bufferName	bundle/nerdtree/plugin/NERD_tree.vim	/^    let bufferName = ''$/;"	v
 buffer_segments	bundle/powerline/autoload/Pl/Theme.vim	/^	let buffer_segments = Pl#Colorscheme#Apply(g:Powerline_colorscheme, buffer_segments)$/;"	v
-buffunc	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:buffunc(e)$/;"	f
-buftab	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:buftab(bufnr, md)$/;"	f
-bufwins	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:bufwins(bufnr)$/;"	f
-buildpat	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:buildpat(lst)$/;"	f
 button	test/a.js	/^			button: function(a) {$/;"	r
 buttons	test/a.js	/^						buttons: [{$/;"	r
 byte2col	bundle/ultisnips/plugin/UltiSnips/compatibility.py	/^    def byte2col(line, nbyte):$/;"	f
@@ -1754,61 +1402,27 @@ c	test/a.js	/^	var c = [],$/;"	r
 c	test/a.js	/^	var c = {},$/;"	r
 c	test/a.js	/^	var c = {};$/;"	r
 c.frameBorder	test/a.js	/^			c.frameBorder = "none";$/;"	r
-cache	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^		let cache = { a:fname : { 'time': ftime, 'lines': lines } }$/;"	v
 cache	bundle/powerline/autoload/Pl.vim	/^			let cache = [$/;"	v
-cachefile	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:cachefile()$/;"	f
-cadir	bundle/ctrlP/autoload/ctrlp/dir.vim	/^	let cadir = ctrlp#utils#cachedir().ctrlp#utils#lash().'dir'$/;"	v
-cafile	bundle/ctrlP/autoload/ctrlp/dir.vim	/^	let cafile = cadir.ctrlp#utils#lash().ctrlp#utils#cachefile('dir')$/;"	v
 cancel	test/a.js	/^		cancel: function() {$/;"	r
-ccex	bundle/ctrlP/autoload/ctrlp.vim	/^let s:ccex = s:pref.'clear_cache_on_exit'$/;"	v
-centerView	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:centerView()$/;"	f
-chCwd	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:chCwd(node)$/;"	f
-chRoot	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:chRoot(node)$/;"	f
-chRootCwd	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:chRootCwd()$/;"	f
 changeCoverage	bundle/fuzzyfinder/autoload/fuf/coveragefile.vim	/^function s:changeCoverage(name)$/;"	f
-changelist	bundle/ctrlP/autoload/ctrlp/changes.vim	/^fu! s:changelist(bufnr)$/;"	f
-char	bundle/nerdtree/plugin/NERD_tree.vim	/^            let char = strpart(startToCur, strlen(startToCur)-1, 1)$/;"	v
 checkDataFileCompatibility	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:checkDataFileCompatibility()$/;"	f
-checkForBrowse	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:checkForBrowse(dir)$/;"	f
 checkKey	bundle/l9/autoload/l9/async.vim	/^function s:checkKey(key)$/;"	f
 check_output	bundle/ultisnips/test.py	/^    def check_output(self):$/;"	m	class:_VimTest
 checkbox	test/a.js	/^			checkbox: function(a) {$/;"	r
-checkbuf	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:checkbuf()$/;"	f
 checked	test/a.js	/^			checked: function(a) {$/;"	r
-checked_ctags	bundle/tagbar/autoload/tagbar.vim	/^            let s:checked_ctags = 2$/;"	v
-checked_ctags	bundle/tagbar/autoload/tagbar.vim	/^        let s:checked_ctags = 1$/;"	v
-checked_ctags	bundle/tagbar/autoload/tagbar.vim	/^        let s:checked_ctags = 2$/;"	v
-checked_ctags	bundle/tagbar/autoload/tagbar.vim	/^let s:checked_ctags       = 0$/;"	v
-checked_ctags_types	bundle/tagbar/autoload/tagbar.vim	/^    let s:checked_ctags_types = 1$/;"	v
-checked_ctags_types	bundle/tagbar/autoload/tagbar.vim	/^let s:checked_ctags_types = 0$/;"	v
 child	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let child = current.child[n]$/;"	v
-childNodesToDraw	bundle/nerdtree/plugin/NERD_tree.vim	/^        let childNodesToDraw = self.getVisibleChildren()$/;"	v
 child_seg_name	bundle/powerline/autoload/Pl/Colorscheme.vim	/^						let child_seg_name = join(child_segment.variants[0:i], '.')$/;"	v
 child_seg_ns_name	bundle/powerline/autoload/Pl/Colorscheme.vim	/^						let child_seg_ns_name = len(child_segment.ns) > 0 ? child_segment.ns .':'. child_seg_name : child_seg_name$/;"	v
 child_segment	bundle/powerline/autoload/Pl/Colorscheme.vim	/^							let child_segment.colors = colorscheme[child_seg_name]$/;"	v
 child_segment	bundle/powerline/autoload/Pl/Colorscheme.vim	/^							let child_segment.colors = colorscheme[child_seg_ns_name]$/;"	v
 child_segment	bundle/powerline/autoload/Pl/Colorscheme.vim	/^					let child_segment.ns = segment.ns$/;"	v
 child_segment	bundle/powerline/autoload/Pl/Colorscheme.vim	/^					let child_segment.variants = [seg_name] + split(child_segment.name, '\\.')$/;"	v
-chknearby	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:chknearby(pat)$/;"	f
-choice	bundle/nerdtree/plugin/NERD_tree.vim	/^        let choice = inputlist(choices)$/;"	v
-choices	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:choices(str, choices, func, args)$/;"	f
-choices	bundle/nerdtree/plugin/NERD_tree.vim	/^        let choices = ["Choose a tree to mirror"]$/;"	v
-choices	bundle/nerdtree/plugin/NERD_tree.vim	/^        let choices = extend(choices, sort(keys(options)))$/;"	v
-chop	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:chop(mrufs)$/;"	f
 cl	bundle/zencoding/autoload/zencoding/lang/html.vim	/^          let cl = last.child$/;"	v
-clearBookmarks	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:clearBookmarks(bookmarks)$/;"	f
 clear_outputs	bundle/l9/autoload/l9/async.py	/^    def clear_outputs(self):$/;"	m	class:Worker
 clear_snippets	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def clear_snippets(self, triggers = [], ft = "all"):$/;"	m	class:SnippetManager
 clear_snippets	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def clear_snippets(self, triggers=[]):$/;"	m	class:_SnippetDictionary
-closeChildren	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:closeChildren(node)$/;"	f
-closeCurrentDir	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:closeCurrentDir(node)$/;"	f
-closeTree	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:closeTree()$/;"	f
-closeTreeIfOpen	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:closeTreeIfOpen()$/;"	f
-closeTreeIfQuitOnOpen	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:closeTreeIfQuitOnOpen()$/;"	f
-closeTreeWindow	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:closeTreeWindow()$/;"	f
 cls	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let cls += cl$/;"	v
 cls	bundle/zencoding/autoload/zencoding/lang/html.vim	/^          let cls = []$/;"	v
-cmn	bundle/ctrlP/autoload/ctrlp.vim	/^		let cmn .= char$/;"	v
 cntrl_beg	indent/javascript.vim	/^let s:cntrl_beg = s:cntrl_beg_keys . s:js_end_line_comment . '$' $/;"	v
 cntrl_beg_keys	indent/javascript.vim	/^let s:cntrl_beg_keys = '\\(\\(\\(if\\|for\\|with\\|while\\)\\s*(.*)\\)\\|\\(try\\|do\\)\\)\\s*'$/;"	v
 cntrl_end	indent/javascript.vim	/^let s:cntrl_end = '\\(while\\s*(.*)\\)\\s*;\\=\\s*' . s:js_end_line_comment . '$'$/;"	v
@@ -1820,28 +1434,13 @@ col2byte	bundle/ultisnips/plugin/UltiSnips/compatibility.py	/^    def col2byte(l
 color	colors/jellybeans.vim	/^fun! s:color(r, g, b)$/;"	f
 colors	bundle/powerline/autoload/Pl/Parser.vim	/^				let colors = get(seg_curr, 'colors', base_color)$/;"	v
 colors_name	colors/jellybeans.vim	/^let colors_name = "jellybeans"$/;"	v
-columns	bundle/tagbar/autoload/tagbar.vim	/^            let &columns -= g:tagbar_width + 1$/;"	v
 command	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^def command(s):$/;"	f
 comment	bundle/jsbeautify/plugin/jsbeautify.vim	/^					let comment .= s:input[s:parser_pos]$/;"	v
 comment	bundle/jsbeautify/plugin/jsbeautify.vim	/^				let comment .= s:input[s:parser_pos]$/;"	v
 comment	bundle/jsbeautify/plugin/jsbeautify.vim	/^			let comment = c$/;"	v
 comment	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let comment = ""$/;"	v
-compareBookmarks	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:compareBookmarks(first, second)$/;"	f
-compareNodes	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:compareNodes(n1, n2)$/;"	f
 compareTimeDescending	bundle/fuzzyfinder/autoload/fuf/buffer.vim	/^function s:compareTimeDescending(i1, i2)$/;"	f
-compare_lim	bundle/ctrlP/autoload/ctrlp.vim	/^let s:compare_lim = 3000$/;"	v
-compare_typeinfo	bundle/tagbar/autoload/tagbar.vim	/^    let s:compare_typeinfo = typeinfo$/;"	v
-compare_typeinfo	bundle/tagbar/autoload/tagbar.vim	/^let s:compare_typeinfo = {}$/;"	v
-comparent	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:comparent(...)$/;"	f
 compatible_exec	bundle/ultisnips/plugin/UltiSnips/compatibility_py2.py	/^def compatible_exec(code, gglobals = None, glocals = None):$/;"	f
-compfnlen	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:compfnlen(...)$/;"	f
-completeBookmarks	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:completeBookmarks(A,L,P)$/;"	f
-compmatlen	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:compmatlen(...)$/;"	f
-compmreb	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:compmreb(...)$/;"	f
-compmref	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:compmref(...)$/;"	f
-comptime	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:comptime(...)$/;"	f
-compval	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:compval(...)$/;"	f
-compval	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:compval(...)$/;"	f
 conserve	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def conserve(self):$/;"	m	class:VisualContentPreserver
 content	bundle/zencoding/autoload/zencoding.vim	/^      let content = join(getline(a:firstline, a:lastline), "\\n")$/;"	v
 continuation	indent/javascript.vim	/^let s:continuation = '\\(+\\|\\\\\\)\\{1}' . s:js_line_comment . '$' $/;"	v
@@ -1858,30 +1457,14 @@ cpo	bundle/align/autoload/AlignMaps.vim	/^let &cpo= s:keepcpo$/;"	v
 cpo	bundle/align/plugin/AlignMapsPlugin.vim	/^let &cpo= s:keepcpo$/;"	v
 cpo	bundle/align/plugin/AlignPlugin.vim	/^let &cpo= s:keepcpo$/;"	v
 cpo	bundle/align/plugin/cecutil.vim	/^let &cpo= s:keepcpo$/;"	v
-cpo	bundle/nerdtree/plugin/NERD_tree.vim	/^let &cpo = s:old_cpo$/;"	v
+cpo	bundle/grep/plugin/grep.vim	/^let &cpo = s:cpo_save$/;"	v
 cpo	bundle/zencoding/autoload/zencoding.vim	/^let &cpo = s:save_cpo$/;"	v
 cpo	bundle/zencoding/plugin/zencoding.vim	/^let &cpo = s:save_cpo$/;"	v
+cpo_save	bundle/grep/plugin/grep.vim	/^let s:cpo_save = &cpo$/;"	v
 createChangeCoverageListener	bundle/fuzzyfinder/autoload/fuf/coveragefile.vim	/^function s:createChangeCoverageListener()$/;"	f
 createDataBufferListener	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:createDataBufferListener(dataFile)$/;"	f
-createDefaultBindings	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:createDefaultBindings()$/;"	f
 createEditDataListener	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:createEditDataListener()$/;"	f
-createTreeWin	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:createTreeWin()$/;"	f
-ctags_args	bundle/tagbar/autoload/tagbar.vim	/^        let ctags_args .= ' --language-force=' . ctags_type .$/;"	v
-ctags_bin	bundle/tagbar/autoload/tagbar.vim	/^        let ctags_bin = expand(typeinfo.ctagsbin)$/;"	v
-ctags_bin	bundle/tagbar/autoload/tagbar.vim	/^        let ctags_bin = g:tagbar_ctags_bin$/;"	v
-ctags_cmd	bundle/tagbar/autoload/tagbar.vim	/^    let ctags_cmd = s:EscapeCtagsCmd(ctags_bin, ctags_args, a:fname)$/;"	v
-ctags_cmd	bundle/tagbar/autoload/tagbar.vim	/^    let ctags_cmd = s:EscapeCtagsCmd(g:tagbar_ctags_bin, '--version')$/;"	v
-ctags_output	bundle/tagbar/autoload/tagbar.vim	/^    let ctags_output = s:ExecuteCtags(ctags_cmd)$/;"	v
-ctags_types	bundle/tagbar/autoload/tagbar.vim	/^let s:ctags_types         = {}$/;"	v
 cterm2gui_dict	bundle/powerline/autoload/Pl/Hi.vim	/^let s:cterm2gui_dict = {$/;"	v
-ctrlp_alldirs	bundle/ctrlP/autoload/ctrlp/dir.vim	/^			let g:ctrlp_alldirs = ctrlp#utils#readfile(cafile)$/;"	v
-ctrlp_allmixes	bundle/ctrlP/autoload/ctrlp/mixed.vim	/^	let g:ctrlp_allmixes = { 'filtime': getftime(ctrlp#utils#cachefile()),$/;"	v
-ctrlp_lines	bundle/ctrlP/autoload/ctrlp/mixed.vim	/^	let g:ctrlp_lines = len(mrufs) > len(g:ctrlp_lines)$/;"	v
-ctrlp_lines	bundle/ctrlP/plugin/ctrlp.vim	/^let [g:ctrlp_lines, g:ctrlp_allfiles, g:ctrlp_alltags, g:ctrlp_alldirs,$/;"	v
-ctrlp_newdir	bundle/ctrlP/autoload/ctrlp/dir.vim	/^		let g:ctrlp_newdir = 0$/;"	v
-curline	bundle/tagbar/autoload/tagbar.vim	/^                    let curline                   = line('.')$/;"	v
-curline	bundle/tagbar/autoload/tagbar.vim	/^            let curline                   = line('.')$/;"	v
-curline	bundle/tagbar/autoload/tagbar.vim	/^    let curline = line('.')$/;"	v
 current	bundle/zencoding/autoload/zencoding/lang/css.vim	/^        let current.snippet .= "\\n"$/;"	v
 current	bundle/zencoding/autoload/zencoding/lang/css.vim	/^        let current.snippet = substitute(current.snippet, '${cursor}', '', 'g') . '${cursor}'$/;"	v
 current	bundle/zencoding/autoload/zencoding/lang/css.vim	/^      let current.name = ''$/;"	v
@@ -1918,12 +1501,10 @@ current	bundle/zencoding/autoload/zencoding/lang/html.vim	/^      let current.va
 current	bundle/zencoding/autoload/zencoding/lang/html.vim	/^      let current.value = value$/;"	v
 current	bundle/zencoding/autoload/zencoding/lang/html.vim	/^    let current.multiplier = multiplier$/;"	v
 current_line_splitted	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^    def current_line_splitted(self):$/;"	m	class:VimBuffer
-current_syntax	bundle/tagbar/syntax/tagbar.vim	/^let b:current_syntax = "tagbar"$/;"	v
 current_syntax	bundle/ultisnips/syntax/snippets.vim	/^let b:current_syntax = "snippet"$/;"	v
 current_text	bundle/ultisnips/plugin/UltiSnips/text_objects/_base.py	/^    def current_text(self):$/;"	m	class:TextObject
 cursor	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^    def cursor():$/;"	m	class:VimBuffer
 cursor_moved	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def cursor_moved(self):$/;"	m	class:SnippetManager
-curtags	bundle/tagbar/autoload/tagbar.vim	/^        let curtags = filter(copy(fileinfo.tags),$/;"	v
 d	test/a.js	/^				var d = [];$/;"	r
 d	test/a.js	/^			for (var e, f = 1, d = "#"; f < 4; f++) e = parseInt(RegExp["$" + f]).toString(16),$/;"	r
 d	test/a.js	/^			var d = ["{"],$/;"	r
@@ -1947,25 +1528,14 @@ d.onreadystatechange	test/a.js	/^	d.onload = d.onreadystatechange = function() {
 d.onsuccess	test/a.js	/^		return d.onsuccess = function(a, f) {$/;"	r
 dataMap	bundle/l9/autoload/l9/tempbuffer.vim	/^let s:dataMap = {}$/;"	v
 deactivateFufBuffer	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:deactivateFufBuffer()$/;"	f
-debug	bundle/tagbar/autoload/tagbar.vim	/^let s:debug = 0$/;"	v
 debug	bundle/ultisnips/plugin/UltiSnips/debug.py	/^def debug(s):$/;"	f
-debug_file	bundle/tagbar/autoload/tagbar.vim	/^let s:debug_file = ''$/;"	v
-def	bundle/tagbar/autoload/tagbar.vim	/^                let def.kind2scope[value] = key$/;"	v
-def	bundle/tagbar/autoload/tagbar.vim	/^                let def.scope2kind[value] = key$/;"	v
-def	bundle/tagbar/autoload/tagbar.vim	/^            let def.kind2scope = {}$/;"	v
-def	bundle/tagbar/autoload/tagbar.vim	/^            let def.scope2kind = {}$/;"	v
 defaultCommentString	bundle/tcomment/autoload/tcomment.vim	/^let s:defaultCommentString = s:DefaultValue('commentstring')$/;"	v
 defaultComments	bundle/tcomment/autoload/tcomment.vim	/^let s:defaultComments      = s:DefaultValue('comments')$/;"	v
 default_modes	bundle/powerline/autoload/Pl/Segment.vim	/^let s:default_modes = ['n', 'N', 'v', 'i', 'r', 's']$/;"	v
 defineOption	bundle/autocomplete/plugin/acp.vim	/^function s:defineOption(name, default)$/;"	f
 definitions	bundle/tcomment/autoload/tcomment.vim	/^let s:definitions = {}$/;"	v
-delent	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:delent(rfunc)$/;"	f
-deleteBookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:deleteBookmark(bm)$/;"	f
-deprecated	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:deprecated(func, ...)$/;"	f
 description	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def description(self):$/;"	m	class:Snippet
 detect_parsing	bundle/ultisnips/test.py	/^    def detect_parsing(self):$/;"	m	class:VimInterfaceScreen
-dict2list	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:dict2list(dict)$/;"	f
-dictindex	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:dictindex(dict, expr)$/;"	f
 did_UltiSnips_snipmate_compatibility	bundle/ultisnips/plugin/snipMate_compatibility.vim	/^let did_UltiSnips_snipmate_compatibility = 1$/;"	v
 did_UltiSnips_vim	bundle/ultisnips/plugin/UltiSnips.vim	/^let did_UltiSnips_vim=1$/;"	v
 did_UltiSnips_vim_after	bundle/ultisnips/after/plugin/UltiSnips_after.vim	/^let did_UltiSnips_vim_after=1$/;"	v
@@ -1973,28 +1543,20 @@ did_indent	indent/javascript.vim	/^let b:did_indent = 1$/;"	v
 diff	bundle/ultisnips/plugin/UltiSnips/_diff.py	/^def diff(a, b, sline = 0):$/;"	f
 diff	bundle/ultisnips/plugin/UltiSnips/geometry.py	/^    def diff(self,pos):$/;"	m	class:Position
 diff_in_buffer_length	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def diff_in_buffer_length(self):$/;"	m	class:VimState
-dir	bundle/ctrlP/autoload/ctrlp.vim	/^		let dir = fnamemodify(a:line, ':h')$/;"	v
 dirPrev	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^    let dirPrev = fnamemodify(dirPrev, ':h')$/;"	v
 dirPrev	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^  let dirPrev = a:dir$/;"	v
 dirPrevPrev	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^    let dirPrevPrev = dirPrev$/;"	v
-dircompl	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:dircompl(be, sd)$/;"	f
-dircounts	bundle/ctrlP/autoload/ctrlp/dir.vim	/^let s:dircounts = {}$/;"	v
 direction	test/a.js	/^		direction: ["e", "s", "se"],$/;"	r
 directionHandlePosition	test/a.js	/^		directionHandlePosition: {}$/;"	r
 disabled	test/a.js	/^			disabled: function(a) {$/;"	r
-dismrk	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:dismrk()$/;"	f
-displayHelp	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:displayHelp()$/;"	f
 dispose	test/a.js	/^		dispose: function() {$/;"	r
 do_tests	bundle/zencoding/unittest.vim	/^function! s:do_tests(...)$/;"	f
 document.body.style.MozUserSelect	test/a.js	/^		document.body.style.MozUserSelect = "none",$/;"	r
 document.body.style.MozUserSelect	test/a.js	/^		document.body.style.MozUserSelect = "none";$/;"	r
-dohighlight	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:dohighlight()$/;"	f
 done_bundles	autoload/pathogen.vim	/^let s:done_bundles = ''$/;"	v
-dosigns	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:dosigns()$/;"	f
 dr	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let dr = 1$/;"	v
 dr	bundle/zencoding/autoload/zencoding/lang/html.vim	/^          let dr = 1$/;"	v
 dr	bundle/zencoding/autoload/zencoding/lang/html.vim	/^    let dr = 0$/;"	v
-dumpHelp	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:dumpHelp()$/;"	f
 e	test/a.js	/^			e = {$/;"	r
 e	test/a.js	/^			e: {$/;"	r
 e	test/a.js	/^		e = "";$/;"	r
@@ -2011,13 +1573,7 @@ e	test/a.js	/^	var b, c, d, e = [];$/;"	r
 e	test/a.js	/^	var c, d, e = {},$/;"	r
 e	test/a.js	/^	var e = function() {},$/;"	r
 e.innerHTML	test/a.js	/^			e.innerHTML = ""$/;"	r
-echo	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:echo(msg)$/;"	f
-echo	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:echo(msg)$/;"	f
-echoError	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:echoError(msg)$/;"	f
-echoWarning	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:echoWarning(msg)$/;"	f
-echoWarning	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:echoWarning(msg)$/;"	f
 echo_to_hierarchy	bundle/ultisnips/plugin/UltiSnips/debug.py	/^def echo_to_hierarchy(to):$/;"	f
-elapsed	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:elapsed(nr)$/;"	f
 emapleader	bundle/align/plugin/AlignMapsPlugin.vim	/^  let s:emapleader= escape(s:mapleader,'\\ ')$/;"	v
 empty	test/a.js	/^			empty: function(a) {$/;"	r
 enabled	test/a.js	/^			enabled: function(a) {$/;"	r
@@ -2037,18 +1593,9 @@ esc	bundle/jsbeautify/plugin/jsbeautify.vim	/^					let esc = s:input[s:parser_po
 esc	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let esc = 0$/;"	v
 escape	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^def escape(inp):$/;"	f
 escape	bundle/zencoding/unittest.vim	/^function! s:escape(str)$/;"	f
-escape_chars	bundle/nerdtree/plugin/NERD_tree.vim	/^    let s:escape_chars =  " \\\\`\\|\\"#%&,?()\\*^<>[]"$/;"	v
-escape_chars	bundle/nerdtree/plugin/NERD_tree.vim	/^    let s:escape_chars =  " `\\|\\"#%&,?()\\*^<>"$/;"	v
-esctagscmd	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:esctagscmd(bin, args, ...)$/;"	f
 eval	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^def eval(s):$/;"	f
 evaluateLearningRank	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:evaluateLearningRank(word, stats)$/;"	f
 even	test/a.js	/^			even: function(a, b) {$/;"	r
-eventignore	bundle/tagbar/autoload/tagbar.vim	/^    let &eventignore = eventignore_save$/;"	v
-excl	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:excl(fn)$/;"	f
-exec	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:exec(cmd)$/;"	f
-execextvar	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:execextvar(key)$/;"	f
-exectags	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:exectags(cmd)$/;"	f
-exectagsonfile	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:exectagsonfile(fname, ftype)$/;"	f
 execute	bundle/l9/autoload/l9/async.py	/^    def execute(self, var_key, var_command, var_cwd, var_input, var_appends):$/;"	m	class:Asyncer
 execute	bundle/l9/autoload/l9/async.py	/^    def execute(self, worker):$/;"	m	class:Executor
 exists	bundle/zencoding/autoload/zencoding/lang.vim	/^let s:exists = {}$/;"	v
@@ -2103,7 +1650,6 @@ f	test/a.js	/^	f = function(a, b) {$/;"	r
 f	test/a.js	/^	f = {$/;"	r
 f	test/a.js	/^	var f = {$/;"	r
 f.style.MozUserSelect	test/a.js	/^			f.style.MozUserSelect = "none",$/;"	r
-fbar	bundle/ctrlP/autoload/ctrlp.vim	/^				let fbar = index(lst, ';')$/;"	v
 feedPopup	bundle/autocomplete/autoload/acp.vim	/^function s:feedPopup()$/;"	f
 feedkeys	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^def feedkeys(s, mode='n'):$/;"	f
 fetch_snippets_from_dir	bundle/ultisnips/utils/get_tm_snippets.py	/^def fetch_snippets_from_dir(path):$/;"	f
@@ -2112,51 +1658,27 @@ fget	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^        def fget(self):$/;"
 fget	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^        def fget(self):$/;"	m	class:VimBuffer
 fget	bundle/ultisnips/plugin/UltiSnips/geometry.py	/^        def fget(self):$/;"	m	class:Position
 fget	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^        def fget(self):$/;"	m	class:SnippetUtil
-ficounts	bundle/ctrlP/autoload/ctrlp.vim	/^let s:ficounts = {}$/;"	v
 file	test/a.js	/^			file: function(a) {$/;"	r
 file_to_edit	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def file_to_edit(self, ft):$/;"	m	class:SnippetManager
-filecounts	bundle/ctrlP/autoload/ctrlp/rtscript.vim	/^let s:filecounts = {}$/;"	v
-fileinfo	bundle/tagbar/autoload/tagbar.vim	/^                    let a:fileinfo.tline[curline] = tag$/;"	v
-fileinfo	bundle/tagbar/autoload/tagbar.vim	/^            let a:fileinfo.tline[curline] = kindtag$/;"	v
-fileinfo	bundle/tagbar/autoload/tagbar.vim	/^    let fileinfo.foldlevel = a:level$/;"	v
 files	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def files(self):$/;"	m	class:_SnippetDictionary
-filter	bundle/ctrlP/autoload/ctrlp/tag.vim	/^fu! s:filter(tags)$/;"	f
 filter	test/a.js	/^		filter: {$/;"	r
 filters	bundle/zencoding/autoload/zencoding.vim	/^      let filters = split(matchstr(str, mx)[1:], '\\s*,\\s*')$/;"	v
 filters	test/a.js	/^		filters: {$/;"	r
 find	autoload/pathogen.vim	/^function! s:find(count,cmd,file,...) " {{{1$/;"	f
 find	test/a.js	/^		find: {$/;"	r
-findAndRevealPath	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:findAndRevealPath()$/;"	f
 findItem	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^function s:findItem(items, word)$/;"	f
 findItem	bundle/fuzzyfinder/autoload/fuf/bookmarkfile.vim	/^function s:findItem(items, word)$/;"	f
 findItem	bundle/fuzzyfinder/autoload/fuf/buffer.vim	/^function s:findItem(items, word)$/;"	f
 find_parent_for_new_to	bundle/ultisnips/plugin/UltiSnips/text_objects/_base.py	/^    def find_parent_for_new_to(self, pos):$/;"	m	class:EditableTextObject
-findcommon	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:findcommon(items, seed)$/;"	f
-findcount	bundle/ctrlP/autoload/ctrlp/tag.vim	/^fu! s:findcount(str)$/;"	f
-findroot	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:findroot(curr, mark, depth, type)$/;"	f
 finishPopup	bundle/autocomplete/autoload/acp.vim	/^function s:finishPopup(fGroup1)$/;"	f
 first	test/a.js	/^			first: function(a, b) {$/;"	r
-firstUsableWindow	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:firstUsableWindow()$/;"	f
-first_tag	bundle/tagbar/autoload/tagbar.vim	/^                let first_tag = 0$/;"	v
-first_tag	bundle/tagbar/autoload/tagbar.vim	/^            let first_tag = 0$/;"	v
 firstmenu	bundle/align/plugin/AlignMapsPlugin.vim	/^ let s:firstmenu= 1$/;"	v
 fixup	bundle/ultisnips/utils/get_tm_snippets.py	/^    def fixup(m):$/;"	f
-flatten	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:flatten(tree, cur)$/;"	f
 fn	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def fn(self):$/;"	m	class:SnippetUtil
-fndroot	bundle/ctrlP/autoload/ctrlp.vim	/^			let fndroot = s:findroot(s:dyncwd, markrs, 0, 1)$/;"	v
-fnesc	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:fnesc(...)$/;"	f
 focus	bundle/ultisnips/test.py	/^    def focus(self, title=None):$/;"	m	class:VimInterfaceWindows
 focus	bundle/ultisnips/test.py	/^    def focus(title=None):$/;"	m	class:VimInterface
 focus	test/a.js	/^			focus: function(a) {$/;"	r
-foldmarker	bundle/tagbar/autoload/tagbar.vim	/^                let foldmarker = s:icon_closed$/;"	v
-foldmarker	bundle/tagbar/autoload/tagbar.vim	/^                let foldmarker = s:icon_open$/;"	v
-format	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:format(...)$/;"	f
 formatItemUsingCache	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^function s:formatItemUsingCache(item)$/;"	f
-formatline	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:formatline(str)$/;"	f
-formatul	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:formatul(...)$/;"	f
-forward	bundle/tagbar/autoload/tagbar.vim	/^            let forward = !forward$/;"	v
-forward	bundle/tagbar/autoload/tagbar.vim	/^        let forward  = 1$/;"	v
-fpats	bundle/ctrlP/autoload/ctrlp.vim	/^let s:fpats = {$/;"	v
 fset	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^        def fset(self, value):$/;"	m	class:_SnippetDictionary
 fset	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^        def fset(self, pos):$/;"	m	class:VimBuffer
 fset	bundle/ultisnips/plugin/UltiSnips/geometry.py	/^        def fset(self, value):$/;"	m	class:Position
@@ -2191,56 +1713,23 @@ getMatchingIndex	bundle/fuzzyfinder/autoload/fuf/help.vim	/^function s:getMatchi
 getMatchingIndex	bundle/fuzzyfinder/autoload/fuf/tag.vim	/^function s:getMatchingIndex(lines, cmd)$/;"	f
 getMatchingLineNumber	bundle/fuzzyfinder/autoload/fuf/bookmarkfile.vim	/^function s:getMatchingLineNumber(lines, pattern, lnumBegin)$/;"	f
 getMatchingSnipItems	bundle/autocomplete/autoload/acp.vim	/^function s:getMatchingSnipItems(base)$/;"	f
-getPath	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:getPath(ln)$/;"	f
 getPostText	bundle/autocomplete/autoload/acp.vim	/^function s:getPostText()$/;"	f
 getSnippedHead	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:getSnippedHead(head, baseLen)$/;"	f
 getTagData	bundle/fuzzyfinder/autoload/fuf/buffertag.vim	/^function s:getTagData(bufNrs)$/;"	f
 getTagItems	bundle/fuzzyfinder/autoload/fuf/buffertag.vim	/^function s:getTagItems(bufNr)$/;"	f
 getTagNames	bundle/fuzzyfinder/autoload/fuf/tag.vim	/^function s:getTagNames(tagFile)$/;"	f
 getTaggedFileList	bundle/fuzzyfinder/autoload/fuf/taggedfile.vim	/^function s:getTaggedFileList(tagfile)$/;"	f
-getTreeWinNum	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:getTreeWinNum()$/;"	f
 getWordBoundaries	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:getWordBoundaries(word)$/;"	f
 get_buffer_data	bundle/ultisnips/test.py	/^    def get_buffer_data(self):$/;"	m	class:VimInterface
 get_dim	bundle/powerline/fontpatcher/fontpatcher	/^	def get_dim(glyph):$/;"	f
 get_matching_snippets	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def get_matching_snippets(self, trigger, potentially):$/;"	m	class:_SnippetDictionary
 get_next_token	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:get_next_token()$/;"	f
-getbookmarks	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:getbookmarks()$/;"	f
-getenv	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:getenv()$/;"	f
-getextvar	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:getextvar(key)$/;"	f
-gethistdata	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:gethistdata()$/;"	f
-gethistloc	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:gethistloc()$/;"	f
-getinput	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:getinput(...)$/;"	f
-getinput	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:getinput(str, ...)$/;"	f
-getnewmix	bundle/ctrlP/autoload/ctrlp/mixed.vim	/^fu! s:getnewmix(cwd, clim)$/;"	f
-getparent	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:getparent(item)$/;"	f
-getregs	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:getregs()$/;"	f
-getundo	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:getundo()$/;"	f
-glbpath	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:glbpath(...)$/;"	f
-glbs	bundle/ctrlP/autoload/ctrlp.vim	/^let s:glbs = { 'magic': 1, 'to': 1, 'tm': 0, 'sb': 1, 'hls': 0, 'im': 0,$/;"	v
-glob	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:glob = s:showhidden ? '.*\\|*' : '*'$/;"	v
 global	test/a.js	/^	global: {}$/;"	r
-globdirs	bundle/ctrlP/autoload/ctrlp/dir.vim	/^fu! s:globdirs(dirs, depth)$/;"	f
-grandchildren	bundle/tagbar/autoload/tagbar.vim	/^    let grandchildren = filter(copy(a:tags), is_grandchild)$/;"	v
 grey_color	colors/jellybeans.vim	/^fun! s:grey_color(n)$/;"	f
 grey_level	colors/jellybeans.vim	/^fun! s:grey_level(n)$/;"	f
 grey_number	colors/jellybeans.vim	/^fun! s:grey_number(x)$/;"	f
 gt	test/a.js	/^			gt: function(a, b, c) {$/;"	r
 guess_edit	bundle/ultisnips/plugin/UltiSnips/_diff.py	/^def guess_edit(initial_line, lt, ct, vs):$/;"	f
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h="\\" Press ". g:NERDTreeMapHelp ." for help\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\"    the NERDTree window\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" ". g:NERDTreeMapHelp .": toggle help\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" ". g:NERDTreeMapQuit .": Close the NERDTree window\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" ". g:NERDTreeMapToggleZoom .": Zoom (maximize-minimize)\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" :Bookmark <name>\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" :BookmarkToRoot <name>\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" :ClearAllBookmarks\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" :ClearBookmarks [<names>]\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" :OpenBookmark <name>\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" :RevealBookmark <name>\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" Bookmark commands~\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\" Other mappings~\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^        let @h=@h."\\"\\n\\" ----------------------------\\n"$/;"	v
-h	bundle/nerdtree/plugin/NERD_tree.vim	/^    let @h = old_h$/;"	v
 h	test/a.js	/^		h = [].slice.call(arguments, 0),$/;"	r
 h	test/a.js	/^	h = [d.minWidth || 0, d.maxWidth || Number.MAX_VALUE, d.minHeight || 0, d.maxHeight || Number.MAX_VALUE],$/;"	r
 h	test/a.js	/^	h = function() {$/;"	r
@@ -2249,8 +1738,6 @@ h	test/a.js	/^	h = {},$/;"	r
 h.innerHTML	test/a.js	/^			for (var l = 0; l < 256; l++) l == 32 ? h.innerHTML = "&nbsp;": c(h, String.fromCharCode(l)),$/;"	r
 h.style.cssText	test/a.js	/^			h.style.cssText = "float:left;" + j,$/;"	r
 handleFailedAssersion	bundle/l9/plugin/l9.vim	/^  function s:handleFailedAssersion(expr)$/;"	f
-handleLeftClick	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:handleLeftClick()$/;"	f
-handleMiddleMouse	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:handleMiddleMouse()$/;"	f
 handler	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^function s:handler.getCompleteItems(patternPrimary)$/;"	f
 handler	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^function s:handler.getModeName()$/;"	f
 handler	bundle/fuzzyfinder/autoload/fuf/bookmarkdir.vim	/^function s:handler.getPreviewHeight()$/;"	f
@@ -2522,18 +2009,12 @@ handlerBase	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:handlerBase.removeP
 handlerBase	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:handlerBase.restorePrompt(line)$/;"	f
 handlerBase	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:handlerBase = {}$/;"	v
 has	test/a.js	/^			has: function(a, b, c) {$/;"	r
-has_opt	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:has_opt(options, name)$/;"	f
 header	test/a.js	/^			header: function(a) {$/;"	r
-headntail	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:headntail(str)$/;"	f
 height	test/a.js	/^			height: function() {$/;"	r
-highlight	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:highlight(pat, grp)$/;"	f
 highlightError	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:highlightError()$/;"	f
 highlightPrompt	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:highlightPrompt(prompt)$/;"	f
 hl_group	bundle/powerline/autoload/Pl/Parser.vim	/^				let hl_group = s:HlCreate(mode_colors)$/;"	v
-hlgrps	bundle/ctrlP/autoload/ctrlp.vim	/^let s:hlgrps = {$/;"	v
 href	test/a.js	/^			href: function(a) {$/;"	r
-i	bundle/nerdtree/plugin/NERD_tree.vim	/^        let i = i + 1$/;"	v
-i	bundle/nerdtree/plugin/NERD_tree.vim	/^    let i = 0$/;"	v
 i	test/a.js	/^	function i(a) {$/;"	r
 i	test/a.js	/^	i = [],$/;"	r
 i	test/a.js	/^	i = function(a) {$/;"	r
@@ -2542,23 +2023,6 @@ i	test/a.js	/^	i = {$/;"	r
 i	test/a.js	/^	var i = {$/;"	r
 iBehavs	bundle/autocomplete/autoload/acp.vim	/^let s:iBehavs = 0$/;"	v
 i["X-Requested-With"]	test/a.js	/^	i["X-Requested-With"] = "XMLHttpRequest";$/;"	r
-ic	bundle/ctrlP/autoload/ctrlp.vim	/^		let ic += 1$/;"	v
-ic	bundle/tagbar/syntax/tagbar.vim	/^    let s:ic = '\\' . s:ic$/;"	v
-ic	bundle/tagbar/syntax/tagbar.vim	/^let s:ic = g:tagbar_iconchars[0]$/;"	v
-icon_closed	bundle/tagbar/autoload/tagbar.vim	/^let s:icon_closed = g:tagbar_iconchars[0]$/;"	v
-icon_open	bundle/tagbar/autoload/tagbar.vim	/^let s:icon_open   = g:tagbar_iconchars[1]$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/changes.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/dir.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/line.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/mixed.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/quickfix.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/rtscript.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/tag.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-id	bundle/ctrlP/autoload/ctrlp/undo.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
-ignore	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ignore()$/;"	f
-igntype	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:igntype = empty(s:usrign) ? -1 : type(s:usrign)$/;"	v
 image	test/a.js	/^			image: function(a) {$/;"	r
 important	bundle/zencoding/autoload/zencoding/lang/css.vim	/^      let important = 0$/;"	v
 important	bundle/zencoding/autoload/zencoding/lang/css.vim	/^      let important = 1$/;"	v
@@ -2566,15 +2030,8 @@ in_array	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:in_array(what, ar
 indent	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:indent()$/;"	f
 indent	bundle/zencoding/autoload/zencoding.vim	/^        let indent = ''$/;"	v
 indent	bundle/zencoding/autoload/zencoding.vim	/^        let indent = line[:-len(part)-1]$/;"	v
-indentLevelFor	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:indentLevelFor(line)$/;"	f
 indent_guides_auto_colors	colors/jellybeans.vim	/^  let g:indent_guides_auto_colors = 0$/;"	v
 indent_to_spaces	bundle/ultisnips/plugin/UltiSnips/util.py	/^    def indent_to_spaces(self, indent):$/;"	m	class:IndentUtil
-initNerdTree	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:initNerdTree(name)$/;"	f
-initNerdTreeInPlace	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:initNerdTreeInPlace(dir)$/;"	f
-initNerdTreeMirror	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:initNerdTreeMirror()$/;"	f
-initVariable	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:initVariable(var, value)$/;"	f
-initcwd	bundle/ctrlP/autoload/ctrlp/dir.vim	/^			let s:initcwd = s:cwd$/;"	v
-initcwd	bundle/ctrlP/autoload/ctrlp/dir.vim	/^		let [s:initcwd, g:ctrlp_alldirs] = [s:cwd, []]$/;"	v
 initialize	bundle/fuzzyfinder/plugin/fuf.vim	/^function s:initialize()$/;"	f
 inner	bundle/zencoding/autoload/zencoding.vim	/^      let inner = substitute(inner, "\\n", "\\n" . spaces, 'g')$/;"	v
 inner	bundle/zencoding/autoload/zencoding/lang/haml.vim	/^        let inner .= zencoding#toString(child, type, inline, filters, itemno)$/;"	v
@@ -2598,30 +2055,15 @@ inner	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^      let inner = subs
 inner	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^      let inner = substitute(inner, "\\n", "\\n" . escape(indent, '\\'), 'g')$/;"	v
 inner	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^    let inner = ''$/;"	v
 input	test/a.js	/^			input: function(a) {$/;"	r
-insertcache	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:insertcache(str)$/;"	f
-insertstr	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:insertstr()$/;"	f
 install_plugin	bundle/zencoding/plugin/zencoding.vim	/^function! s:install_plugin()$/;"	f
 interpretPrimaryPatternForNonPath	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:interpretPrimaryPatternForNonPath(pattern)$/;"	f
 interpretPrimaryPatternForPath	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:interpretPrimaryPatternForPath(pattern)$/;"	f
 interpretPrimaryPatternForPathTail	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:interpretPrimaryPatternForPathTail(pattern)$/;"	f
-interval	bundle/tagbar/autoload/tagbar.vim	/^                    let interval = interval * 2$/;"	v
-interval	bundle/tagbar/autoload/tagbar.vim	/^        let interval = 1$/;"	v
-io	bundle/tagbar/syntax/tagbar.vim	/^    let s:io = '\\' . s:io$/;"	v
-io	bundle/tagbar/syntax/tagbar.vim	/^let s:io = g:tagbar_iconchars[1]$/;"	v
 isModifiedSinceLastCall	bundle/autocomplete/autoload/acp.vim	/^function s:isModifiedSinceLastCall()$/;"	f
-isTreeOpen	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:isTreeOpen()$/;"	f
-isWindowUsable	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:isWindowUsable(winnumber)$/;"	f
 is_complete_edit	bundle/ultisnips/plugin/UltiSnips/_diff.py	/^def is_complete_edit(initial_line, a, b, cmds):$/;"	f
 is_focused	bundle/ultisnips/test.py	/^    def is_focused(self, title=None):$/;"	m	class:VimInterfaceWindows
-is_grandchild	bundle/tagbar/autoload/tagbar.vim	/^        let is_grandchild .=$/;"	v
-is_grandchild	bundle/tagbar/autoload/tagbar.vim	/^    let is_grandchild = 'v:val.depth > a:depth &&$/;"	v
-is_grandchild	bundle/tagbar/autoload/tagbar.vim	/^    let is_grandchild = 'v:val.depth > a:depth'$/;"	v
 is_js	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:is_js()$/;"	f
 is_killed	bundle/ultisnips/plugin/UltiSnips/text_objects/_tabstop.py	/^    def is_killed(self):$/;"	m	class:TabStop
-is_maximized	bundle/tagbar/autoload/tagbar.vim	/^let s:is_maximized    = 0$/;"	v
-is_scoped	bundle/tagbar/autoload/tagbar.vim	/^        let is_scoped = 'has_key(typeinfo.kind2scope, v:val.fields.kind) ||$/;"	v
-iscmdwin	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:iscmdwin()$/;"	f
-ispathitem	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:ispathitem()$/;"	f
 item	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let item = matchstr(attr, '\\(\\%(\\%(#[{}a-zA-Z0-9_\\-\\$]\\+\\)\\|\\%(\\[[^\\]]\\+\\]\\)\\|\\%(\\.[{}a-zA-Z0-9_\\-\\$]\\+\\)*\\)\\)')$/;"	v
 itemno	bundle/zencoding/autoload/zencoding.vim	/^    let itemno = itemno + 1$/;"	v
 items	bundle/fuzzyfinder/autoload/fuf/buffertag.vim	/^    let items = sort(keys(itemMap))$/;"	v
@@ -2655,14 +2097,6 @@ js_indent_log	indent/javascript.vim	/^	let g:js_indent_log = 0$/;"	v
 js_line_comment	indent/javascript.vim	/^let s:js_line_comment = s:js_end_line_comment$/;"	v
 js_mid_line_comment	indent/javascript.vim	/^let s:js_mid_line_comment = '\\s*\\(\\\/\\*.*\\*\\\/\\)*\\s*'$/;"	v
 jumpToBookmark	bundle/fuzzyfinder/autoload/fuf/bookmarkfile.vim	/^function s:jumpToBookmark(path, mode, pattern, lnum)$/;"	f
-jumpToChild	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToChild(currentNode, direction)$/;"	f
-jumpToFirstChild	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToFirstChild(node)$/;"	f
-jumpToLastChild	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToLastChild(node)$/;"	f
-jumpToNextSibling	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToNextSibling(node)$/;"	f
-jumpToParent	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToParent(node)$/;"	f
-jumpToPrevSibling	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToPrevSibling(node)$/;"	f
-jumpToRoot	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToRoot()$/;"	f
-jumpToSibling	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:jumpToSibling(currentNode, forward)$/;"	f
 jumpToTag	bundle/fuzzyfinder/autoload/fuf/buffertag.vim	/^function s:jumpToTag(item, mode)$/;"	f
 jump_backwards	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def jump_backwards(self):$/;"	m	class:SnippetManager
 jump_forwards	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def jump_forwards(self):$/;"	m	class:SnippetManager
@@ -2675,43 +2109,17 @@ keepcpo	bundle/align/plugin/AlignPlugin.vim	/^let s:keepcpo            = &cpo$/;
 keepcpo	bundle/align/plugin/cecutil.vim	/^let s:keepcpo        = &cpo$/;"	v
 key	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let key = split(amat, '=')[0]$/;"	v
 keysMappingDriven	bundle/autocomplete/autoload/acp.vim	/^  let s:keysMappingDriven = []$/;"	v
-kindtag	bundle/tagbar/autoload/tagbar.vim	/^            let kindtag = curtags[0].parent$/;"	v
-kindtag	bundle/tagbar/autoload/tagbar.vim	/^            let kindtag.tline             = curline$/;"	v
-kindtag	bundle/tagbar/autoload/tagbar.vim	/^        let kindtag          = s:KindheaderTag.New(kind.long)$/;"	v
-kindtag	bundle/tagbar/autoload/tagbar.vim	/^        let kindtag.fileinfo = fileinfo$/;"	v
-kindtag	bundle/tagbar/autoload/tagbar.vim	/^        let kindtag.numtags  = len(curtags)$/;"	v
-kindtag	bundle/tagbar/autoload/tagbar.vim	/^        let kindtag.short    = kind.short$/;"	v
-known_files	bundle/tagbar/autoload/tagbar.vim	/^function! s:known_files.get(fname) abort dict$/;"	f
-known_files	bundle/tagbar/autoload/tagbar.vim	/^function! s:known_files.getCurrent() abort dict$/;"	f
-known_files	bundle/tagbar/autoload/tagbar.vim	/^function! s:known_files.has(fname) abort dict$/;"	f
-known_files	bundle/tagbar/autoload/tagbar.vim	/^function! s:known_files.put(fileinfo, ...) abort dict$/;"	f
-known_files	bundle/tagbar/autoload/tagbar.vim	/^function! s:known_files.rm(fname) abort dict$/;"	f
-known_files	bundle/tagbar/autoload/tagbar.vim	/^function! s:known_files.setCurrent(fileinfo) abort dict$/;"	f
-known_files	bundle/tagbar/autoload/tagbar.vim	/^let s:known_files = {$/;"	v
-known_types	bundle/tagbar/autoload/tagbar.vim	/^            let s:known_types[key] = s:TypeInfo.New(value)$/;"	v
-kprange	bundle/ctrlP/autoload/ctrlp.vim	/^let s:kprange = {$/;"	v
 l.filter.ID	test/a.js	/^		l.filter.ID = function(a, b) {$/;"	r
 l.find.CLASS	test/a.js	/^		l.find.CLASS = function(a, b, c) {$/;"	r
 l0	bundle/l9/autoload/l9.vim	/^      let g:l0 += [a:lines[i : j]]$/;"	v
-lash	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:lash = ctrlp#utils#lash()$/;"	v
-lash	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:lash(...)$/;"	f
-lash	bundle/ctrlP/autoload/ctrlp/utils.vim	/^fu! s:lash(...)$/;"	f
 last	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let last = parent$/;"	v
 last	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let last.pos += 1$/;"	v
 last	bundle/zencoding/autoload/zencoding/lang/html.vim	/^          let last.child = cls$/;"	v
 last	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let last.pos += 1$/;"	v
 last	bundle/zencoding/autoload/zencoding/lang/html.vim	/^    let last = current$/;"	v
 last	test/a.js	/^			last: function(a, b, c, d) {$/;"	r
-lastIndx	bundle/nerdtree/plugin/NERD_tree.vim	/^            let lastIndx = len(childNodesToDraw)-1$/;"	v
-last_highlight_tline	bundle/tagbar/autoload/tagbar.vim	/^        let s:last_highlight_tline = 0$/;"	v
-last_highlight_tline	bundle/tagbar/autoload/tagbar.vim	/^let s:last_highlight_tline = 0$/;"	v
-lastvisual	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:lastvisual()$/;"	f
 launch	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def launch(self, text_before, visual_content, parent, start, end):$/;"	m	class:Snippet
-lazy	bundle/ctrlP/autoload/ctrlp.vim	/^		let [s:lazy, s:glbs['imd']] = [0, 0]$/;"	v
-lazyredraw	bundle/tagbar/autoload/tagbar.vim	/^    let &lazyredraw  = lazyredraw_save$/;"	v
-lcmap	bundle/ctrlP/autoload/ctrlp.vim	/^let [s:lcmap, s:prtmaps] = ['nn <buffer> <silent>', {$/;"	v
 leader	bundle/zencoding/autoload/zencoding.vim	/^        let leader .= (str =~ "\\n" ? ">{\\n" : "{") . str . "}"$/;"	v
-leavepre	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:leavepre()$/;"	f
 leaving_buffer	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def leaving_buffer(self):$/;"	m	class:SnippetManager
 leftMatch	test/a.js	/^		leftMatch: {},$/;"	r
 lg	bundle/zencoding/autoload/zencoding/lang/css.vim	/^    let lg = matchlist(token, '^\\%(linear-gradient\\|lg\\)(\\s*\\(\\w\\+\\)\\s*,\\s*\\([^,]\\+\\)\\s*,\\s*\\([^)]\\+\\)\\s*)$')$/;"	v
@@ -2720,14 +2128,12 @@ lhs	bundle/zencoding/autoload/zencoding.vim	/^          let a:lhs[key] = a:rhs[k
 lhs	bundle/zencoding/autoload/zencoding.vim	/^        let a:lhs[key] += a:rhs[key]$/;"	v
 lhs	bundle/zencoding/autoload/zencoding.vim	/^        let a:lhs[key] = a:rhs[key]$/;"	v
 lhs	bundle/zencoding/autoload/zencoding.vim	/^      let lhs = matchstr(line, '.*\\%<'.col.'c.')$/;"	v
-line	bundle/nerdtree/plugin/NERD_tree.vim	/^        let line = treeParts . self.displayString()$/;"	v
 line	bundle/ultisnips/plugin/UltiSnips/geometry.py	/^    def line():$/;"	m	class:Position
 line	bundle/zencoding/autoload/zencoding.vim	/^        let line = getline(a:firstline)$/;"	v
 line	bundle/zencoding/autoload/zencoding.vim	/^      let line = getline('.')$/;"	v
 line	bundle/zencoding/autoload/zencoding.vim	/^      let line = getline(a:firstline)$/;"	v
 line	bundle/zencoding/autoload/zencoding.vim	/^      let line = matchstr(line, '^\\(.*\\%'.col('.').'c.\\)')$/;"	v
 line	bundle/zencoding/autoload/zencoding.vim	/^    let line = getline('.')$/;"	v
-lineout	bundle/ctrlP/autoload/ctrlp/quickfix.vim	/^fu! s:lineout(dict)$/;"	f
 lines	bundle/zencoding/autoload/zencoding.vim	/^      let lines = split(expand, '\\n')$/;"	v
 lines	bundle/zencoding/autoload/zencoding/lang/css.vim	/^      let lines = split(snippet, "\\n")$/;"	v
 lines	bundle/zencoding/autoload/zencoding/lang/haml.vim	/^      let lines = split(text, "\\n")$/;"	v
@@ -2739,40 +2145,23 @@ loaded_Align	bundle/align/autoload/Align.vim	/^let g:loaded_Align = "v35"$/;"	v
 loaded_AlignMaps	bundle/align/autoload/AlignMaps.vim	/^let g:loaded_AlignMaps= "v41"$/;"	v
 loaded_AlignMapsPlugin	bundle/align/plugin/AlignMapsPlugin.vim	/^let g:loaded_AlignMapsPlugin = "v41"$/;"	v
 loaded_AlignPlugin	bundle/align/plugin/AlignPlugin.vim	/^let g:loaded_AlignPlugin = "v35"$/;"	v
+loaded_VisualMark	bundle/visualmark/visualmark.vim	/^let loaded_VisualMark = 1$/;"	v
 loaded_acp	bundle/autocomplete/plugin/acp.vim	/^let g:loaded_acp = 1$/;"	v
 loaded_autoload_acp	bundle/autocomplete/autoload/acp.vim	/^let g:loaded_autoload_acp = 1$/;"	v
 loaded_autoload_l9	bundle/l9/autoload/l9.vim	/^let g:loaded_autoload_l9 = 1$/;"	v
 loaded_cecutil	bundle/align/plugin/cecutil.vim	/^let g:loaded_cecutil = "v18b"$/;"	v
-loaded_ctrlp	bundle/ctrlP/plugin/ctrlp.vim	/^let g:loaded_ctrlp = 1$/;"	v
-loaded_ctrlp_bookmarkdir	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^let g:loaded_ctrlp_bookmarkdir = 1$/;"	v
-loaded_ctrlp_buftag	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^let g:loaded_ctrlp_buftag = 1$/;"	v
-loaded_ctrlp_changes	bundle/ctrlP/autoload/ctrlp/changes.vim	/^let g:loaded_ctrlp_changes = 1$/;"	v
-loaded_ctrlp_dir	bundle/ctrlP/autoload/ctrlp/dir.vim	/^let [g:loaded_ctrlp_dir, g:ctrlp_newdir] = [1, 0]$/;"	v
-loaded_ctrlp_line	bundle/ctrlP/autoload/ctrlp/line.vim	/^let g:loaded_ctrlp_line = 1$/;"	v
-loaded_ctrlp_mixed	bundle/ctrlP/autoload/ctrlp/mixed.vim	/^let [g:loaded_ctrlp_mixed, g:ctrlp_newmix] = [1, 0]$/;"	v
-loaded_ctrlp_quickfix	bundle/ctrlP/autoload/ctrlp/quickfix.vim	/^let g:loaded_ctrlp_quickfix = 1$/;"	v
-loaded_ctrlp_rtscript	bundle/ctrlP/autoload/ctrlp/rtscript.vim	/^let [g:loaded_ctrlp_rtscript, g:ctrlp_newrts] = [1, 0]$/;"	v
-loaded_ctrlp_tag	bundle/ctrlP/autoload/ctrlp/tag.vim	/^let g:loaded_ctrlp_tag = 1$/;"	v
-loaded_ctrlp_undo	bundle/ctrlP/autoload/ctrlp/undo.vim	/^let g:loaded_ctrlp_undo = 1$/;"	v
+loaded_grep	bundle/grep/plugin/grep.vim	/^let loaded_grep = 1$/;"	v
 loaded_jsbeautify	bundle/jsbeautify/plugin/jsbeautify.vim	/^let loaded_jsbeautify = 3$/;"	v
-loaded_nerd_tree	bundle/nerdtree/plugin/NERD_tree.vim	/^let loaded_nerd_tree = 1$/;"	v
-loaded_nerdtree_exec_menuitem	bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^let g:loaded_nerdtree_exec_menuitem = 1$/;"	v
-loaded_nerdtree_fs_menu	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^let g:loaded_nerdtree_fs_menu = 1$/;"	v
 loaded_pathogen	autoload/pathogen.vim	/^let g:loaded_pathogen = 1$/;"	v
-loaded_tagbar	bundle/tagbar/autoload/tagbar.vim	/^let g:loaded_tagbar = 1$/;"	v
 loaded_tcomment	bundle/tcomment/plugin/tcomment.vim	/^let loaded_tcomment = 206$/;"	v
 loaded_zencoding_vim	bundle/zencoding/plugin/zencoding.vim	/^let g:loaded_zencoding_vim = 1$/;"	v
 lockCount	bundle/autocomplete/autoload/acp.vim	/^let s:lockCount = 0$/;"	v
-log	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:log(m)$/;"	f
 low_color	colors/jellybeans.vim	/^  let s:low_color = 0$/;"	v
 low_color	colors/jellybeans.vim	/^  let s:low_color = 1$/;"	v
 lpart	bundle/zencoding/autoload/zencoding.vim	/^            let lpart = substitute(getline(n), '^\\s*', '', '')$/;"	v
 lpart	bundle/zencoding/autoload/zencoding.vim	/^          let lpart = substitute(lpart, '\\s\\+$', '', '')$/;"	v
 lpart	bundle/zencoding/autoload/zencoding.vim	/^          let lpart = substitute(lpart, '^[0-9.-]\\+\\s\\+', '', '')$/;"	v
 lpart	bundle/zencoding/autoload/zencoding.vim	/^        let lpart = substitute(lline, '^\\s\\+', '', '')$/;"	v
-lsCmd	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:lsCmd()$/;"	f
-lst_1	bundle/ctrlP/autoload/ctrlp.vim	/^				let lst_1 = s:sublist(lst, 0, fbar - 1)$/;"	v
-lst_2	bundle/ctrlP/autoload/ctrlp.vim	/^				let lst_2 = len(lst) - 1 > fbar ? s:sublist(lst, fbar + 1, -1) : ['']$/;"	v
 lt	test/a.js	/^			lt: function(a, b, c) {$/;"	r
 m	test/a.js	/^		m = {$/;"	r
 m	test/a.js	/^	m = ["classid", "codebase", "id", "width", "height", "align"];$/;"	r
@@ -2800,65 +2189,30 @@ match_ignorecase	bundle/ultisnips/ftplugin/snippets.vim	/^  let b:match_ignoreca
 match_words	bundle/ultisnips/ftplugin/snippets.vim	/^  let b:match_words = '^snippet\\>:^endsnippet\\>,^global\\>:^endglobal\\>,\\${:}'$/;"	v
 matched	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def matched(self):$/;"	m	class:Snippet
 matches	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def matches(self, trigger):$/;"	m	class:Snippet
-matchfname	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:matchfname(item, pat)$/;"	f
-matchlens	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:matchlens(str, pat, ...)$/;"	f
-matchtabe	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:matchtabe(item, pat)$/;"	f
-matchtabs	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:matchtabs(item, pat)$/;"	f
-max	bundle/ctrlP/autoload/ctrlp/dir.vim	/^fu! s:max(len, max)$/;"	f
-maxdepth	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:maxdepth = min([s:maxdepth, 100])$/;"	v
-maxf	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:maxf(len)$/;"	f
-mdata	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:mdata = [s:dyncwd, s:itemtype, s:regexp, s:sublist(a:items, id, -1)]$/;"	v
 mergeConfig	bundle/zencoding/autoload/zencoding.vim	/^function! s:mergeConfig(lhs, rhs)$/;"	f
-mergelists	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:mergelists()$/;"	f
-mfunc	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:mfunc()$/;"	f
-migemo	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:migemo(str)$/;"	f
-mixedsort	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:mixedsort(...)$/;"	f
 mkline	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def mkline(self, line="", indent=None):$/;"	m	class:SnippetUtil
-mmode	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:mmode()$/;"	f
 mode	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def mode(self):$/;"	m	class:VisualContentPreserver
 mode	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def mode(self):$/;"	m	class:_VimPosition
 modeNames	bundle/fuzzyfinder/autoload/fuf.vim	/^let s:modeNames = []$/;"	v
 mode_colors	bundle/powerline/autoload/Pl/Parser.vim	/^							let mode_colors[col] = base_color_mode[col]$/;"	v
 mode_colors	bundle/powerline/autoload/Pl/Parser.vim	/^				let mode_colors = get(colors, mode, get(colors, 'n', {}))$/;"	v
 mode_colors	bundle/powerline/autoload/Pl/Parser.vim	/^				let mode_colors = get(seg_curr.colors, mode, seg_curr.colors['n'])$/;"	v
-modevar	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:modevar()$/;"	f
 modifier	bundle/align/plugin/cecutil.vim	/^ let s:modifier= "sil "$/;"	v
 modifier	bundle/align/plugin/cecutil.vim	/^ let s:modifier= "sil keepj "$/;"	v
-modify	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:modify(entry, type)$/;"	f
 move	bundle/ultisnips/plugin/UltiSnips/geometry.py	/^    def move(self, pivot, diff):$/;"	m	class:Position
 moveToOtherTabpageOpeningBuffer	bundle/l9/autoload/l9.vim	/^function s:moveToOtherTabpageOpeningBuffer(bufNr)$/;"	f
-mrbs	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^let [s:mrbs, s:mrufs] = [[], []]$/;"	v
-msg	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:msg(name, cwd)$/;"	f
-mtype	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:mtype()$/;"	f
-multipliers	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:multipliers(...)$/;"	f
 mx	bundle/zencoding/autoload/zencoding.vim	/^    let mx = '|\\(\\%(html\\|haml\\|slim\\|e\\|c\\|fc\\|xsl\\|t\\|\\\/[^ ]\\+\\)\\s*,\\{0,1}\\s*\\)*$'$/;"	v
 mx	bundle/zencoding/autoload/zencoding/lang/html.vim	/^let s:mx = '\\([+>]\\|[<^]\\+\\)\\{-}\\s*'$/;"	v
-mxheight	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:mxheight = max([s:mxheight, 1])$/;"	v
 n	test/a.js	/^			n: {$/;"	r
 n	test/a.js	/^		var n = [];$/;"	r
 n	test/a.js	/^	n = function(a, b) {$/;"	r
 name	test/a.js	/^			NAME: \/\\[name=['"]*((?:[\\w\\u00c0-\\uFFFF\\-]|\\\\.)+)['"]*\\]\/,$/;"	r
-narrowable	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:narrowable()$/;"	f
 nc	bundle/zencoding/autoload/zencoding/lang/html.vim	/^    let nc = len(current.child)$/;"	v
 ne	test/a.js	/^			ne: {$/;"	r
 needs_update	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def needs_update(self):$/;"	m	class:_SnippetDictionary
 new_scratch_buffer	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^def new_scratch_buffer(text):$/;"	f
-new_window	bundle/tagbar/autoload/tagbar.vim	/^let s:new_window      = 1$/;"	v
-newcache	bundle/ctrlP/autoload/ctrlp/mixed.vim	/^fu! s:newcache(cwd)$/;"	f
-newobj	bundle/tagbar/autoload/tagbar.vim	/^        let newobj.tagfolds[kind.short] = {}$/;"	v
-newobj	bundle/tagbar/autoload/tagbar.vim	/^    let newobj.foldlevel = g:tagbar_foldlevel$/;"	v
-newobj	bundle/tagbar/autoload/tagbar.vim	/^    let newobj.tagfolds = {}$/;"	v
 next	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def next(self):$/;"	m	class:_TextIterator
-nextBufferName	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:nextBufferName()$/;"	f
-next_buffer_number	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:next_buffer_number = 1$/;"	v
-nmapped	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:nmapped = s:bufnr$/;"	v
 no	bundle/ultisnips/plugin/UltiSnips/text_objects/_tabstop.py	/^    def no(self):$/;"	m	class:TabStop
-nocache	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:nocache(...)$/;"	f
-nocache	bundle/ctrlP/autoload/ctrlp/dir.vim	/^fu! s:nocache()$/;"	f
-nocache	bundle/ctrlP/autoload/ctrlp/rtscript.vim	/^fu! s:nocache()$/;"	f
-norwin	bundle/ctrlP/autoload/ctrlp.vim	/^	let norwin = empty(norwins) ? 0 : norwins[0]$/;"	v
-nosort	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:nosort()$/;"	f
-nosplit	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:nosplit()$/;"	f
 nr	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^    def nr(self):$/;"	m	class:VimBuffer
 ntabs_to_proper_indent	bundle/ultisnips/plugin/UltiSnips/util.py	/^    def ntabs_to_proper_indent(self, ntabs):$/;"	m	class:IndentUtil
 nth	test/a.js	/^			nth: function(a, b, c) {$/;"	r
@@ -2871,7 +2225,6 @@ o	test/a.js	/^	var o = ["<object "];$/;"	r
 object_beg	indent/javascript.vim	/^let s:object_beg = '{[^}]*' . s:js_end_line_comment . '$'$/;"	v
 object_end	indent/javascript.vim	/^let s:object_end = '^' . s:js_mid_line_comment . '}[;,]\\='$/;"	v
 odd	test/a.js	/^			odd: function(a, b) {$/;"	r
-old_cpo	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:old_cpo = &cpo$/;"	v
 oldselection	bundle/zencoding/autoload/zencoding.vim	/^    let oldselection = &selection$/;"	v
 onBufDelete	bundle/l9/autoload/l9/tempbuffer.vim	/^function s:onBufDelete(bufname)$/;"	f
 onBufWriteCmd	bundle/l9/autoload/l9/tempbuffer.vim	/^function s:onBufWriteCmd(bufname)$/;"	f
@@ -2881,26 +2234,9 @@ onfailure	test/a.js	/^			onfailure: function() {$/;"	r
 onfailure	test/a.js	/^		onfailure: function(a) {$/;"	r
 onsuccess	test/a.js	/^		onsuccess: function(a, b) {$/;"	r
 onsuccess	test/a.js	/^		onsuccess: function(a, c) {$/;"	r
-openBookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openBookmark(name)$/;"	f
-openExplorer	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openExplorer(node)$/;"	f
-openHSplit	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openHSplit(target)$/;"	f
-openInNewTab	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openInNewTab(target)$/;"	f
-openInNewTabSilent	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openInNewTabSilent(target)$/;"	f
-openNodeRecursively	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openNodeRecursively(node)$/;"	f
-openVSplit	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:openVSplit(target)$/;"	f
-openfile	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:openfile(cmd, fid, tail, chkmod, ...)$/;"	f
-opke	bundle/ctrlP/autoload/ctrlp.vim	/^			let opke = substitute(ke, '\\(\\w:\\)\\?ctrlp_', '', '')$/;"	v
 opt	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def opt(self, option, default=None):$/;"	m	class:SnippetUtil
-options	bundle/nerdtree/plugin/NERD_tree.vim	/^        let options[i+1 . '. ' . treeRoot.path.str() . '  (buf name: ' . bufName . ')'] = bufName$/;"	v
-options	bundle/nerdtree/plugin/NERD_tree.vim	/^    let options = {}$/;"	v
-opts	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:opts(...)$/;"	f
 order	test/a.js	/^		order: ["ID", "NAME", "TAG"],$/;"	r
 origMap	bundle/l9/autoload/l9/tempvariables.vim	/^let s:origMap = {}$/;"	v
-output	bundle/nerdtree/plugin/NERD_tree.vim	/^                    let output = output . i._renderToString(a:depth + 1, 1, add(copy(a:vertMap), 1), 0)$/;"	v
-output	bundle/nerdtree/plugin/NERD_tree.vim	/^            let output = output . childNodesToDraw[lastIndx]._renderToString(a:depth + 1, 1, add(copy(a:vertMap), 0), 1)$/;"	v
-output	bundle/nerdtree/plugin/NERD_tree.vim	/^        let output = output . line . "\\n"$/;"	v
-output	bundle/tagbar/autoload/tagbar.vim	/^    let output .= "    \\\\ ],\\n"$/;"	v
-output	bundle/tagbar/autoload/tagbar.vim	/^    let output .= "\\\\ }"$/;"	v
 overwrite	bundle/ultisnips/plugin/UltiSnips/text_objects/_base.py	/^    def overwrite(self, gtext = None):$/;"	m	class:TextObject
 overwrites_previous	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def overwrites_previous(self):$/;"	m	class:Snippet
 p	test/a.js	/^		o, p = function(i) {$/;"	r
@@ -2915,7 +2251,6 @@ padding_right	bundle/powerline/autoload/Pl/Parser.vim	/^					let padding_right =
 padding_right	bundle/powerline/autoload/Pl/Parser.vim	/^			let padding_right = (side == s:RIGHT_SIDE ? repeat(' ', s:PADDING) : '')$/;"	v
 paren_beg	indent/javascript.vim	/^let s:paren_beg = '([^)]*' . s:js_end_line_comment . '$'$/;"	v
 paren_end	indent/javascript.vim	/^let s:paren_end = '^' . s:js_mid_line_comment . '[^(]*)[;,]*'$/;"	v
-parent	bundle/ctrlP/autoload/ctrlp.vim	/^		let parent = s:getparent(a:curr)$/;"	v
 parent	bundle/zencoding/autoload/zencoding/lang/html.vim	/^              let parent = tmp$/;"	v
 parent	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let parent = last$/;"	v
 parent	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let parent = tmp$/;"	v
@@ -2932,7 +2267,6 @@ parseTagFiles	bundle/fuzzyfinder/autoload/fuf/taggedfile.vim	/^function s:parseT
 parseTagLine	bundle/fuzzyfinder/autoload/fuf/buffertag.vim	/^function s:parseTagLine(line)$/;"	f
 parse_args	bundle/ultisnips/test.py	/^    def parse_args():$/;"	f
 parse_content	bundle/ultisnips/utils/get_tm_snippets.py	/^def parse_content(c):$/;"	f
-parseline	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:parseline(line)$/;"	f
 parser_pos	bundle/jsbeautify/plugin/jsbeautify.vim	/^					let s:parser_pos += 1$/;"	v
 parser_pos	bundle/jsbeautify/plugin/jsbeautify.vim	/^				let s:parser_pos += 1$/;"	v
 parser_pos	bundle/jsbeautify/plugin/jsbeautify.vim	/^			let s:parser_pos += 1$/;"	v
@@ -2945,30 +2279,13 @@ part	bundle/zencoding/autoload/zencoding.vim	/^      let part = matchstr(line, '
 part	bundle/zencoding/autoload/zencoding.vim	/^      let part = matchstr(line, '\\(\\S.*\\)$')$/;"	v
 part	bundle/zencoding/autoload/zencoding.vim	/^      let part = substitute(line, '^\\s*', '', '')$/;"	v
 part	bundle/zencoding/autoload/zencoding.vim	/^      let part = zencoding#lang#{rtype}#findTokens(part)$/;"	v
-parts	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:parts(str)$/;"	f
 password	test/a.js	/^			password: function(a) {$/;"	r
-pat	bundle/ctrlP/autoload/ctrlp.vim	/^				let pat = s:buildpat(lst)$/;"	v
-pat	bundle/ctrlP/autoload/ctrlp.vim	/^				let pat = s:buildpat(lst_1).';'.s:buildpat(lst_2)$/;"	v
-pat	bundle/ctrlP/autoload/ctrlp.vim	/^		let pat = ''$/;"	v
-pathshorten	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:pathshorten(str)$/;"	f
-pattern	bundle/tagbar/syntax/tagbar.vim	/^let s:pattern = '[' . s:ic . s:io . ']\\([-+# ]\\)\\@='$/;"	v
-pattern	bundle/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\([' . s:ic . s:io . ' ]\\)\\@<=#\\([^-+# ]\\)\\@='$/;"	v
-pattern	bundle/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\([' . s:ic . s:io . ' ]\\)\\@<=+\\([^-+# ]\\)\\@='$/;"	v
-pattern	bundle/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\([' . s:ic . s:io . ' ]\\)\\@<=-\\([^-+# ]\\)\\@='$/;"	v
-pattern	bundle/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\([' . s:ic . s:io . '] \\)\\@<=[^-+: ]\\+[^:]\\+$'$/;"	v
-pattern	bundle/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\([' . s:ic . s:io . '][-+# ]\\)\\@<=[^*]\\+\\(\\*\\?\\(([^)]\\+)\\)\\? :\\)\\@='$/;"	v
 peek	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def peek(self, count = 1):$/;"	m	class:_TextIterator
 pos	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def pos(self):$/;"	m	class:VimState
 pos	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def pos(self):$/;"	m	class:_TextIterator
 pos	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let pos += [last.pos]$/;"	v
-postSourceActions	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:postSourceActions()$/;"	f
 ppos	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def ppos(self):$/;"	m	class:VimState
 preFilter	test/a.js	/^		preFilter: {$/;"	r
-pref	bundle/ctrlP/autoload/ctrlp.vim	/^let [s:pref, s:bpref, s:opts, s:new_opts, s:lc_opts] =$/;"	v
-pref	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^let [s:pref, s:opts] = ['g:ctrlp_buftag_', {$/;"	v
-previewNodeCurrent	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:previewNodeCurrent(node)$/;"	f
-previewNodeHSplit	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:previewNodeHSplit(node)$/;"	f
-previewNodeVSplit	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:previewNodeVSplit(node)$/;"	f
 primary_filetype	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def primary_filetype(self):$/;"	m	class:SnippetManager
 print_active_worker_keys	bundle/l9/autoload/l9/async.py	/^    def print_active_worker_keys(self):$/;"	m	class:Asyncer
 print_newline	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:print_newline(ignore_repeated) $/;"	f
@@ -2976,17 +2293,7 @@ print_output	bundle/l9/autoload/l9/async.py	/^    def print_output(self, var_key
 print_space	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:print_space()$/;"	f
 print_token	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:print_token()$/;"	f
 print_worker_keys	bundle/l9/autoload/l9/async.py	/^    def print_worker_keys(self):$/;"	m	class:Asyncer
-process	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:process(entries, type)$/;"	f
-process	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:process(fname, ftype)$/;"	f
-process	bundle/ctrlP/autoload/ctrlp/changes.vim	/^fu! s:process(clines, ...)$/;"	f
-processedtags	bundle/tagbar/autoload/tagbar.vim	/^    let processedtags = []$/;"	v
-promptToDelBuffer	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:promptToDelBuffer(bufnum, msg)$/;"	f
-promptToDelBuffer	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:promptToDelBuffer(bufnum, msg)$/;"	f
-promptToRenameBuffer	bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:promptToRenameBuffer(bufnum, msg, newFileName)$/;"	f
-prt	bundle/ctrlP/autoload/ctrlp.vim	/^			let prt[0] = str$/;"	v
 put	bundle/l9/autoload/l9/async.py	/^    def put(self, executor):$/;"	m	class:Worker
-putCursorInTreeWin	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:putCursorInTreeWin()$/;"	f
-putCursorOnBookmarkTable	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:putCursorOnBookmarkTable()$/;"	f
 q	test/a.js	/^				l.relative[q] ? r = w.pop() : q = "",$/;"	r
 q	test/a.js	/^				r === q && (q = []);$/;"	r
 q	test/a.js	/^		for (var m = e.firstChild, n = k[256], o = k[257], p = k[258], q = [], g = g ? p: 0; m; m = m.nextSibling) if (f < g) e.removeChild(m);$/;"	r
@@ -3027,26 +2334,16 @@ r	test/a.js	/^	document.documentElement.compareDocumentPosition ? r = function(a
 r	test/a.js	/^	function r(a) {$/;"	r
 radio	test/a.js	/^			radio: function(a) {$/;"	r
 range_start	bundle/powerline/autoload/Pl/Parser.vim	/^		let range_start = (i == len(segments) - 1 ? i : i + 1)$/;"	v
-record	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:record(bufnr)$/;"	f
 record_output	bundle/l9/autoload/l9/async.py	/^    def record_output(self, line):$/;"	m	class:Worker
-reformat	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:reformat(mrufs)$/;"	f
-refreshCurrent	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:refreshCurrent(node)$/;"	f
-refreshRoot	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:refreshRoot()$/;"	f
-regexfilter	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:regexfilter(str)$/;"	f
-regisfilter	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:regisfilter(reg)$/;"	f
 registerCoverage	bundle/fuzzyfinder/autoload/fuf/coveragefile.vim	/^function s:registerCoverage()$/;"	f
 relative	test/a.js	/^		relative: {$/;"	r
 reload	bundle/zencoding/unittest.vim	/^function! s:reload(d)$/;"	f
-remarksigns	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:remarksigns()$/;"	f
 remember_buffer	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def remember_buffer(self, to):$/;"	m	class:VimState
 remember_position	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def remember_position(self):$/;"	m	class:VimState
 remembered_buffer	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def remembered_buffer(self):$/;"	m	class:VimState
 removeItemFromCache	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^function s:removeItemFromCache(word)$/;"	f
 removeRule	test/a.js	/^		removeRule: function(a) {$/;"	r
 remove_indent	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:remove_indent()$/;"	f
-renderBookmarks	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:renderBookmarks()$/;"	f
-renderView	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:renderView()$/;"	f
-renderViewSavingPosition	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:renderViewSavingPosition()$/;"	f
 renewCachesOfAllModes	bundle/fuzzyfinder/plugin/fuf.vim	/^function s:renewCachesOfAllModes()$/;"	f
 replace	bundle/ultisnips/plugin/UltiSnips/text_objects/_transformation.py	/^    def replace(self, match):$/;"	m	class:_CleverReplace
 replace_initital_text	bundle/ultisnips/plugin/UltiSnips/text_objects/_snippet_instance.py	/^    def replace_initital_text(self):$/;"	m	class:SnippetInstance
@@ -3061,14 +2358,12 @@ reset	test/a.js	/^			reset: function(a) {$/;"	r
 reset_buffer_filetypes	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def reset_buffer_filetypes(self):$/;"	m	class:SnippetManager
 reset_indent	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def reset_indent(self):$/;"	m	class:SnippetUtil
 rest	bundle/zencoding/autoload/zencoding.vim	/^    let rest = getline('.')[len(line):]$/;"	v
-restoreScreenState	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:restoreScreenState()$/;"	f
 restoreTempOptions	bundle/autocomplete/autoload/acp.vim	/^function s:restoreTempOptions(group)$/;"	f
 restore_mode	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:restore_mode()$/;"	f
 resulting_string	bundle/jsbeautify/plugin/jsbeautify.vim	/^				let resulting_string .= s:input[s:parser_pos]$/;"	v
 resulting_string	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let resulting_string .= sep$/;"	v
 resulting_string	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let resulting_string = c$/;"	v
 ret	bundle/zencoding/autoload/zencoding.vim	/^      let ret = s:zen_settings[a:type][a:name]$/;"	v
-revealBookmark	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:revealBookmark(name)$/;"	f
 rgb	colors/jellybeans.vim	/^fun! s:rgb(rgb)$/;"	f
 rgb_color	colors/jellybeans.vim	/^fun! s:rgb_color(x, y, z)$/;"	f
 rgb_level	colors/jellybeans.vim	/^fun! s:rgb_level(n)$/;"	f
@@ -3081,7 +2376,6 @@ runTest	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^    def runTest(s
 runTest	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^    def runTest(self):$/;"	m	class:_BaseGuessing
 runTest	bundle/ultisnips/plugin/UltiSnips/tests/test_geometry.py	/^    def runTest(self):$/;"	m	class:_MPBase
 runTest	bundle/ultisnips/test.py	/^    def runTest(self): self.check_output()$/;"	m	class:_VimTest
-running_windows	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:running_windows = has("win16") || has("win32") || has("win64")$/;"	v
 rv	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def rv():$/;"	m	class:SnippetUtil
 s	test/a.js	/^			s: {$/;"	r
 s	test/a.js	/^	s = function(a, b, c) {$/;"	r
@@ -3090,22 +2384,13 @@ s.onreadystatechange	test/a.js	/^			a.hasCallback || (s.onload = s.onreadystatec
 s.type	test/a.js	/^			s.type = "text\/javascript",$/;"	r
 sEval	test/a.js	/^	sEval = "",$/;"	r
 sNS	test/a.js	/^	sNS = "",$/;"	r
-samerootsyml	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:samerootsyml(each, isfile, cwd)$/;"	f
-sanstail	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:sanstail(str)$/;"	f
-saveScreenState	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:saveScreenState()$/;"	f
 save_cpo	bundle/zencoding/autoload/zencoding.vim	/^let s:save_cpo = &cpo$/;"	v
 save_cpo	bundle/zencoding/plugin/zencoding.vim	/^let s:save_cpo = &cpo$/;"	v
 save_last_visual_selection	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def save_last_visual_selection(self):$/;"	m	class:SnippetManager
 save_regcont	bundle/zencoding/autoload/zencoding.vim	/^        let save_regcont = @"$/;"	v
 save_regtype	bundle/zencoding/autoload/zencoding.vim	/^        let save_regtype = getregtype('"')$/;"	v
-savebookmark	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:savebookmark(name, cwd)$/;"	f
-savetofile	bundle/ctrlP/autoload/ctrlp/mrufiles.vim	/^fu! s:savetofile(mrufs)$/;"	f
-scopedtags	bundle/tagbar/autoload/tagbar.vim	/^        let scopedtags += filter(copy(fileinfo.tags), is_scoped)$/;"	v
-scopedtags	bundle/tagbar/autoload/tagbar.vim	/^        let scopedtags = []$/;"	v
 scoreBoundaryMatching	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:scoreBoundaryMatching(wordForBoundary, pattern, exprBoundary)$/;"	f
 scoreSequentialMatching	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:scoreSequentialMatching(word, pattern)$/;"	f
-scrolloff	bundle/tagbar/autoload/tagbar.vim	/^        let &scrolloff = scrolloff_save$/;"	v
-scrolloff_save	bundle/tagbar/autoload/tagbar.vim	/^        let scrolloff_save = &scrolloff$/;"	v
 se	test/a.js	/^			se: {$/;"	r
 seg	bundle/powerline/autoload/Pl/Parser.vim	/^			let seg = deepcopy(get(segments, j))$/;"	v
 seg_name	bundle/powerline/autoload/Pl/Colorscheme.vim	/^					let seg_name = i > 0 ? segment.name .'.'. seg_variants : segment.name$/;"	v
@@ -3123,10 +2408,6 @@ selected	test/a.js	/^			selected: function(a) {$/;"	r
 selection	bundle/zencoding/autoload/zencoding.vim	/^    let &selection = 'inclusive'$/;"	v
 selection	bundle/zencoding/autoload/zencoding.vim	/^    let &selection = oldselection$/;"	v
 self	bundle/fuzzyfinder/autoload/fuf.vim	/^    let self.lastFirstWord = items[0].word$/;"	v
-self	bundle/nerdtree/plugin/NERD_tree.vim	/^        let self.cachedDisplayString .=  ' -> ' . self.symLinkDest$/;"	v
-self	bundle/nerdtree/plugin/NERD_tree.vim	/^        let self.cachedDisplayString .=  ' [RO]'$/;"	v
-self	bundle/nerdtree/plugin/NERD_tree.vim	/^        let self.cachedDisplayString .= ' {' . join(self._bookmarkNames) . '}'$/;"	v
-self	bundle/nerdtree/plugin/NERD_tree.vim	/^        let self.children = newChildNodes$/;"	v
 send	bundle/ultisnips/test.py	/^    def send(self, keys):$/;"	m	class:VimInterfaceWindows
 send	bundle/ultisnips/test.py	/^    def send(self, s):$/;"	m	class:VimInterfaceScreen
 send	bundle/ultisnips/test.py	/^    def send(self,s):$/;"	m	class:_VimTest
@@ -3137,25 +2418,17 @@ sep	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let sep = c$/;"	v
 set	test/a.js	/^		set: function(a, b) {$/;"	r
 set	test/a.js	/^	set: function(a, b) {$/;"	r
 setAbbrWithFileAbbrData	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:setAbbrWithFileAbbrData(item, snippedHeads)$/;"	f
-setCommonBufOptions	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:setCommonBufOptions()$/;"	f
 setCompletefunc	bundle/autocomplete/autoload/acp.vim	/^function s:setCompletefunc()$/;"	f
 setFilters	test/a.js	/^		setFilters: {$/;"	r
 setRanks	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:setRanks(item, pattern, exprBoundary, stats)$/;"	f
 setTempOption	bundle/autocomplete/autoload/acp.vim	/^function s:setTempOption(group, name, value)$/;"	f
 setUp	bundle/ultisnips/test.py	/^    def setUp(self):$/;"	m	class:_VimTest
 set_mode	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:set_mode(mode)$/;"	f
-setentries	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:setentries()$/;"	f
-settype	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:settype(type)$/;"	f
-setupStatusline	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:setupStatusline()$/;"	f
-setupblank	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:setupblank()$/;"	f
 sfile	bundle/zencoding/unittest.vim	/^let s:sfile = expand('<sfile>')$/;"	v
 sharp	bundle/jsbeautify/plugin/jsbeautify.vim	/^				let sharp .= c$/;"	v
 sharp	bundle/jsbeautify/plugin/jsbeautify.vim	/^			let sharp .= c$/;"	v
 sharp	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let sharp = "#"$/;"	v
 shift	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def shift(self, amount=1):$/;"	m	class:SnippetUtil
-short_help	bundle/tagbar/autoload/tagbar.vim	/^let s:short_help      = 1$/;"	v
-shortest	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:shortest(lens)$/;"	f
-showMenu	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:showMenu(node)$/;"	f
 show_category	bundle/zencoding/unittest.vim	/^function! s:show_category(category)$/;"	f
 show_done	bundle/zencoding/unittest.vim	/^function! s:show_done()$/;"	f
 show_ng	bundle/zencoding/unittest.vim	/^function! s:show_ng(no, expect, got)$/;"	f
@@ -3165,7 +2438,6 @@ show_skip	bundle/zencoding/unittest.vim	/^function! s:show_skip(no, title)$/;"	f
 show_title	bundle/zencoding/unittest.vim	/^function! s:show_title(no, title)$/;"	f
 show_type	bundle/zencoding/unittest.vim	/^function! s:show_type(type)$/;"	f
 side	bundle/powerline/autoload/Pl/Parser.vim	/^				let side = s:RIGHT_SIDE$/;"	v
-smapped	bundle/ctrlP/autoload/ctrlp.vim	/^	let s:smapped = s:bufnr$/;"	v
 snipItems	bundle/autocomplete/autoload/acp.vim	/^let s:snipItems = {}$/;"	v
 snippet	bundle/zencoding/autoload/zencoding/lang/css.vim	/^        let snippet = substitute(snippet, '|', '${cursor}', 'g')$/;"	v
 snippet	bundle/zencoding/autoload/zencoding/lang/css.vim	/^      let snippet = current.snippet$/;"	v
@@ -3186,7 +2458,6 @@ starts_here	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def s
 starts_here	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def starts_here(klass, stream):$/;"	m	class:VimLCodeToken
 starts_here	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def starts_here(klass, stream):$/;"	m	class:VisualToken
 starts_here	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^    def starts_here(klass, stream, chars = '{}\\$`'):$/;"	m	class:EscapeCharToken
-str	bundle/tagbar/autoload/tagbar.vim	/^                    let str = tag.strfmt()$/;"	v
 str	bundle/zencoding/autoload/zencoding.vim	/^            let str .= getline(n) . "\\n"$/;"	v
 str	bundle/zencoding/autoload/zencoding.vim	/^            let str .= lpart . "\\n"$/;"	v
 str	bundle/zencoding/autoload/zencoding.vim	/^        let str = @"$/;"	v
@@ -3232,60 +2503,16 @@ str	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^      let str = substitu
 str	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^      let str = substitute(str, '\\\\\\$', '$', 'g')$/;"	v
 str	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^    let str .= "\\n"$/;"	v
 str	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^    let str = current.value[1:-2]$/;"	v
-stripMarkupFromLine	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:stripMarkupFromLine(line, removeLeadingSpaces)$/;"	f
-strwidth	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:strwidth(str)$/;"	f
-sublist	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:sublist(l, s, e)$/;"	f
-sublist7071	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:sublist7071(l, s, e)$/;"	f
 submit	test/a.js	/^			submit: function(a) {$/;"	r
-sva	bundle/ctrlP/autoload/ctrlp.vim	/^				let sva = s:lc_opts[opke]$/;"	v
-sva	bundle/ctrlP/autoload/ctrlp.vim	/^				let {sva} = va$/;"	v
 sw	test/a.js	/^			sw: {$/;"	r
-swb	bundle/ctrlP/autoload/ctrlp.vim	/^	let &swb = swb$/;"	v
-swb	bundle/ctrlP/autoload/ctrlp/changes.vim	/^	let &swb = swb$/;"	v
 switch_beg_next_line	indent/javascript.vim	/^let s:switch_beg_next_line = 'switch\\s*(.*)\\s*' . s:js_mid_line_comment . s:js_end_line_comment . '$'$/;"	v
 switch_beg_same_line	indent/javascript.vim	/^let s:switch_beg_same_line = 'switch\\s*(.*)\\s*' . s:js_mid_line_comment . '{\\s*' . s:js_line_comment . '$'$/;"	v
 switch_mid	indent/javascript.vim	/^let s:switch_mid = '^.*\\(case.*\\|default\\)\\s*:\\s*' $/;"	v
 syn_comment	indent/javascript.vim	/^let s:syn_comment = '\\(Comment\\|String\\|Regexp\\)'$/;"	v
-syntax	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:syntax()$/;"	f
-syntax	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:syntax()$/;"	f
-syntax	bundle/ctrlP/autoload/ctrlp/changes.vim	/^fu! s:syntax()$/;"	f
-syntax	bundle/ctrlP/autoload/ctrlp/line.vim	/^fu! s:syntax()$/;"	f
-syntax	bundle/ctrlP/autoload/ctrlp/quickfix.vim	/^fu! s:syntax()$/;"	f
-syntax	bundle/ctrlP/autoload/ctrlp/tag.vim	/^fu! s:syntax()$/;"	f
-syntax	bundle/ctrlP/autoload/ctrlp/undo.vim	/^fu! s:syntax()$/;"	f
 t	test/a.js	/^	function t(a) {$/;"	r
-tabpagevar	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:tabpagevar(tabnr, var)$/;"	f
-tag	bundle/tagbar/autoload/tagbar.vim	/^                    let tag.depth                 = 1$/;"	v
-tag	bundle/tagbar/autoload/tagbar.vim	/^                    let tag.tline                 = curline$/;"	v
-tag	bundle/tagbar/autoload/tagbar.vim	/^            let tag.parent = kindtag$/;"	v
 tagDataCache	bundle/fuzzyfinder/autoload/fuf/buffertag.vim	/^    let s:tagDataCache[key] = {$/;"	v
 tag_name	bundle/zencoding/autoload/zencoding/lang/css.vim	/^      let tag_name = tag_name[:-2]$/;"	v
 tag_name	bundle/zencoding/autoload/zencoding/lang/css.vim	/^    let tag_name = token$/;"	v
-tagbar_autoclose	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_autoclose = 0$/;"	v
-tagbar_autofocus	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_autofocus = 0$/;"	v
-tagbar_autoshowtag	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_autoshowtag = 0$/;"	v
-tagbar_compact	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_compact = 0$/;"	v
-tagbar_ctags_bin	bundle/tagbar/autoload/tagbar.vim	/^        let g:tagbar_ctags_bin = expand(g:tagbar_ctags_bin)$/;"	v
-tagbar_expand	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_expand = 0$/;"	v
-tagbar_foldlevel	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_foldlevel = 99$/;"	v
-tagbar_iconchars	bundle/tagbar/plugin/tagbar.vim	/^        let g:tagbar_iconchars = ['+', '-']$/;"	v
-tagbar_iconchars	bundle/tagbar/plugin/tagbar.vim	/^        let g:tagbar_iconchars = ['▶', '▼']$/;"	v
-tagbar_indent	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_indent = 2$/;"	v
-tagbar_left	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_left = 0$/;"	v
-tagbar_singleclick	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_singleclick = 0$/;"	v
-tagbar_sort	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_sort = 1$/;"	v
-tagbar_systemenc	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_systemenc = &encoding$/;"	v
-tagbar_width	bundle/tagbar/plugin/tagbar.vim	/^    let g:tagbar_width = 40$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^                let taginfo.fullpath = taginfo.path . a:typeinfo.sro .$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^                let taginfo.path  = taginfo.fields[scope]$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^                let taginfo.scope = scope$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^        let taginfo.depth = len(split(taginfo.path, '\\V' . a:typeinfo.sro))$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^        let taginfo.fields.line = curline$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^        let taginfo.fields.line = taginfo.fields.lineno$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^        let taginfo.fileinfo.fline[curline] = taginfo$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^    let taginfo.fileinfo = a:fileinfo$/;"	v
-taginfo	bundle/tagbar/autoload/tagbar.vim	/^    let taginfo.typeinfo = a:typeinfo$/;"	v
-tail	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:tail()$/;"	f
 tcomment	bundle/tcomment/autoload/tcomment.vim	/^    let g:tcomment#ignore_char_type = 1   "{{{2$/;"	v
 tcomment	bundle/tcomment/autoload/tcomment.vim	/^    let g:tcomment#replacements_c = {$/;"	v
 tcomment	bundle/tcomment/autoload/tcomment.vim	/^    let g:tcomment#syntax_substitute = {$/;"	v
@@ -3318,7 +2545,6 @@ tempOptionSet	bundle/autocomplete/autoload/acp.vim	/^let s:tempOptionSet = [{}, 
 termBlack	colors/jellybeans.vim	/^    let s:termBlack = "Black"$/;"	v
 termBlack	colors/jellybeans.vim	/^    let s:termBlack = "Grey"$/;"	v
 test	bundle/zencoding/unittest.vim	/^function! s:test(...)$/;"	f
-text	bundle/ctrlP/autoload/ctrlp/undo.vim	/^let s:text = map(['second', 'seconds', 'minutes', 'hours', 'days', 'weeks',$/;"	v
 text	bundle/powerline/autoload/Pl/Parser.vim	/^					let text = s:AddDivider(text, side, mode, colors, seg_prev, seg_curr, seg_next)$/;"	v
 text	bundle/powerline/autoload/Pl/Parser.vim	/^				let text = '%(%#'. hl_group .'#'. padding_left . text . padding_right . '%)'$/;"	v
 text	bundle/powerline/autoload/Pl/Parser.vim	/^				let text = seg_curr.text$/;"	v
@@ -3346,7 +2572,6 @@ text	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^      let text = curren
 text	bundle/zencoding/autoload/zencoding/lang/slim.vim	/^      let text = current.value[1:-2]$/;"	v
 text	test/a.js	/^			text: function(a) {$/;"	r
 text_to_vim	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^def text_to_vim(start, end, text):$/;"	f
-textdialog	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:textdialog(str)$/;"	f
 this.__listeners	test/a.js	/^	! this.__listeners && (this.__listeners = {}),$/;"	r
 this.__listeners	test/a.js	/^	if (typeof b != "function") return; ! this.__listeners && (this.__listeners = {});$/;"	r
 this.eStyle.type	test/a.js	/^	b ? (this.eStyle = b.createElement("style"), this.eStyle.type = "text\/css", this.eStyle.id = c) : this.eStyle = qing.dom.create("style", {$/;"	r
@@ -3363,91 +2588,44 @@ tmp	bundle/zencoding/autoload/zencoding/lang/html.vim	/^              let tmp = 
 tmp	bundle/zencoding/autoload/zencoding/lang/html.vim	/^        let tmp = parent.parent$/;"	v
 toLowerForIgnoringCase	bundle/fuzzyfinder/autoload/fuf.vim	/^function s:toLowerForIgnoringCase(str)$/;"	f
 to_vim	bundle/ultisnips/plugin/UltiSnips/text_objects/_snippet_instance.py	/^    def to_vim(self):$/;"	m	class:_VimCursor
-toggle	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:toggle(dir)$/;"	f
 toggle	test/a.js	/^		toggle: function() {$/;"	r
-toggleIgnoreFilter	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:toggleIgnoreFilter()$/;"	f
-toggleShowBookmarks	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:toggleShowBookmarks()$/;"	f
-toggleShowFiles	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:toggleShowFiles()$/;"	f
-toggleShowHidden	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:toggleShowHidden()$/;"	f
-toggleZoom	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:toggleZoom()$/;"	f
 tokenize	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^def tokenize(text, indent, offset):$/;"	f
 transform	bundle/ultisnips/plugin/UltiSnips/tests/test_diff.py	/^def transform(a, cmds):$/;"	f
 translate	bundle/ultisnips/plugin/UltiSnips/_vim.py	/^    def translate(self, s):$/;"	m	class:_Real_LangMapTranslator
-treeBufNames	bundle/nerdtree/plugin/NERD_tree.vim	/^    let treeBufNames = s:unique(treeBufNames)$/;"	v
-treeExistsForBuf	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:treeExistsForBuf()$/;"	f
-treeExistsForTab	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:treeExistsForTab()$/;"	f
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                    let treeParts = treeParts . '+'$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                    let treeParts = treeParts . '~'$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                    let treeParts = treeParts . '▸ '$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                    let treeParts = treeParts . '▾ '$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                let treeParts = treeParts . '  '$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                let treeParts = treeParts . '-'$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                let treeParts = treeParts . '`'$/;"	v
-treeParts	bundle/nerdtree/plugin/NERD_tree.vim	/^                let treeParts = treeParts . '|'$/;"	v
-treeRoot	bundle/nerdtree/plugin/NERD_tree.vim	/^        let treeRoot = getbufvar(bufName, "NERDTreeRoot")$/;"	v
-tree_markup_reg	bundle/nerdtree/plugin/NERD_tree.vim	/^    let s:tree_markup_reg = '^[ `|]*[\\-+~]'$/;"	v
-tree_markup_reg	bundle/nerdtree/plugin/NERD_tree.vim	/^    let s:tree_markup_reg = '^\\([▾▸] \\| \\+[▾▸] \\| \\+\\)'$/;"	v
-tree_up_dir_line	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
-tree_up_dir_line	bundle/nerdtree/syntax/nerdtree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
-tree_wid	bundle/nerdtree/plugin/NERD_tree.vim	/^let s:tree_wid = 2$/;"	v
 trigger	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def trigger(self):$/;"	m	class:Snippet
 trim_output	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:trim_output()$/;"	f
 type	test/a.js	/^			type: function(a) {$/;"	r
-type_init_done	bundle/tagbar/autoload/tagbar.vim	/^    let s:type_init_done = 1$/;"	v
-type_init_done	bundle/tagbar/autoload/tagbar.vim	/^let s:type_init_done      = 0$/;"	v
-types	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^let s:types = {$/;"	v
 typesDirty	bundle/tcomment/autoload/tcomment.vim	/^let s:typesDirty = 1$/;"	v
 u	test/a.js	/^	function u(a) {$/;"	r
 undefined	test/a.js	/^				return d ? d.id === a[1] || typeof d.getAttributeNode != "undefined" && d.getAttributeNode("id").nodeValue === a[1] ? [d] : undefined: []$/;"	r
 unescape	bundle/ultisnips/plugin/UltiSnips/text_objects/_lexer.py	/^def unescape(s):$/;"	f
 unescape	bundle/ultisnips/utils/get_tm_snippets.py	/^def unescape(s):$/;"	f
 unindent	bundle/jsbeautify/plugin/jsbeautify.vim	/^function! s:unindent()$/;"	f
-unique	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:unique(list)$/;"	f
 unmapForMappingDriven	bundle/autocomplete/autoload/acp.vim	/^function s:unmapForMappingDriven()$/;"	f
-unmarksigns	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:unmarksigns()$/;"	f
 unshift	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def unshift(self, amount=1):$/;"	m	class:SnippetUtil
-upDir	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:upDir(keepState)$/;"	f
-upDirCurrentRootClosed	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:upDirCurrentRootClosed()$/;"	f
-upDirCurrentRootOpen	bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:upDirCurrentRootOpen()$/;"	f
 updateBufTimes	bundle/fuzzyfinder/autoload/fuf/buffer.vim	/^function s:updateBufTimes()$/;"	f
 updateData	bundle/fuzzyfinder/autoload/fuf/mrufile.vim	/^function s:updateData()$/;"	f
 updateInfo	bundle/fuzzyfinder/autoload/fuf/mrucmd.vim	/^function s:updateInfo(cmd)$/;"	f
 update_textobjects	bundle/ultisnips/plugin/UltiSnips/text_objects/_snippet_instance.py	/^    def update_textobjects(self):$/;"	m	class:SnippetInstance
 use_pipe_for_cursor	bundle/zencoding/autoload/zencoding/lang/css.vim	/^    let use_pipe_for_cursor = zencoding#getResource(type, 'use_pipe_for_cursor', 1)$/;"	v
 user_zen_leader_key	bundle/zencoding/plugin/zencoding.vim	/^  let g:user_zen_leader_key = '<c-y>'$/;"	v
-usrign	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:usrign(item, type)$/;"	f
 v	bundle/ultisnips/plugin/UltiSnips/text_objects/_python_code.py	/^    def v(self):$/;"	m	class:SnippetUtil
 v	bundle/zencoding/autoload/zencoding.vim	/^    let v = s:zen_settings[a:type][a:name]$/;"	v
 v	test/a.js	/^	function v(a) {$/;"	r
 v	test/a.js	/^	var v = function(a, b, c) {$/;"	r
-va	bundle/ctrlP/autoload/ctrlp.vim	/^			let {va} = {s:bpref.ke}$/;"	v
-va	bundle/ctrlP/autoload/ctrlp.vim	/^		let {va} = {exists(s:pref.ke) ? s:pref.ke : va}$/;"	v
-vacantdict	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:vacantdict(dict)$/;"	f
 val	bundle/zencoding/autoload/zencoding/lang/html.vim	/^              let val = val[1:-2]$/;"	v
 val	bundle/zencoding/autoload/zencoding/lang/html.vim	/^            let val = amat[len(key)+1:]$/;"	v
-validfile	bundle/ctrlP/autoload/ctrlp/buffertag.vim	/^fu! s:validfile(fname, ftype)$/;"	f
-vcscmd	bundle/ctrlP/autoload/ctrlp.vim	/^		let s:vcscmd = s:lash == '\\'$/;"	v
 visualmode	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def visualmode(self):$/;"	m	class:_VimPosition
 w	test/a.js	/^			w: {$/;"	r
 w	test/a.js	/^			} else k = w = []$/;"	r
 w	test/a.js	/^		w = [],$/;"	r
-walker	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:walker(m, p, d)$/;"	f
 wanted_newline	bundle/jsbeautify/plugin/jsbeautify.vim	/^		let wanted_newline = n_newlines == 1$/;"	v
 width	test/a.js	/^			width: function() {$/;"	r
-wig_cond	bundle/ctrlP/autoload/ctrlp/utils.vim	/^let s:wig_cond = v:version > 702 || ( v:version == 702 && has('patch051') )$/;"	v
-wildignore	bundle/tagbar/autoload/tagbar.vim	/^        let &wildignore = wildignore_save$/;"	v
-wildignore_save	bundle/tagbar/autoload/tagbar.vim	/^        let wildignore_save = &wildignore$/;"	v
 window.baiduInstance	test/a.js	/^window.baiduInstance = function(a) {$/;"	r
 window.qing	test/a.js	/^typeof window.qing == "undefined" && (window.qing = {}),$/;"	r
-window_expanded	bundle/tagbar/autoload/tagbar.vim	/^            let s:window_expanded = 0$/;"	v
-window_expanded	bundle/tagbar/autoload/tagbar.vim	/^let s:window_expanded = 0$/;"	v
-winexec	bundle/tagbar/autoload/tagbar.vim	/^function! s:winexec(cmd) abort$/;"	f
 wrapper	bundle/ultisnips/plugin/UltiSnips/__init__.py	/^    def wrapper(self, *args, **kwds):$/;"	f
 write_snippets	bundle/ultisnips/utils/get_tm_snippets.py	/^def write_snippets(snip_descr, f):$/;"	f
-writecache	bundle/ctrlP/autoload/ctrlp.vim	/^fu! s:writecache(cafile)$/;"	f
-writecache	bundle/ctrlP/autoload/ctrlp/bookmarkdir.vim	/^fu! s:writecache(lines)$/;"	f
 y	test/a.js	/^	function y(a) {$/;"	r
 zen_settings	bundle/zencoding/autoload/zencoding.vim	/^let s:zen_settings = {$/;"	v
 zencoding_curl_command	bundle/zencoding/plugin/zencoding.vim	/^  let g:zencoding_curl_command = 'curl -s -L -A Mozilla\/5.0'$/;"	v
 zencoding_debug	bundle/zencoding/plugin/zencoding.vim	/^  let g:zencoding_debug = 0$/;"	v
-{each	bundle/ctrlP/autoload/ctrlp.vim	/^		let s:{each} = {each}$/;"	v

@@ -1,9 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-"开机自动显示目录树,并将焦点放在文件编辑窗口
-" au VimEnter * NERDTree
-" autocmd VimEnter * wincmd l
 
 " 操作记录, 按v进入选择模式,d剪切,y复制,p粘贴
 " u撤销操作 ctrl+r重新操作 /查找 n继续下一个
@@ -56,14 +53,6 @@ color jellybeans
 set nu
 " 不要使用vi的键盘模式，而是vim自己的
 set nocompatible
-
-"ctrlP设置
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-highlight StatusLine guifg=SlateBlue guibg=Yellow
-highlight StatusLineNC guifg=Gray guibg=White
 
 " 设定默认解码
 set fenc=utf-8
@@ -124,4 +113,3 @@ set noswapfile
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_stl_path_style = 'full'
-
