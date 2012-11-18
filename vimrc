@@ -1,6 +1,11 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+"开机自动显示目录树,并将焦点放在文件编辑窗口
+au VimEnter * NERDTree
+autocmd VimEnter * wincmd l
+" autocmd VimEnter * nested :call tagbar#autoopen(1)
+
 " 操作记录, 按v进入选择模式,d剪切,y复制,p粘贴
 " u撤销操作 ctrl+r重新操作 /查找 n继续下一个
 " ctrl+w v 左右分屏 ctrl+w s 上下分屏, sp[vsp] file 分屏打开文件 ctrl+w  c[q]关闭窗口
@@ -23,18 +28,17 @@ let NERDTreeWinPos = "left"
 "设置成员函数树
 let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_usearrows = 1
+let g:tagbar_left = 0
+let g:tagbar_compact = 1
 nnoremap <F3> :TagbarToggle<CR>
 let g:tagbar_width=30
 "打开一下格式文件时自动显示函数树
-autocmd BufReadPost *.js,*.py call tagbar#autoopen()
+"autocmd BufReadPost *.js,*.py call tagbar#autoopen()
 nnoremap <F4> :call g:Jsbeautify()<CR>  
-
-"设置xptemplate
-let g:xptemplate_key_pum_only = '<S-Tab>'
 
 
 filetype plugin indent on 
-
+"vim7.3要这个来修正后退功能键
 set backspace=indent,eol,start
 " 文件修改之后自动载入
 set autoread          
@@ -118,3 +122,28 @@ set laststatus=2
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_stl_path_style = 'full'
 
+"退出所有编辑的文件后,目录树也同时退出
+function! NERDTreeQuit()
+	redir => buffersoutput
+	silent buffers
+	redir END
+
+	let pattern = '^\s*\(\d\+\)\(.....\) "\(.*\)"\s\+line \(\d\+\)$'
+	let windowfound = 0
+
+	for bline in split(buffersoutput, "\n")
+		let m = matchlist(bline, pattern)
+
+		if (len(m) > 0)
+			if (m[2] =~ '..a..')
+				let windowfound = 1
+			endif
+		endif
+	endfor
+
+	
+	if (!windowfound)
+		quitall
+	endif
+endfunction
+autocmd WinEnter * call NERDTreeQuit()
