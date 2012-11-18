@@ -2,9 +2,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 "开机自动显示目录树,并将焦点放在文件编辑窗口
-au VimEnter * NERDTree
-autocmd VimEnter * wincmd l
-" autocmd VimEnter * nested :call tagbar#autoopen(1)
+" au VimEnter * NERDTree
+" autocmd VimEnter * wincmd l
 
 " 操作记录, 按v进入选择模式,d剪切,y复制,p粘贴
 " u撤销操作 ctrl+r重新操作 /查找 n继续下一个
@@ -13,29 +12,30 @@ autocmd VimEnter * wincmd l
 "两个连续的逗号等同于ESC :%s/one/two 将one替换为two,加上/g为全部替换
 "@不加%表示从此往下,加了代表全文替换
 "ctrl-/ 连续按两次注析行
-"选择中行后按=号排列
+"选择中行后按=号对齐代码
+"扩大一个窗口:res +40 <c+w>方向键在不同的窗体中跳转 
 "----------------------------------------
+
+"快捷键映射
+
+nmap <F8> :TagbarToggle<CR>
+nmap <F5> :call g:Jsbeautify()<CR>  
+
+inoremap ,, <ESC>
+inoremap ;; <ESC>
 
 
 "设置剪切可以跨vim
 set clipboard+=unnamed
 syntax on
-inoremap ,, <ESC>
-inoremap ;; <ESC>
-"设置目录树
-nmap <F2> :NERDTreeToggle<CR>
-let NERDTreeWinPos = "left"
 "设置成员函数树
 let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_usearrows = 1
 let g:tagbar_left = 0
 let g:tagbar_compact = 1
-nnoremap <F3> :TagbarToggle<CR>
 let g:tagbar_width=30
 "打开一下格式文件时自动显示函数树
 "autocmd BufReadPost *.js,*.py call tagbar#autoopen()
-nnoremap <F4> :call g:Jsbeautify()<CR>  
-
 
 filetype plugin indent on 
 "vim7.3要这个来修正后退功能键
@@ -103,9 +103,6 @@ set ai "开启自动缩进
 "set expandtab "自动把tab转化为空格
 "retab "将已存在的tab都转化为空格
 
-"安F8智能补全
-inoremap <F8> <C-x><C-o>
-
 " 自动使用新文件模板
 " autocmd BufNewFile *.py 0r ~/.vim/template/simple.py
 "
@@ -122,28 +119,3 @@ set laststatus=2
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_stl_path_style = 'full'
 
-"退出所有编辑的文件后,目录树也同时退出
-function! NERDTreeQuit()
-	redir => buffersoutput
-	silent buffers
-	redir END
-
-	let pattern = '^\s*\(\d\+\)\(.....\) "\(.*\)"\s\+line \(\d\+\)$'
-	let windowfound = 0
-
-	for bline in split(buffersoutput, "\n")
-		let m = matchlist(bline, pattern)
-
-		if (len(m) > 0)
-			if (m[2] =~ '..a..')
-				let windowfound = 1
-			endif
-		endif
-	endfor
-
-	
-	if (!windowfound)
-		quitall
-	endif
-endfunction
-autocmd WinEnter * call NERDTreeQuit()
