@@ -17,15 +17,16 @@ call pathogen#helptags()
 "----------------------------------------
 
 "快捷键映射
-
-nmap <F8> :TagbarToggle<CR>
+" let mapleader = ","
+nmap <F2> :TagbarToggle<CR>
 nmap <F5> :call g:Jsbeautify()<CR>  
 
-inoremap ,, <ESC>
-inoremap ;; <ESC>
+imap ,, <ESC>
+imap ;; <ESC>
 
-map <leader>f :FufFileWithCurrentBufferDir **/<C-M> 
-map <leader>b :FufBuffer<C-M>
+map <c-i> :FufFileWithCurrentBufferDir **/<C-M> 
+map <c-p> :FufBuffer<C-M>
+map <c-o> :FufTag<C-M>
 
 "设置剪切可以跨vim
 set clipboard+=unnamed
