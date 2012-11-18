@@ -24,9 +24,13 @@ nmap <F5> :call g:Jsbeautify()<CR>
 imap ,, <ESC>
 imap ;; <ESC>
 
-map <c-i> :FufFileWithCurrentBufferDir **/<C-M> 
-map <c-p> :FufBuffer<C-M>
-map <c-o> :FufTag<C-M>
+imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M> 
+imap ,b <ESC>:FufBuffer<C-M>
+imap ,t <ESC>:FufTag<C-M>
+
+map ,f :FufFileWithCurrentBufferDir **/<C-M> 
+map ,b :FufBuffer<C-M>
+map ,t :FufTag<C-M>
 
 "设置剪切可以跨vim
 set clipboard+=unnamed

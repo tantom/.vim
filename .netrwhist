@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/root/.vim'
 let g:netrw_dirhist_2='/root'
 let g:netrw_dirhist_3='/'
 let g:netrw_dirhist_4='/dev'
 let g:netrw_dirhist_5='/root/.vim'
 let g:netrw_dirhist_6='/root/.vim/bundle'
+let g:netrw_dirhist_7='/root/.vim'
