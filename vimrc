@@ -22,7 +22,7 @@ call pathogen#helptags()
 " let mapleader = ","
 nmap <F2> :TagbarToggle<CR>
 nmap <F5> :call g:Jsbeautify()<CR>  
-
+nnoremap <silent> <F3> :Grep<CR>
 imap ,, <ESC>
 imap ;; <ESC>:
 
@@ -41,6 +41,7 @@ imap ,w <c-w>
 
 "设置剪切可以跨vim
 set clipboard+=unnamed
+let Grep_Default_Options = '-i' 
 syntax on
 "设置成员函数树
 let g:tagbar_ctags_bin = 'ctags'
