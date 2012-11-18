@@ -1,7 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
-" 
+ 
 " 操作记录, 按v进入选择模式,d剪切,y复制,p粘贴
 " u撤销操作 ctrl+r重新操作 /查找 n继续下一个
 " ctrl+w v 左右分屏 ctrl+w s 上下分屏, sp[vsp] file 分屏打开文件 ctrl+w  c[q]关闭窗口
