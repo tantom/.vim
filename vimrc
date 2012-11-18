@@ -20,7 +20,6 @@ call pathogen#helptags()
 
 "快捷键映射
 " let mapleader = ","
-nmap <F2> :TagbarToggle<CR>
 nmap <F5> :call g:Jsbeautify()<CR>  
 nnoremap <silent> <F3> :Grep<CR>
 imap ,, <ESC>
@@ -43,14 +42,6 @@ imap ,w <c-w>
 set clipboard+=unnamed
 let Grep_Default_Options = '-i' 
 syntax on
-"设置成员函数树
-let g:tagbar_ctags_bin = 'ctags'
-let g:tagbar_usearrows = 1
-let g:tagbar_left = 0
-let g:tagbar_compact = 1
-let g:tagbar_width=30
-"打开一下格式文件时自动显示函数树
-"autocmd BufReadPost *.js,*.py call tagbar#autoopen()
 
 filetype plugin indent on 
 "vim7.3要这个来修正后退功能键
