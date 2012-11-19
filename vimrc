@@ -42,7 +42,11 @@ nnoremap ,m :VbookmarkToggle<CR>
 nnoremap <silent> <F2> :VbookmarkNext<CR>
 nnoremap <silent> <S-F2> :VbookmarkPrevious<CR>
 
-"设置剪切可以跨vim
+nnoremap y "+y
+vnoremap y "+y
+
+" 设置后将下面这句加到lion
+" alias vim='/path/to/MacVim.app/Contents/MacOS/Vim' 
 set clipboard+=unnamed
 let Grep_Default_Options = '-i' 
 syntax on
