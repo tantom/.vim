@@ -14,6 +14,8 @@ call pathogen#helptags()
 "FuzzyFinder时选中文件按<c-j>竖向打开文件
 "定期需要ctags -R一下
 "VbookmarkClearAll删除所有标记
+"gg跳到行首,v G跳到末行,$跳到最后
+"curl -v -H "Content-Type: application/json" -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
 "----------------------------------------
 
 "快捷键映射
@@ -22,7 +24,7 @@ nmap <F5> :call g:Jsbeautify()<CR>
 nnoremap <silent> <F3> :Grep<CR>
 imap ,, <ESC>
 imap ;; <ESC>:
-
+vmap ,, <ESC> 
 imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M> 
 imap ,b <ESC>:FufBuffer<C-M>
 imap ,t <ESC>:FufBufferTagAll<C-M>
@@ -41,6 +43,9 @@ inoremap ,m <ESC>:VbookmarkToggle<CR>i
 nnoremap ,m :VbookmarkToggle<CR>
 nnoremap <silent> <F2> :VbookmarkNext<CR>
 nnoremap <silent> <S-F2> :VbookmarkPrevious<CR>
+
+nmap <C-A> ggVG <S-end>
+imap <C-A> <ESC> ggVG <S-end>
 
 " 设置mac中直接复制到剪切板
 set clipboard+=unnamed
