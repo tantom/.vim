@@ -15,7 +15,7 @@ call pathogen#helptags()
 "定期需要ctags -R一下
 "VbookmarkClearAll删除所有标记
 "gg跳到行首,v G跳到末行,$跳到最后
-"curl -v -H "Content-Type: application/json" -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
+"curl -v -H 'Content-Type: application/json' -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
 "----------------------------------------
 
 "快捷键映射
@@ -23,13 +23,12 @@ call pathogen#helptags()
 nmap <F5> :call g:Jsbeautify()<CR>  
 nnoremap <silent> <F3> :Grep<CR>
 imap ,, <ESC>
-imap ;; <ESC>:
 vmap ,, <ESC> 
 imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M> 
 imap ,b <ESC>:FufBuffer<C-M>
 imap ,t <ESC>:FufBufferTagAll<C-M>
 imap ,p <ESC>:FufTag<C-M>
-
+imap ,s <ESC>:w<C-M>i
 map ,f :FufFileWithCurrentBufferDir **/<C-M> 
 map ,b :FufBuffer<C-M>
 map ,t :FufBufferTagAll<C-M>
@@ -44,9 +43,8 @@ nnoremap ,m :VbookmarkToggle<CR>
 nnoremap <silent> <F2> :VbookmarkNext<CR>
 nnoremap <silent> <S-F2> :VbookmarkPrevious<CR>
 
-nmap <C-A> ggVG <S-end>
-imap <C-A> <ESC> ggVG <S-end>
-
+nmap <c-a> ggVG <S-end>
+imap <c-a> <ESC> ggVG <S-end>
 " 设置mac中直接复制到剪切板
 set clipboard+=unnamed
 let Grep_Default_Options = '-i' 
@@ -88,7 +86,7 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html,ejs set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType xml set omnifunc=xmlcomplet:#CompleteTags
 autocmd FileType java set omnifunc=javacomplete#Complet
 
 " 高亮显示匹配的括号
