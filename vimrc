@@ -24,16 +24,23 @@ nmap <F5> :call g:Jsbeautify()<CR>
 nnoremap <silent> <F3> :Grep<CR>
 imap ,, <ESC>
 vmap ,, <ESC> 
+cmap ,, <ESC>
+omap ,, <ESC>
+nmap ,, <ESC>
 imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M> 
 imap ,b <ESC>:FufBuffer<C-M>
 imap ,t <ESC>:FufBufferTagAll<C-M>
 imap ,p <ESC>:FufTag<C-M>
-imap ,s <ESC>:w<C-M>i
+imap ,u <ESC>:MRU<C-M>
 map ,f :FufFileWithCurrentBufferDir **/<C-M> 
 map ,b :FufBuffer<C-M>
 map ,t :FufBufferTagAll<C-M>
 map ,p :FufTag<C-M>
+map ,u :MRU<C-M>
 
+
+
+imap ,s <ESC>:w<C-M>i
 map ,w <c-w>
 imap ,w <c-w>
 
