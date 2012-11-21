@@ -9,13 +9,14 @@ call pathogen#helptags()
 "@不加%表示从此往下,加了代表全文替换
 "ctrl-/ 连续按两次注析行
 "选择中行后按=号对齐代码
-"扩大一个窗口:res +40 <c+w>方向键在不同的窗体中跳转 
 ":vert help command 竖向打开帮助
 "FuzzyFinder时选中文件按<c-j>竖向打开文件
 "定期需要ctags -R一下
 "VbookmarkClearAll删除所有标记
 "gg跳到行首,v G跳到末行,$跳到最后 I 跳到行首
 "curl -v -H 'Content-Type: application/json' -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
+"i=inner di" clear words before "
+"#高亮当前单词
 "----------------------------------------
 
 "快捷键映射
@@ -27,20 +28,23 @@ vmap ,, <ESC>
 cmap ,, <ESC>
 omap ,, <ESC>
 nmap ,, <ESC>
-imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M> 
+imap ,f <ESC>:FufFile<C-M> 
 imap ,b <ESC>:FufBuffer<C-M>
 imap ,t <ESC>:FufBufferTagAll<C-M>
-imap ,p <ESC>:FufTag<C-M>
-map ,f :FufFileWithCurrentBufferDir **/<C-M> 
+imap ,p <ESC>:FufFileWithCurrentBufferDir **/<C-M>
+map ,f :FufFile<C-M> 
 map ,b :FufBuffer<C-M>
 map ,t :FufBufferTagAll<C-M>
-map ,p :FufTag<C-M>
+map ,p :FufFileWithCurrentBufferDir **/<C-M>
 
 
 
 imap ,s <ESC>:w<C-M>i
 map ,w <c-w>
 imap ,w <c-w>
+imap ,; <ESC>$a;
+imap ,l <ESC>$a
+
 
 " 使用 Visual Stdio 书签的按键方式
 inoremap ,m <ESC>:VbookmarkToggle<CR>i
@@ -132,6 +136,5 @@ let g:Powerline_stl_path_style = 'full'
 " 禁用默认的按键绑定
 let g:vbookmark_disableMapping = 1
 let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
-
 
 
