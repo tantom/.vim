@@ -14,7 +14,7 @@ call pathogen#helptags()
 "FuzzyFinder时选中文件按<c-j>竖向打开文件
 "定期需要ctags -R一下
 "VbookmarkClearAll删除所有标记
-"gg跳到行首,v G跳到末行,$跳到最后
+"gg跳到行首,v G跳到末行,$跳到最后 I 跳到行首
 "curl -v -H 'Content-Type: application/json' -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
 "----------------------------------------
 
