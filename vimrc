@@ -31,12 +31,10 @@ imap ,f <ESC>:FufFileWithCurrentBufferDir **/<C-M>
 imap ,b <ESC>:FufBuffer<C-M>
 imap ,t <ESC>:FufBufferTagAll<C-M>
 imap ,p <ESC>:FufTag<C-M>
-imap ,u <ESC>:MRU<C-M>
 map ,f :FufFileWithCurrentBufferDir **/<C-M> 
 map ,b :FufBuffer<C-M>
 map ,t :FufBufferTagAll<C-M>
 map ,p :FufTag<C-M>
-map ,u :MRU<C-M>
 
 
 
