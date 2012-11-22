@@ -44,7 +44,14 @@ map ,w <c-w>
 imap ,w <c-w>
 imap ,; <ESC>$a;
 imap ,l <ESC>$a
+imap ,v <ESC>v
+inoremap ," <ESC>vi"
+inoremap ,' <ESC>vi'
 
+nnoremap ," <ESC>vi"
+nnoremap ,' <ESC>vi'
+
+nnoremap c "_d
 
 " 使用 Visual Stdio 书签的按键方式
 inoremap ,m <ESC>:VbookmarkToggle<CR>i
@@ -138,3 +145,17 @@ let g:vbookmark_disableMapping = 1
 let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
 
 
+function! ConditionalPairMap(open, close)
+  let line = getline('.')
+  let col = col('.')
+  if col < col('$') || stridx(line, a:close, col + 1) != -1
+    return a:open
+  else
+    return a:open . a:close . "\<left>" . "\<cr>" . "\<cr>" . "\<up>" . "\<tab>"
+  endif
+endf
+inoremap <expr> { ConditionalPairMap('{', '}')
+
+
+
+au BufNewFile,BufRead *.ejs set filetype=html
