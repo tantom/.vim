@@ -1,3 +1,6 @@
+" 不要使用vi的键盘模式，而是vim自己的
+set nocompatible
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
  
@@ -17,8 +20,8 @@ call pathogen#helptags()
 "curl -v -H 'Content-Type: application/json' -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
 "i=inner di" clear words before "
 "#高亮当前单词
+"A跳到行末并进入输入模式 I跳到行首并进入输入
 "----------------------------------------
-
 "快捷键映射
 " let mapleader = ","
 nmap <F5> :call g:Jsbeautify()<CR>  
@@ -40,14 +43,16 @@ map ,p :FufFileWithCurrentBufferDir **/<C-M>
 
 
 imap ,s <ESC>:w<C-M>i
-map ,w <c-w>
-imap ,w <c-w>
 imap ,; <ESC>$a;
 imap ,l <ESC>$a
+imap ,a <ESC>I
 imap ,v <ESC>v
+inoremap ,w <ESC>:w<C-M>
 inoremap ," <ESC>vi"
 inoremap ,' <ESC>vi'
-
+inoremap ,r <ESC>I<ESC>v$<delete>i
+let g:user_zen_expandabbr_key = ',z'
+inoremap ,d <ESC>viw"_d<ESC>i
 nnoremap ," <ESC>vi"
 nnoremap ,' <ESC>vi'
 
@@ -77,8 +82,6 @@ set t_Co=256
 color jellybeans
 " 默认显示行号
 set nu
-" 不要使用vi的键盘模式，而是vim自己的
-set nocompatible
 
 " 设定默认解码
 set fenc=utf-8
@@ -159,3 +162,9 @@ inoremap <expr> { ConditionalPairMap('{', '}')
 
 
 au BufNewFile,BufRead *.ejs set filetype=html
+
+let g:acp_mappingDriven = 0
+let g:acp_ignorecaseOption = 0
+let g:acp_behaviorKeywordIgnores = ["get", "set", "use", "log"]
+
+

@@ -37,3 +37,6 @@
 [submodule "bundle/delimit"]
 	path = bundle/delimit
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/zenc"]
+	path = bundle/zenc
+	url = https://github.com/mattn/zencoding-vim.git
