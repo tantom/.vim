@@ -1,5 +1,7 @@
 " 不要使用vi的键盘模式，而是vim自己的
 set nocompatible
+" 不发出不不的声音
+set noeb vb t_vb=
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -13,8 +15,6 @@ call pathogen#helptags()
 "ctrl-/ 连续按两次注析行
 "选择中行后按=号对齐代码
 ":vert help command 竖向打开帮助
-"FuzzyFinder时选中文件按<c-j>竖向打开文件
-"定期需要ctags -R一下
 "VbookmarkClearAll删除所有标记
 "gg跳到行首,v G跳到末行,$跳到最后 I 跳到行首
 "curl -v -H 'Content-Type: application/json' -X PUT -d '{"test":{"subject":"tools"}}' \http://localhost:3000/
@@ -25,24 +25,18 @@ call pathogen#helptags()
 "快捷键映射
 " let mapleader = ","
 nmap <F5> :call g:Jsbeautify()<CR>  
-nnoremap <silent> <F3> :Grep<CR>
 imap ,, <ESC>
 vmap ,, <ESC> 
 cmap ,, <ESC>
 omap ,, <ESC>
 nmap ,, <ESC>
-imap ,f <ESC>:FufFile<C-M> 
-imap ,b <ESC>:FufBuffer<C-M>
-imap ,t <ESC>:FufBufferTagAll<C-M>
-imap ,p <ESC>:FufFileWithCurrentBufferDir **/<C-M>
-map ,f :FufFile<C-M> 
-map ,b :FufBuffer<C-M>
-map ,t :FufBufferTagAll<C-M>
-map ,p :FufFileWithCurrentBufferDir **/<C-M>
 
-
-
-imap ,s <ESC>:w<C-M>i
+inoremap ,m <ESC>:CtrlPMRU<C-M>
+nnoremap ,m <ESC>:CtrlPMRU<C-M>
+inoremap ,f <ESC>:CtrlPCurFile<C-M>
+nnoremap ,f <ESC>:CtrlPCurFile<C-M>
+inoremap ,c <ESC>:CtrlPChangeAll<C-M>
+nnoremap ,c <ESC>:CtrlPChangeAll<C-M>
 imap ,; <ESC>$a;
 imap ,l <ESC>$a
 imap ,a <ESC>I
@@ -50,7 +44,7 @@ imap ,v <ESC>v
 inoremap ,w <ESC>:w<C-M>
 inoremap ," <ESC>vi"
 inoremap ,' <ESC>vi'
-inoremap ,r <ESC>I<ESC>v$<delete>i
+inoremap ,s <ESC>I<ESC>v$
 let g:user_zen_expandabbr_key = ',z'
 inoremap ,d <ESC>viw"_d<ESC>i
 nnoremap ," <ESC>vi"
@@ -59,8 +53,8 @@ nnoremap ,' <ESC>vi'
 nnoremap c "_d
 
 " 使用 Visual Stdio 书签的按键方式
-inoremap ,m <ESC>:VbookmarkToggle<CR>i
-nnoremap ,m :VbookmarkToggle<CR>
+inoremap ,b <ESC>:VbookmarkToggle<CR>i
+nnoremap ,b :VbookmarkToggle<CR>
 nnoremap <silent> <F2> :VbookmarkNext<CR>
 nnoremap <silent> <S-F2> :VbookmarkPrevious<CR>
 
@@ -163,8 +157,38 @@ inoremap <expr> { ConditionalPairMap('{', '}')
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
+
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tags,*/node_modules/*,*/jquery*min*
 let g:acp_mappingDriven = 0
-let g:acp_ignorecaseOption = 0
+let g:acp_ignorecaseOption = 1
 let g:acp_behaviorKeywordIgnores = ["get", "set", "use", "log"]
 
+let g:ctrlp_working_path_mode = 'rc'
+let g:ctrlp_custom_ignore = {
+  \ 'dir': 'node_modules',
+  \ 'file': '\.pyc$\|\.mp3$\|\.flac$\|\.swp$\|\.o$',
+  \ 'link': '',
+  \ }
 
+
+" Set the default opening command to use when pressing the above mapping: >
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+
+" Change the listing order of the files in the match window. The default setting
+" (1) is from bottom to top: >
+let g:ctrlp_match_window_reversed = 0
+
+" fix the rgrep 
+if has('mac')
+  if system('which gxargs')
+    let Grep_Xargs_Path = 'gxargs'
+  else
+    let Grep_Find_Use_Xargs = 0
+  endif
+endif
+
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
