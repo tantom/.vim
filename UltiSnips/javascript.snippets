@@ -1,0 +1,15 @@
+snippet log "node js console log(js)" b
+console.log('$0');
+endsnippet
+
+snippet ajax "jquery ajax" b
+$.ajax({
+  type: '$1',
+  url: $2,
+  data: $3,
+  dataType:'json',
+  success: function(res) {
+	$4	
+  }
+});
+endsnippet

@@ -22,6 +22,7 @@ call pathogen#helptags()
 "#高亮当前单词
 "A跳到行末并进入输入模式 I跳到行首并进入输入
 "----------------------------------------
+"g; go back g, go forward
 "快捷键映射
 " let mapleader = ","
 nmap <F5> :call g:Jsbeautify()<CR>  
@@ -41,14 +42,13 @@ imap ,; <ESC>$a;
 imap ,l <ESC>$a
 imap ,a <ESC>I
 imap ,v <ESC>v
+imap ,V <ESC>V
+inoremap ,; <ESC>g;<ESC>i
+inoremap ,' <ESC>g,<ESC>i
 inoremap ,w <ESC>:w<C-M>
-inoremap ," <ESC>vi"
-inoremap ,' <ESC>vi'
 inoremap ,s <ESC>I<ESC>v$
 let g:user_zen_expandabbr_key = ',z'
 inoremap ,d <ESC>viw"_d<ESC>i
-nnoremap ," <ESC>vi"
-nnoremap ,' <ESC>vi'
 
 nnoremap c "_d
 
@@ -162,6 +162,7 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tags,*/node_modules/*,*/jquery*min*
 let g:acp_mappingDriven = 0
 let g:acp_ignorecaseOption = 1
 let g:acp_behaviorKeywordIgnores = ["get", "set", "use", "log"]
+let g:acp_completeOption = '.,w,b,u,t,i,k'
 
 let g:ctrlp_working_path_mode = 'rc'
 let g:ctrlp_custom_ignore = {
@@ -188,7 +189,11 @@ if has('mac')
   endif
 endif
 
-
+"配置ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsListSnippets="<c-l>"
+let g:UltiSnipsEditSplit = "vertical"
+
+
