@@ -43,3 +43,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/filesearch"]
+	path = bundle/filesearch
+	url = https://github.com/jeetsukumaran/vim-filesearch.git
