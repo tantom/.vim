@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/root/.vim'
 let g:netrw_dirhist_2='/root'
 let g:netrw_dirhist_3='/'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/root/.vim'
 let g:netrw_dirhist_6='/root/.vim/bundle'
 let g:netrw_dirhist_7='/root/.vim'
 let g:netrw_dirhist_8='/Users/tantom/.vim'
+let g:netrw_dirhist_9='/Users/tantom/Home/myapp/node_modules/mysql/node_modules'
