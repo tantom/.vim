@@ -38,19 +38,28 @@ inoremap ,f <ESC>:CtrlPCurFile<C-M>
 nnoremap ,f <ESC>:CtrlPCurFile<C-M>
 inoremap ,c <ESC>:CtrlPChangeAll<C-M>
 nnoremap ,c <ESC>:CtrlPChangeAll<C-M>
-imap ,; <ESC>$a;
+imap ,h <ESC>^i
+imap ,g <ESC>0i
 imap ,l <ESC>$a
-imap ,a <ESC>I
+nmap ,h ^
+nmap ,g 0
+nmap ,l $
 imap ,v <ESC>v
 imap ,V <ESC>V
-inoremap ,; <ESC>g;<ESC>i
-inoremap ,' <ESC>g,<ESC>i
+inoremap ,q <ESC>g;<ESC>i
+inoremap ,p <ESC>g,<ESC>i
 inoremap ,w <ESC>:w<C-M>
 inoremap ,s <ESC>I<ESC>v$
+nnoremap ,q <ESC>g;<ESC>
+nnoremap ,p <ESC>g,<ESC>
 let g:user_zen_expandabbr_key = ',z'
-inoremap ,d <ESC>viw"_d<ESC>i
-
+inoremap ,dw <ESC>viw"_d<ESC>i
+inoremap ,dd <ESC>dd<ESC>i
+inoremap ,u <ESC>u<ESC>i
+nnoremap ,u <ESC>u
 nnoremap c "_d
+inoremap ,/ <ESC>/
+inoremap ,n <ESC>nn<ESC>i
 
 " 使用 Visual Stdio 书签的按键方式
 inoremap ,b <ESC>:VbookmarkToggle<CR>i
