@@ -5,7 +5,7 @@ set noeb vb t_vb=
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
- 
+" 按键备忘-----------------------------------
 " 操作记录, 按v进入选择模式,d剪切,y复制,p粘贴
 " u撤销操作 ctrl+r重新操作 /查找 n继续下一个
 " ctrl+w v 左右分屏 ctrl+w s 上下分屏, sp[vsp] file 分屏打开文件 ctrl+w  c[q]关闭窗口
@@ -21,10 +21,12 @@ call pathogen#helptags()
 "i=inner di" clear words before "
 "#高亮当前单词
 "A跳到行末并进入输入模式 I跳到行首并进入输入
+"*直接查询当前的单词并跳到下一个出现的位置,#跳回上一个
+"%匹配的范围符号
+"za 展开当前fold
+":number 跳到对应的行上
 "----------------------------------------
-"g; go back g, go forward
 "快捷键映射
-" let mapleader = ","
 nmap <F5> :call g:Jsbeautify()<CR>  
 imap ,, <ESC>
 vmap ,, <ESC> 
@@ -46,21 +48,39 @@ nmap ,g 0
 nmap ,l $
 imap ,v <ESC>v
 imap ,V <ESC>V
-inoremap ,q <ESC>g;<ESC>i
-inoremap ,p <ESC>g,<ESC>i
+inoremap ,e <ESC>g;<ESC>i
+inoremap ,r <ESC>g,<ESC>i
 inoremap ,w <ESC>:w<C-M>
+nnoremap ,w :w<C-M>
 inoremap ,s <ESC>I<ESC>v$
-nnoremap ,q <ESC>g;<ESC>
-nnoremap ,p <ESC>g,<ESC>
+nnoremap ,e <ESC>g;<ESC>
+nnoremap ,r <ESC>g,<ESC>
 let g:user_zen_expandabbr_key = ',z'
 inoremap ,dw <ESC>viw"_d<ESC>i
-inoremap ,dd <ESC>dd<ESC>i
+inoremap ,dd <ESC>,dd<ESC>i
 inoremap ,u <ESC>u<ESC>i
 nnoremap ,u <ESC>u
 nnoremap c "_d
 inoremap ,/ <ESC>/
+"输入模式下跳到下一个查找位置
 inoremap ,n <ESC>nn<ESC>i
-
+"覆盖dd且不填进剪切板
+nnoremap ,dd "_dd
+inoremap ,y <ESC>Vyi
+inoremap ,p <c-r>*
+"在当前行下面增加一个空行并跳到开始输入
+inoremap ,o <ESC>o
+"对齐block中的代码
+inoremap ,a <ESC>=i{
+inoremap ,qq <ESC>:q!<C-M>
+nnoremap ,qq :q!<C-M>
+inoremap ,gd <ESC>gd<ESC>i
+inoremap ,gh <ESC>gg<ESC>i
+inoremap ,ge <ESC>G<ESC>i
+inoremap ,* <ESC>*<ESC>i
+inoremap ,# <ESC>#<ESC>i
+inoremap ,< <ESC>[{<ESC>i
+inoremap ,> <ESC>]}<ESC>i
 " 使用 Visual Stdio 书签的按键方式
 inoremap ,b <ESC>:VbookmarkToggle<CR>i
 nnoremap ,b :VbookmarkToggle<CR>
@@ -91,7 +111,7 @@ set fenc=utf-8
 set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936
 
 "高亮光标所在的行
-set cursorline 
+set cursorline
 
 "设定字体
 set guifontwide=新宋体:h11:cGB2312
@@ -168,10 +188,15 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tags,*/node_modules/*,*/jquery*min*
+let g:acp_enableAtStartup = 1
 let g:acp_mappingDriven = 0
 let g:acp_ignorecaseOption = 1
 let g:acp_behaviorKeywordIgnores = ["get", "set", "use", "log"]
 let g:acp_completeOption = '.,w,b,u,t,i,k'
+let g:acp_completeoptPreview = 1
+let g:acp_behaviorKeywordLength = 2
+let g:acp_behaviorHtmlOmniLength = 1
+
 
 let g:ctrlp_working_path_mode = 'rc'
 let g:ctrlp_custom_ignore = {
@@ -204,5 +229,16 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-l>"
 let g:UltiSnipsEditSplit = "vertical"
-
+"wrap的行可以直接移动鼠标上去
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+" nnoremap <Down> gj
+" nnoremap <Up> gk
+" vnoremap <Down> gj
+" vnoremap <Up> gk
+" inoremap <Down> <C-o>gj
+" inoremap <Up> <C-o>gk
+" 
 

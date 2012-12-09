@@ -46,3 +46,6 @@
 [submodule "bundle/filesearch"]
 	path = bundle/filesearch
 	url = https://github.com/jeetsukumaran/vim-filesearch.git
+[submodule "bundle/neocache"]
+	path = bundle/neocache
+	url = https://github.com/Shougo/neocomplcache.git

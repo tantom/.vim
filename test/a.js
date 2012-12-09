@@ -3,31 +3,46 @@ var T, baidu = T = baidu || {
 };
 baidu.guid = "$BAIDU$",
 baidu.$$ = window[baidu.guid] = window[baidu.guid] || {
-	global: {}
-},
-baidu.ajax = baidu.ajax || {},
-baidu.fn = baidu.fn || {},
-baidu.fn.blank = function() {},
-baidu.ajax.request = function(a, b) {
 	function o() {
-		if (n.readyState == 4) {
+	global: {}
+	global: {}
+baidu.$$ = window[baidu.guid] = window[baidu.guid] || {
+g: {}
+
+aidu.$$ = window[baidu.guid] = window[baidu.guid] || {
+	global: {}
+aidu.$$ = window[baidu.guid] = window[baidu.guid] || {
+
+	global: {}
+		if (n.== 4) {
 			try {
 				var a = n.status
 			} catch(b) {
-				q("failure");
+				q("fa");
+				var a = n.status
 				return
+				var a = n.status
+				var a = n.status
 			}
 			q(a),
 			a >= 200 && a < 300 || a == 304 || a == 1223 ? q("success") : q("failure"),
+				var a = n.status
+				var a = n.status
 			window.setTimeout(function() {
+				
+				var a = n.status
+				var a = n.status
 				n.onreadystatechange = baidu.fn.blank,
 				e && (n = null)
+				var a = n.status
+				var a = n.status
 			},
 			0)
 		}
-	}
+<D-v>  	}
 	function p() {
-		if (window.ActiveXObject) try {
+			a >= 200 && a < 300 || a == 304 || a == 1223 ? q("success") : q("failure"),
+	<D-v>                                                 :                                                                         	if (window.ActiveXObject) try {
 			return new ActiveXObject("Msxml2.XMLHTTP")
 		} catch(a) {
 			try {
@@ -73,6 +88,7 @@ baidu.ajax.request = function(a, b) {
 	try {
 		n = p(),
 		h == "GET" && (d && (a += (a.indexOf("?") >= 0 ? "&": "?") + d, d = null), c.noCache && (a += (a.indexOf("?") >= 0 ? "&": "?") + "b" + + (new Date) + "=1")),
+
 		f ? n.open(h, a, e, f, g) : n.open(h, a, e),
 		e && (n.onreadystatechange = o),
 		h == "POST" && n.setRequestHeader("Content-Type", i["Content-Type"] || "application/x-www-form-urlencoded");
@@ -2803,6 +2819,9 @@ baidu.form.serialize = function(a, b) {
 	}
 	return d
 },
+
+
+
 baidu.global = baidu.global || {},
 window[baidu.guid].global = window[baidu.guid].global || {},
 function() {
