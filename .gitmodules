@@ -49,3 +49,9 @@
 [submodule "bundle/neocache"]
 	path = bundle/neocache
 	url = https://github.com/Shougo/neocomplcache.git
+[submodule "bundle/autopair"]
+	path = bundle/autopair
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
