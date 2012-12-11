@@ -60,7 +60,7 @@ nnoremap ,e <ESC>g;<ESC>
 nnoremap ,r <ESC>g,<ESC>
 let g:user_zen_expandabbr_key = ',z'
 inoremap ,dw <ESC>viw"_d<ESC>i
-inoremap ,dd <ESC>,dd<ESC>i
+inoremap ,dl <ESC>"_dd<ESC>i
 inoremap ,u <ESC>u<ESC>i
 nnoremap ,u <ESC>u
 nnoremap c "_d
@@ -68,7 +68,7 @@ inoremap ,/ <ESC>/
 "输入模式下跳到下一个查找位置
 inoremap ,n <ESC>nn<ESC>i
 "覆盖dd且不填进剪切板
-nnoremap ,dd "_dd
+nnoremap ,dl "_dd
 inoremap ,y <ESC>Vyi
 inoremap ,p <c-r>*
 "在当前行下面增加一个空行并跳到开始输入
@@ -135,7 +135,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplet:#CompleteTags
 autocmd FileType java set omnifunc=javacomplete#Complet
 autocmd FileType javascript setl omnifunc=jscomplete#CompleteJS
-autocmd FileType javascript setl dictionary+=$HOME/.vim/dict/node.dict
 
 " 高亮显示匹配的括号
 set showmatch

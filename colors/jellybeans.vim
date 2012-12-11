@@ -1,5 +1,4 @@
 " Vim color file
-"
 "  "    __       _ _       _                             "
 "  "    \ \  ___| | |_   _| |__   ___  __ _ _ __  ___    "
 "  "     \ \/ _ \ | | | | |  _ \ / _ \/ _  |  _ \/ __|   "
@@ -308,9 +307,10 @@ if version >= 700
   call s:X("TabLineFill","9098a0","","","",s:termBlack)
   call s:X("TabLineSel","000000","f0f0f0","italic,bold",s:termBlack,"White")
 
+
   " Auto-completion
   call s:X("Pmenu","ffffff","606060","","White",s:termBlack)
-  call s:X("PmenuSel","101010","eeeeee","",s:termBlack,"White")
+  call s:X("PmenuSel","101010","d2d70c","",s:termBlack,"White")
 endif
 
 call s:X("Visual","","404040","","",s:termBlack)
