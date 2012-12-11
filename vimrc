@@ -6,6 +6,7 @@ set noeb vb t_vb=
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 " 按键备忘-----------------------------------
+" git submodule foreach git pull origin master
 " 操作记录, 按v进入选择模式,d剪切,y复制,p粘贴
 " u撤销操作 ctrl+r重新操作 /查找 n继续下一个
 " ctrl+w v 左右分屏 ctrl+w s 上下分屏, sp[vsp] file 分屏打开文件 ctrl+w  c[q]关闭窗口
@@ -25,6 +26,8 @@ call pathogen#helptags()
 "%匹配的范围符号
 "za 展开当前fold
 ":number 跳到对应的行上
+"[<tab> 跳到变量定义的位置,然后可以按*跳到下一个#跳到上一个
+":noh关闭高亮
 "----------------------------------------
 "快捷键映射
 nmap <F5> :call g:Jsbeautify()<CR>  
@@ -79,7 +82,7 @@ inoremap ,gh <ESC>gg<ESC>i
 inoremap ,ge <ESC>G<ESC>i
 inoremap ,* <ESC>*<ESC>i
 inoremap ,# <ESC>#<ESC>i
-inoremap ,< <ESC>[{<ESC>i
+inoremap ,< {<cr>}
 inoremap ,> <ESC>]}<ESC>i
 " 使用 Visual Stdio 书签的按键方式
 inoremap ,b <ESC>:VbookmarkToggle<CR>i
@@ -112,24 +115,27 @@ set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936
 
 "高亮光标所在的行
 set cursorline
-
+ " 允许backspace和光标键跨越行边界
+set whichwrap+=<,>,h,l,[,]      
 "设定字体
 set guifontwide=新宋体:h11:cGB2312
 
 
 
 "自动补全
-set completeopt=longest,menu
+" set completeopt=longest,menu
+set completeopt=menuone,preview
 " 增强模式中的命令行自动完成操作
 set wildmenu
 
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html,ejs set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplet:#CompleteTags
 autocmd FileType java set omnifunc=javacomplete#Complet
+autocmd FileType javascript setl omnifunc=jscomplete#CompleteJS
+autocmd FileType javascript setl dictionary+=$HOME/.vim/dict/node.dict
 
 " 高亮显示匹配的括号
 set showmatch
@@ -150,12 +156,6 @@ set ai "开启自动缩进
 "set expandtab "自动把tab转化为空格
 "retab "将已存在的tab都转化为空格
 
-" 自动使用新文件模板
-" autocmd BufNewFile *.py 0r ~/.vim/template/simple.py
-"
-" autocmd FileType html set shiftwidth=4 tabstop=4 expandtab
-" autocmd BufNewFile *.html 0r ~/.vim/template/simple.html
-
 "不备份
 set nobackup
 set nowritebackup
@@ -170,20 +170,10 @@ let g:Powerline_stl_path_style = 'full'
 let g:vbookmark_disableMapping = 1
 let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
 
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsShortcutBackInsert = '<M-b>'
 
-function! ConditionalPairMap(open, close)
-  let line = getline('.')
-  let col = col('.')
-  if col < col('$') || stridx(line, a:close, col + 1) != -1
-    return a:open
-  else
-    return a:open . a:close . "\<left>" . "\<cr>" . "\<cr>" . "\<up>" . "\<tab>"
-  endif
-endf
-inoremap <expr> { ConditionalPairMap('{', '}')
-
-
-
+"附加ejs也当作html对待
 au BufNewFile,BufRead *.ejs set filetype=html
 
 
@@ -193,7 +183,7 @@ let g:acp_mappingDriven = 0
 let g:acp_ignorecaseOption = 1
 let g:acp_behaviorKeywordIgnores = ["get", "set", "use", "log"]
 let g:acp_completeOption = '.,w,b,u,t,i,k'
-let g:acp_completeoptPreview = 1
+let g:acp_completeoptPreview = 0
 let g:acp_behaviorKeywordLength = 2
 let g:acp_behaviorHtmlOmniLength = 1
 
@@ -234,11 +224,21 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-" nnoremap <Down> gj
-" nnoremap <Up> gk
-" vnoremap <Down> gj
-" vnoremap <Up> gk
-" inoremap <Down> <C-o>gj
-" inoremap <Up> <C-o>gk
-" 
 
+"javascript 补全
+let g:jscomplete_use = ['dom', 'moz']
+let g:node_usejscomplete = 1
+let jsbehavs = { 'javascript': [] }
+    call add(jsbehavs.javascript, {
+        \   'command' : "\<C-n>",
+        \   'meets'   : 'acp#meetsForKeyword',
+        \   'repeat'  : 0,
+        \ })
+    call add(jsbehavs.javascript, {
+        \   'command'  : "\<C-x>\<C-o>",
+        \   'meets'   : 'acp#meetsForKeyword',
+        \   'repeat'   : 0,
+    \})
+
+let g:acp_behavior = {}
+call extend(g:acp_behavior, jsbehavs, 'keep')

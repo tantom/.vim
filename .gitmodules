@@ -58,3 +58,6 @@
 [submodule "bundle/ultisnip"]
 	path = bundle/ultisnip
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/jscomplete"]
+	path = bundle/jscomplete
+	url = https://github.com/teramako/jscomplete-vim.git
