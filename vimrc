@@ -148,10 +148,12 @@ set hlsearch
 set incsearch
 
 "缩进处理
+set smarttab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set ai "开启自动缩进
+set si "智能缩进
 "set expandtab "自动把tab转化为空格
 "retab "将已存在的tab都转化为空格
 
@@ -203,14 +205,6 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " (1) is from bottom to top: >
 let g:ctrlp_match_window_reversed = 0
 
-" fix the rgrep 
-if has('mac')
-  if system('which gxargs')
-    let Grep_Xargs_Path = 'gxargs'
-  else
-    let Grep_Find_Use_Xargs = 0
-  endif
-endif
 
 "配置ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -218,11 +212,6 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-l>"
 let g:UltiSnipsEditSplit = "vertical"
-"wrap的行可以直接移动鼠标上去
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
 
 "javascript 补全
 let g:jscomplete_use = ['dom', 'moz']

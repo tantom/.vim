@@ -1,5 +1,5 @@
 snippet log "node js console log(js)" b
-console.log('$0');
+console.log('$1:' + $2);
 endsnippet
 
 snippet ajax "jquery ajax" b
@@ -19,5 +19,14 @@ console.log('$1' + sys.inspect($2));
 endsnippet
 
 
+snippet { "auto pair"
+{
+	$1
+}
+endsnippet
 
-
+snippet {{ "auto clourse pair"
+{
+	$1
+});
+endsnippet
