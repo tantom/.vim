@@ -49,8 +49,9 @@ imap ,l <ESC>$a
 nmap ,h ^
 nmap ,g 0
 nmap ,l $
-imap ,v <ESC>v
-imap ,V <ESC>V
+imap ,v <ESC>V
+imap ,V <ESC>v
+imap ,x <ESC>Vd
 inoremap ,e <ESC>g;<ESC>i
 inoremap ,r <ESC>g,<ESC>i
 inoremap ,w <ESC>:w<C-M>
@@ -74,9 +75,10 @@ inoremap ,p <c-r>*
 "在当前行下面增加一个空行并跳到开始输入
 inoremap ,o <ESC>o
 "对齐block中的代码
-inoremap ,a <ESC>=i{
-inoremap ,qq <ESC>:q!<C-M>
-nnoremap ,qq :q!<C-M>
+inoremap ,a <ESC>=i{<C-M>g;<ESC>^i
+inoremap ,z <ESC>V=<C-M>g;<ESC>^i
+inoremap ,t <ESC>Vy<ESC>p<ESC>I
+nnoremap ,t <ESC>Vy<ESC>p<ESC>I
 inoremap ,gd <ESC>gd<ESC>i
 inoremap ,gh <ESC>gg<ESC>i
 inoremap ,ge <ESC>G<ESC>i
